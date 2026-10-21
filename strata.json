@@ -1,0 +1,239 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+ "page": "https://localrigcheck.com/strata/",
+ "updated": "2026-10-19",
+ "sourcesChecked": "2026-10-19",
+ "engine": "Strata (github.com/Niko1221/Strata)",
+ "sizes": [
+  {
+   "key": "Coder",
+   "label": "Coder (IQ1_M)",
+   "expertsGB": 23,
+   "minRamGB": 32,
+   "downloadGB": 59,
+   "downloadBasis": "RigCheck sum: shard 1 29.6 GB + the original model's 29 GB shard 2 (MODELS.md, DETAILS.md)"
+  },
+  {
+   "key": "Q2_0",
+   "label": "Q2_0",
+   "expertsGB": 34,
+   "minRamGB": 44,
+   "downloadGB": 66
+  },
+  {
+   "key": "IQ2_XS",
+   "label": "IQ2_XS",
+   "expertsGB": 35.5,
+   "minRamGB": 46,
+   "downloadGB": 68
+  },
+  {
+   "key": "IQ3_XXS",
+   "label": "IQ3_XXS",
+   "expertsGB": 43,
+   "minRamGB": 53,
+   "downloadGB": 76
+  },
+  {
+   "key": "IQ3_S",
+   "label": "IQ3_S",
+   "expertsGB": 50,
+   "minRamGB": 60,
+   "downloadGB": null
+  },
+  {
+   "key": "UD_IQ4_XS",
+   "label": "Unsloth UD-IQ4_XS (~4-bit)",
+   "expertsGB": 59.5,
+   "minRamGB": 48,
+   "downloadGB": 94
+  }
+ ],
+ "benchmarks": [
+  {
+   "key": "rtx5070",
+   "card": "RTX 5070 12 GB",
+   "config": "Ryzen 5 7600, 64 GB DDR5, Windows, engine 0.1.26 (Q2_0: 0.1.36)",
+   "type": "measured",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/MODELS.md#how-fast-is-each-size",
+   "outputTokS": {
+    "Q2_0": 94,
+    "IQ2_XS": 79,
+    "IQ3_XXS": 62,
+    "IQ3_S": 53,
+    "Coder": 55
+   },
+   "outputTokSAt128K": {
+    "Q2_0": 76,
+    "IQ2_XS": 63,
+    "IQ3_XXS": 49,
+    "IQ3_S": 46,
+    "Coder": 43
+   },
+   "promptTokSAt32K": {
+    "Q2_0": 2650,
+    "IQ2_XS": 2090,
+    "IQ3_XXS": 1750,
+    "IQ3_S": 1620,
+    "Coder": 2180
+   },
+   "outputRange": null
+  },
+  {
+   "key": "rx9070xt",
+   "card": "RX 9070 XT 16 GB",
+   "config": "Ryzen 9 3900X, 47 GB RAM, Linux",
+   "type": "measured",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/MODELS.md#how-fast-is-each-size",
+   "outputTokS": {
+    "Q2_0": 60,
+    "IQ2_XS": 52,
+    "Coder": 44
+   },
+   "outputTokSAt128K": {
+    "Q2_0": 48,
+    "IQ2_XS": 36,
+    "Coder": 33
+   },
+   "promptTokSAt32K": {
+    "Q2_0": 1160,
+    "IQ2_XS": 1110,
+    "Coder": 1420
+   },
+   "outputRange": null
+  },
+  {
+   "key": "rtx5060ti16",
+   "card": "RTX 5060 Ti 16 GB",
+   "config": "official estimate from the RTX 5070 runs (same CPU, 64 GB RAM), ±20%",
+   "type": "estimate",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/DETAILS.md#other-gpus-estimated",
+   "outputTokS": {
+    "Q2_0": 87,
+    "IQ2_XS": 77,
+    "IQ3_XXS": 65
+   },
+   "outputTokSAt128K": {
+    "Q2_0": 62,
+    "IQ2_XS": 51,
+    "IQ3_XXS": 45
+   },
+   "promptTokSAt32K": null,
+   "outputRange": null
+  },
+  {
+   "key": "rtx3090",
+   "card": "RTX 3090 24 GB",
+   "config": "official estimate from the RTX 5070 runs (same CPU, 64 GB RAM), ±20%",
+   "type": "estimate",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/DETAILS.md#other-gpus-estimated",
+   "outputTokS": {
+    "Q2_0": 140,
+    "IQ2_XS": 128,
+    "IQ3_XXS": 103
+   },
+   "outputTokSAt128K": {
+    "Q2_0": 100,
+    "IQ2_XS": 85,
+    "IQ3_XXS": 71
+   },
+   "promptTokSAt32K": null,
+   "outputRange": null
+  },
+  {
+   "key": "rtx5090",
+   "card": "RTX 5090 32 GB",
+   "config": "Core Ultra 9 285K, 64 GB RAM, Ubuntu 24.04, engine 0.1.29, synthetic code prompts",
+   "type": "community",
+   "source": "https://github.com/Niko1221/Strata/blob/main/bench/results/2026-09-30-community-rtx-5090/README.md",
+   "outputTokS": {
+    "IQ2_XS": 179
+   },
+   "outputTokSAt128K": {
+    "IQ2_XS": 165
+   },
+   "promptTokSAt32K": {
+    "IQ2_XS": 5543
+   },
+   "outputRange": null
+  },
+  {
+   "key": "r9700",
+   "card": "Radeon AI PRO R9700 32 GB",
+   "config": "Linux, 32K context, 4K prompt, 128 greedy tokens (AMD_HIP.md end-to-end test)",
+   "type": "measured",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/AMD_HIP.md",
+   "outputTokS": {
+    "Coder": 46
+   },
+   "outputTokSAt128K": null,
+   "promptTokSAt32K": null,
+   "outputRange": null
+  },
+  {
+   "key": "rx7800xt",
+   "card": "RX 7800 XT 16 GB",
+   "config": "Ryzen 9 5950X, 121 GiB RAM, Linux, engine 0.1.29",
+   "type": "community",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/AMD_HIP.md",
+   "outputTokS": {
+    "Coder": 41
+   },
+   "outputTokSAt128K": null,
+   "promptTokSAt32K": null,
+   "outputRange": {
+    "Coder": "38–44"
+   }
+  },
+  {
+   "key": "m5max128",
+   "card": "M5 Max 128 GB",
+   "config": "macOS 27.2, model in memory, setup's defaults (MTP), short question",
+   "type": "measured",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md#measured-m5-max-128-gb-macos-272",
+   "outputTokS": {
+    "Q2_0": 119.5,
+    "IQ3_XXS": 108.9,
+    "IQ3_S": 101.9
+   },
+   "outputTokSAt128K": null,
+   "promptTokSAt32K": {
+    "Q2_0": 1460,
+    "IQ3_XXS": 1240
+   },
+   "outputRange": null
+  },
+  {
+   "key": "m4mini32",
+   "card": "M4 Mac mini 32 GB",
+   "config": "experts streamed from the SSD and read from the model file (not setup's experts copy), one token per step (no MTP), short question",
+   "type": "measured",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md#m4-mac-mini-32-gb-experts-streamed-from-the-ssd",
+   "outputTokS": {
+    "Q2_0": 14.1,
+    "IQ3_XXS": 10
+   },
+   "outputTokSAt128K": null,
+   "promptTokSAt32K": null,
+   "outputRange": null
+  },
+  {
+   "key": "rx9060xt",
+   "card": "RX 9060 XT 16 GB",
+   "config": "Ryzen 9 7950X, 64 GiB RAM, Linux, engine 0.1.29",
+   "type": "community",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/AMD_HIP.md",
+   "outputTokS": {
+    "Coder": 29
+   },
+   "outputTokSAt128K": null,
+   "promptTokSAt32K": null,
+   "outputRange": {
+    "Coder": "27–31"
+   }
+  }
+ ],
+ "note": "type: measured = official measurement, estimate = official estimate (±20%), community = community report. Speeds belong to the size and setup they were measured on."
+}

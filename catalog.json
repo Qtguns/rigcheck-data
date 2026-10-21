@@ -1,0 +1,1888 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "models": [
+  {
+   "url": "/deepseek-v4-1-flash/",
+   "name": "DeepSeek V4.1 Flash",
+   "updated": "2026-10-21",
+   "checked": "2026-10-20",
+   "subpages": [],
+   "id": "deepseek-v4-1-flash",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "deepseek"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "deepseek",
+   "variants": [
+    {
+     "id": "deepseek-v4-1-flash",
+     "label": "DeepSeek V4.1 Flash September release",
+     "params": {
+      "total": 552,
+      "active": 16,
+      "scope": "September 10, 2026; same config.json and size as 1017"
+     }
+    },
+    {
+     "id": "deepseek-v4-1-flash-1017",
+     "label": "DeepSeek V4.1 Flash 1017 update",
+     "params": {
+      "total": 552,
+      "active": 16,
+      "scope": "October 17, 2026; backbone parameters (8B active in prefill, 16B in decode); with 196B of Engram tables, about 14B of MTP/DSpark weights and the vision encoder, 763.2B in the checkpoint"
+     }
+    }
+   ],
+   "dates": {
+    "added": "2026-10-18",
+    "announced": null,
+    "weights_released": "2026-09-10",
+    "weights_eta": null
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "DwarfStar",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "requires": "its own Q2 GGUF (365.7 GB) on a fast SSD; SSD streaming on one 128 GB Mac or DGX Spark, documented for the September file (its 1017 file is not yet in its guides); its Q4 is September only",
+     "evidence": "https://github.com/antirez/ds4/blob/main/docs/MODELS.md",
+     "read": "2026-10-20"
+    },
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "experimental",
+     "requires": "an unmerged branch: Unsloth's pull request #30817 for its 1017 GGUF from 233.0 GB (Unsloth: 128 GB RAM setups such as a MacBook, DGX Spark or RTX Spark), or pull request #28696 for mrfakename's 1017 GGUF from 264.5 GB (no hardware named) or your own conversion of the September weights (Q2_K reported on one DGX Spark)",
+     "evidence": "https://unsloth.ai/docs/models/deepseek-v4.1-flash",
+     "read": "2026-10-20"
+    },
+    {
+     "runtime": "oMLX",
+     "variants": [
+      "deepseek-v4-1-flash-1017"
+     ],
+     "where": "local",
+     "status": "community",
+     "requires": "Apple Silicon Mac; mlx-community oQ builds from 313.3 GB",
+     "evidence": "https://huggingface.co/mlx-community/DeepSeek-V4.1-Flash-1017-oQ2e-mtp",
+     "read": "2026-10-18"
+    },
+    {
+     "runtime": "vLLM / SGLang",
+     "variants": [
+      "deepseek-v4-1-flash"
+     ],
+     "where": "local",
+     "status": "community",
+     "requires": "data-center GPUs: NVIDIA's NVFP4 checkpoint on four GB300; the current 429.0 GB revision needs vLLM pull request #61530, SGLang and stock vLLM load only the previous revision (about 492 GiB)",
+     "evidence": "https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4",
+     "read": "2026-10-18"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "cloud",
+     "status": "cloud-only",
+     "requires": null,
+     "evidence": "https://ollama.com/library/deepseek-v4.1-flash/tags",
+     "read": "2026-10-20"
+    }
+   ],
+   "license": {
+    "name": "MIT",
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "DeepSeek",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "552B backbone; 8B active per token in prefill, 16B in decode; Engram conditional memory 196B",
+     "ev": "official",
+     "src": 1,
+     "variant": "DeepSeek V4.1 Flash September release"
+    },
+    {
+     "key": "Context",
+     "value": "1M tokens (1,048,576)",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Weights",
+     "value": "September 10 release and the October 17 update, 510.3 GB each, not gated",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "MIT",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "llama.cpp",
+     "value": "Not in mainline",
+     "ev": "community",
+     "src": 3
+    },
+    {
+     "key": "DwarfStar",
+     "value": "streams its 365.7 GB Q2 file of the September weights from SSD on one 128 GB Mac or DGX Spark",
+     "ev": "community",
+     "src": 4,
+     "variant": "DeepSeek V4.1 Flash September release"
+    },
+    {
+     "key": "Ollama",
+     "value": "Ollama and LM Studio offer the model only in their clouds",
+     "ev": "official",
+     "src": 7
+    }
+   ]
+  },
+  {
+   "url": "/flux-3-image-klein/",
+   "name": "FLUX 3 Image Klein",
+   "updated": "2026-10-19",
+   "checked": "2026-10-17",
+   "subpages": [],
+   "id": "flux-3-image-klein",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "flux"
+   ],
+   "modality": {
+    "primary": "image",
+    "inputs": [
+     "text",
+     "image"
+    ],
+    "outputs": [
+     "image"
+    ]
+   },
+   "family": "flux",
+   "variants": [
+    {
+     "id": "flux-3-image-klein",
+     "label": "FLUX 3 Image Klein",
+     "params": {
+      "total": 5.6,
+      "scope": "image generator (text encoder not counted); distilled 16-step and base 50-step versions"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": "2026-10-15",
+    "weights_eta": null,
+    "added": "2026-10-17"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "ComfyUI",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "BFL's int8 files on 8 GB+ NVIDIA GPUs; NVFP4 files also published (BFL's own NVFP4 code needs Blackwell)",
+     "evidence": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "BFL reference code",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "CUDA; BF16, FP8 (Ada, Hopper, Blackwell) or NVFP4 (Blackwell), no int8 path",
+     "evidence": "https://github.com/black-forest-labs/flux-3-image-klein",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "Diffusers",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "Modular Diffusers pipeline on Diffusers' main branch",
+     "evidence": "https://github.com/huggingface/diffusers/tree/main/src/diffusers/modular_pipelines/flux3",
+     "read": "2026-10-16"
+    }
+   ],
+   "license": {
+    "name": "FLUX Kommunity License",
+    "flags": [
+     "commercial-terms",
+     "gated"
+    ]
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Black Forest Labs",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "5.6B (image generator; text encoder not counted)",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Tasks",
+     "value": "Text-to-image, editing with up to 10 reference images, layout with bounding boxes, up to 4K",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "FLUX Kommunity License",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Weights",
+     "value": "Hugging Face, gated (accept the license first)",
+     "ev": "official",
+     "src": 3
+    },
+    {
+     "key": "ComfyUI",
+     "value": "the int8 files in ComfyUI run on 8 GB GPUs such as the RTX 3070",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "BFL reference code",
+     "value": "BFL's own code has no int8 path",
+     "ev": "official",
+     "src": 2
+    },
+    {
+     "key": "Upsampler",
+     "value": "BFL does not say whether its 8 GB figure includes the 9B upsampler",
+     "ev": "official",
+     "src": 2
+    }
+   ]
+  },
+  {
+   "url": "/gemma-4/",
+   "name": "Gemma 4",
+   "updated": "2026-10-19",
+   "checked": "2026-10-12",
+   "subpages": [],
+   "id": "gemma-4",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "gemma4"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image",
+     "audio"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "gemma",
+   "variants": [
+    {
+     "id": "gemma-4-e2b",
+     "label": "Gemma 4 E2B",
+     "params": {
+      "total": 5.1,
+      "scope": "2.3B effective, the rest per-layer embeddings"
+     },
+     "inputs": [
+      "text",
+      "image",
+      "audio"
+     ]
+    },
+    {
+     "id": "gemma-4-e4b",
+     "label": "Gemma 4 E4B",
+     "params": {
+      "total": 8,
+      "scope": "4.5B effective, the rest per-layer embeddings"
+     },
+     "inputs": [
+      "text",
+      "image",
+      "audio"
+     ]
+    },
+    {
+     "id": "gemma-4-12b",
+     "label": "Gemma 4 12B",
+     "params": {
+      "total": 12,
+      "scope": "dense"
+     },
+     "inputs": [
+      "text",
+      "image",
+      "audio"
+     ]
+    },
+    {
+     "id": "gemma-4-26b-a4b",
+     "label": "Gemma 4 26B-A4B",
+     "params": {
+      "total": 26,
+      "active": 4,
+      "scope": "mixture of experts"
+     },
+     "inputs": [
+      "text",
+      "image"
+     ]
+    },
+    {
+     "id": "gemma-4-31b",
+     "label": "Gemma 4 31B",
+     "params": {
+      "total": 31,
+      "scope": "dense"
+     },
+     "inputs": [
+      "text",
+      "image"
+     ]
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": null,
+    "weights_eta": null,
+    "added": "2026-10-09"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "https://unsloth.ai/docs/models/gemma-4",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://ollama.com/library/gemma4/tags",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "llama.cpp",
+     "variants": [
+      "gemma-4-e2b"
+     ],
+     "where": "local",
+     "status": "official",
+     "requires": "Jetson Orin Nano, NVIDIA's Jetson container",
+     "evidence": "https://www.jetson-ai-lab.com/tutorials/gemma4-on-jetson/",
+     "read": "2026-10-19"
+    }
+   ],
+   "license": {
+    "name": "Apache 2.0",
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Google",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "the dense 12B",
+     "ev": "official",
+     "src": 1,
+     "variant": "Gemma 4 12B"
+    },
+    {
+     "key": "Params",
+     "value": "26B parameters, about 4B active per token",
+     "ev": "official",
+     "src": 1,
+     "variant": "Gemma 4 26B-A4B"
+    },
+    {
+     "key": "Params",
+     "value": "the dense 31B",
+     "ev": "official",
+     "src": 1,
+     "variant": "Gemma 4 31B"
+    },
+    {
+     "key": "Context",
+     "value": "131,072 tokens for E2B and E4B, 262,144 for the others",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Input",
+     "value": "text, image, audio",
+     "ev": "official",
+     "src": 1,
+     "variant": "Gemma 4 12B"
+    },
+    {
+     "key": "License",
+     "value": "Apache 2.0",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Ollama",
+     "value": "Ollama has gemma4 packages",
+     "ev": "official",
+     "src": 3
+    },
+    {
+     "key": "llama.cpp",
+     "value": "llama.cpp supports the architecture, Unsloth publishes GGUF files",
+     "ev": "community",
+     "src": 2,
+     "label": "Unsloth"
+    }
+   ]
+  },
+  {
+   "url": "/glm-5-3-flash/",
+   "name": "GLM-5.3-Flash",
+   "updated": "2026-10-19",
+   "checked": "2026-10-17",
+   "subpages": [],
+   "id": "glm-5-3-flash",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "glm"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image",
+     "video"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "glm",
+   "variants": [
+    {
+     "id": "glm-5-3-flash",
+     "label": "GLM-5.3-Flash",
+     "params": {
+      "total": 320,
+      "active": 18,
+      "scope": "mixture of experts, 288 routed + 1 shared expert, 8 per token"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": null,
+    "weights_eta": null,
+    "added": "2026-10-17"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "requires": "Unsloth's GGUF files and its llama.cpp branch; about 100 GB of RAM + VRAM for 1-bit",
+     "evidence": "https://unsloth.ai/docs/models/glm-5.3-flash",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "KTransformers",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "requires": "official FP8 weights, an RTX 40 or 50 card, an AVX-512 CPU, at least 350 GB of system memory",
+     "evidence": "https://github.com/kvcache-ai/ktransformers/blob/main/doc/en/kt-kernel/GLM-5.3-Flash-Tutorial.md",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "vLLM",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "server GPUs: NVIDIA Hopper or newer, AMD Instinct MI350X / MI355X",
+     "evidence": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+     "read": "2026-10-09"
+    },
+    {
+     "runtime": "SGLang",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "server GPUs (H100 to GB300, MI355X)",
+     "evidence": "https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3-Flash",
+     "read": "2026-10-09"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "cloud",
+     "status": "cloud-only",
+     "requires": "glm-5.3-flash:cloud runs on Ollama's servers",
+     "evidence": "https://ollama.com/library/glm-5.3-flash/tags",
+     "read": "2026-10-17"
+    }
+   ],
+   "license": {
+    "name": "MIT",
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Z.ai",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "320B total, 18B active per token",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Context",
+     "value": "1,048,576 tokens",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Official weights",
+     "value": "FP8, 328.3 GB",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "MIT",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "llama.cpp",
+     "value": "with llama.cpp and Unsloth's GGUF files",
+     "ev": "community",
+     "src": 2
+    },
+    {
+     "key": "KTransformers",
+     "value": "KTransformers runs them with one RTX 40 or 50 card (its tutorial gives no VRAM minimum), at least 350 GB of free system memory and a CPU with AVX-512",
+     "ev": "official",
+     "src": 3
+    },
+    {
+     "key": "vLLM / SGLang",
+     "value": "vLLM and SGLang target server GPUs (H100 and newer, AMD Instinct MI350X/MI355X)",
+     "ev": "official",
+     "src": 3
+    },
+    {
+     "key": "Ollama",
+     "value": "Only as glm-5.3-flash:cloud, which runs on Ollama's servers, not on your hardware",
+     "ev": "official",
+     "src": 4
+    }
+   ]
+  },
+  {
+   "url": "/kolibri-1/",
+   "name": "Kolibri-1",
+   "updated": "2026-10-21",
+   "checked": "2026-10-12",
+   "subpages": [],
+   "id": "kolibri-1",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "kolibri"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "aleph-alpha",
+   "variants": [
+    {
+     "id": "kolibri-1",
+     "label": "Kolibri-1",
+     "params": {
+      "total": 78.1,
+      "active": 3.46,
+      "scope": "mixture of experts, 384 routed + 1 shared expert, 6 selected per token"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": null,
+    "weights_eta": null,
+    "added": "2026-10-12"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "vLLM",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "needs the aleph-alpha-inference plugin, FP8, data-center GPUs",
+     "evidence": "https://github.com/Aleph-Alpha/aleph-alpha-inference",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "Transformers",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "transformers 5.20 or newer; the official card gives no separate hardware for this route",
+     "evidence": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "read": "2026-10-21"
+    },
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "patched",
+     "requires": "independent Hob-forge patch, Q4_K_M GGUF",
+     "evidence": "https://huggingface.co/Hob-forge/Kolibri-1-GGUF",
+     "read": "2026-10-12"
+    }
+   ],
+   "license": {
+    "name": "Apache 2.0",
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Aleph Alpha",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "78.10B total parameters",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Active",
+     "value": "3.46B active per token",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Weights",
+     "value": "32 downloadable shards total 78.84 GB",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "Apache 2.0",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Official routes",
+     "value": "Aleph Alpha's vLLM plugin and, since October 20, 2026, Transformers 5.20 or newer",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "llama.cpp",
+     "value": "requires a custom llama.cpp patch",
+     "ev": "community",
+     "src": 2
+    },
+    {
+     "key": "Official minimum",
+     "value": "2× A100 80 GB, 2× H100 SXM5, or 1× H200/B200/B300",
+     "ev": "official",
+     "src": 1
+    }
+   ]
+  },
+  {
+   "url": "/minimax-h3/",
+   "name": "MiniMax H3",
+   "updated": "2026-10-19",
+   "checked": "2026-10-12",
+   "subpages": [],
+   "id": "minimax-h3",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "h3"
+   ],
+   "modality": {
+    "primary": "video",
+    "inputs": [
+     "text",
+     "image",
+     "video",
+     "audio"
+    ],
+    "outputs": [
+     "video",
+     "audio"
+    ]
+   },
+   "family": "minimax",
+   "variants": [
+    {
+     "id": "minimax-h3",
+     "label": "MiniMax H3",
+     "params": {
+      "total": 33,
+      "scope": "dense transformer only; the Qwen3-VL-32B text encoder is separate"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": null,
+    "weights_eta": null,
+    "added": "2026-10-12"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "SGLang",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://docs.sglang.io/cookbook/diffusion/MiniMax/MiniMax-H3",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "vLLM-Omni",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://recipes.vllm.ai/MiniMaxAI/MiniMax-H3",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "Diffusers",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/docs/diffusers/main/en/api/pipelines/minimax_h3",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "ComfyUI",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "https://docs.comfy.org/tutorials/video/minimax/minimax-h3",
+     "read": "2026-10-19"
+    },
+    {
+     "runtime": "stable-diffusion.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "https://huggingface.co/unsloth/MiniMax-H3-GGUF",
+     "read": "2026-10-12"
+    }
+   ],
+   "license": {
+    "name": "MiniMax H3 Community License",
+    "flags": [
+     "region-restricted",
+     "commercial-terms"
+    ]
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "MiniMax",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "33B-parameter dense",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Output",
+     "value": "768-pixel short edge (1344×768 at 16:9), 24 fps, 4–15 seconds",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "MiniMax's open-weights license does not cover the US, the EU, the UK or South Korea",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "SGLang",
+     "value": "12 GB of VRAM and 32 GB of RAM plus an NVMe drive at 480P (SGLang, run with the memory capped; a real 32 GB PC will be slower)",
+     "ev": "official",
+     "src": 2
+    },
+    {
+     "key": "Diffusers",
+     "value": "two 48 GB cards with int8 (diffusers)",
+     "ev": "official",
+     "src": 3
+    },
+    {
+     "key": "stable-diffusion.cpp",
+     "value": "Unsloth's GGUF files run in stable-diffusion.cpp",
+     "ev": "community",
+     "src": 5
+    }
+   ]
+  },
+  {
+   "url": "/mistral-large-4/",
+   "name": "Mistral Large 4",
+   "updated": "2026-10-19",
+   "checked": "2026-10-08",
+   "subpages": [],
+   "id": "mistral-large-4",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "large4"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "mistral",
+   "variants": [
+    {
+     "id": "mistral-large-4",
+     "label": "Mistral Large 4",
+     "params": {
+      "total": 1050,
+      "active": 52,
+      "scope": "49B active without embeddings and output layers; a 1.6B vision encoder is listed separately"
+     }
+    }
+   ],
+   "dates": {
+    "announced": "2026-10-06",
+    "weights_released": null,
+    "weights_eta": {
+     "date": "2026-10-31",
+     "source": "https://huggingface.co/mistralai/Mistral-Large-4.0-1T05-A52B",
+     "read": "2026-10-08"
+    },
+    "added": "2026-10-07"
+   },
+   "weights": "announced",
+   "routes": [
+    {
+     "runtime": "Mistral API",
+     "variants": "all",
+     "where": "cloud",
+     "status": "official",
+     "evidence": "https://docs.mistral.ai/models/mistral-large-4",
+     "read": "2026-10-08"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "cloud",
+     "status": "cloud-only",
+     "evidence": "https://ollama.com/library/mistral-large-4/tags",
+     "read": "2026-10-08"
+    }
+   ],
+   "license": {
+    "name": null,
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Mistral AI",
+     "ev": "official",
+     "src": 2
+    },
+    {
+     "key": "Total parameters",
+     "value": "1.05 trillion (Mistral docs)",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Active parameters",
+     "value": "52B per token",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Context",
+     "value": "1M tokens (Mistral docs, API model page)",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Weights",
+     "value": "open weights announced for the end of October 2026",
+     "ev": "official",
+     "src": 2
+    },
+    {
+     "key": "API",
+     "value": "mistral-large-4-0",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Ollama",
+     "value": "only the cloud tag mistral-large-4:cloud",
+     "ev": "official",
+     "src": 4
+    }
+   ]
+  },
+  {
+   "url": "/mistral-medium-3-5/",
+   "name": "Mistral Medium 3.5",
+   "updated": "2026-10-19",
+   "checked": "2026-10-12",
+   "subpages": [],
+   "id": "mistral-medium-3-5",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "medium"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "mistral",
+   "variants": [
+    {
+     "id": "mistral-medium-3-5",
+     "label": "Mistral Medium 3.5",
+     "params": {
+      "total": 128,
+      "scope": "dense; a vision encoder handles image input"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": "2026-04-28",
+    "weights_eta": null,
+    "added": "2026-10-08"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "https://unsloth.ai/docs/models/mistral-3.5",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://ollama.com/library/mistral-medium-3.5/tags",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "vLLM",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "SGLang",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "Transformers",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+     "read": "2026-10-12"
+    }
+   ],
+   "license": {
+    "name": "Modified MIT",
+    "flags": [
+     "commercial-terms"
+    ]
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Mistral AI",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "128B, dense",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Context",
+     "value": "256K (262,144 tokens)",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Official weights",
+     "value": "FP8 (e4m3), 133.6 GB",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "KV cache",
+     "value": "352 KiB per token at f16",
+     "ev": "estimate",
+     "src": 1,
+     "label": "RigCheck calculation"
+    },
+    {
+     "key": "License",
+     "value": "Modified MIT",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Release",
+     "value": "April 28, 2026, as open weights",
+     "ev": "official",
+     "src": 5
+    },
+    {
+     "key": "vLLM",
+     "value": "vLLM (recommended by Mistral)",
+     "ev": "official",
+     "src": 1
+    }
+   ]
+  },
+  {
+   "url": "/nemotron-3-5/",
+   "name": "Nemotron 3.5",
+   "updated": "2026-10-20",
+   "checked": "2026-10-17",
+   "subpages": [],
+   "id": "nemotron-3-5",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "nemotron"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image",
+     "video"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "nemotron",
+   "variants": [
+    {
+     "id": "nemotron-3-5-bolt",
+     "label": "Nemotron 3.5 Bolt 74B-A9B",
+     "params": {
+      "total": 74,
+      "active": 9,
+      "scope": "mixture of experts, hybrid Mamba-2 / transformer"
+     }
+    },
+    {
+     "id": "nemotron-3-5-super-vl",
+     "label": "Nemotron 3.5 Super VL 120B-A12B",
+     "params": {
+      "total": 120,
+      "active": 12,
+      "scope": "mixture of experts, hybrid Mamba-2 / transformer"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": "2026-10-15",
+    "weights_eta": null,
+    "added": "2026-10-17"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "llama.cpp",
+     "variants": [
+      "nemotron-3-5-bolt"
+     ],
+     "where": "local",
+     "status": "official",
+     "requires": "NVIDIA's 2-bit GGUF and recipes: a 32 GB+ RTX 40/50 GPU or an RTX Spark; latest llama.cpp built from source",
+     "evidence": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "llama.cpp",
+     "variants": [
+      "nemotron-3-5-super-vl"
+     ],
+     "where": "local",
+     "status": "community",
+     "requires": "ggml-org and Unsloth GGUF files, 64 GB+ of RAM + VRAM or unified memory",
+     "evidence": "https://unsloth.ai/docs/models/nemotron-3.5-super-vl",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "vLLM",
+     "variants": [
+      "nemotron-3-5-bolt"
+     ],
+     "where": "local",
+     "status": "official",
+     "requires": "DGX Spark: the 24GB packed build, 256K context, fp8 KV cache, a nightly vLLM image at release",
+     "evidence": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "vLLM",
+     "variants": [
+      "nemotron-3-5-super-vl"
+     ],
+     "where": "local",
+     "status": "official",
+     "requires": "NVFP4 weights on one DGX Spark, one H200, two H100s or one GB200",
+     "evidence": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": [
+      "nemotron-3-5-bolt"
+     ],
+     "where": "local",
+     "status": "official",
+     "requires": "nemotron-3.5-bolt, 25 GB",
+     "evidence": "https://ollama.com/library/nemotron-3.5-bolt/tags",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": [
+      "nemotron-3-5-super-vl"
+     ],
+     "where": "local",
+     "status": "official",
+     "requires": "nemotron-3.5-super, 80–249 GB",
+     "evidence": "https://ollama.com/library/nemotron-3.5-super/tags",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "LM Studio",
+     "variants": [
+      "nemotron-3-5-super-vl"
+     ],
+     "where": "local",
+     "status": "official",
+     "requires": "at least 70 GB of system memory (LM Studio's listing)",
+     "evidence": "https://lmstudio.ai/models/nvidia/nemotron-3.5-super-vl",
+     "read": "2026-10-17"
+    }
+   ],
+   "license": {
+    "name": "OpenMDW-1.1",
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "NVIDIA",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "74B total, 9B active per token",
+     "ev": "official",
+     "src": 1,
+     "variant": "Nemotron 3.5 Bolt 74B-A9B"
+    },
+    {
+     "key": "Params",
+     "value": "120B total, 12B active",
+     "ev": "official",
+     "src": 2,
+     "variant": "Nemotron 3.5 Super VL 120B-A12B"
+    },
+    {
+     "key": "Context",
+     "value": "up to 256K tokens (262,144)",
+     "ev": "official",
+     "src": 1,
+     "variant": "Nemotron 3.5 Bolt 74B-A9B"
+    },
+    {
+     "key": "Context",
+     "value": "up to 1M tokens (1,048,576)",
+     "ev": "official",
+     "src": 2,
+     "variant": "Nemotron 3.5 Super VL 120B-A12B"
+    },
+    {
+     "key": "Release",
+     "value": "October 15, 2026 on Hugging Face (nvidia organization, not gated)",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "OpenMDW-1.1",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "llama.cpp",
+     "value": "NVIDIA's own llama.cpp recipes start at a 32 GB GPU (RTX 5090)",
+     "ev": "official",
+     "src": 1,
+     "variant": "Nemotron 3.5 Bolt 74B-A9B"
+    }
+   ]
+  },
+  {
+   "url": "/qwen-3-8-27b/",
+   "name": "Qwen3.8-27B",
+   "updated": "2026-10-19",
+   "checked": "2026-10-12",
+   "subpages": [],
+   "id": "qwen-3-8-27b",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "qwen27"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image",
+     "video"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "qwen",
+   "variants": [
+    {
+     "id": "qwen-3-8-27b",
+     "label": "Qwen3.8-27B",
+     "params": {
+      "total": 27,
+      "scope": "dense language model; the vision encoder is part of the release"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": null,
+    "weights_eta": null,
+    "added": "2026-10-09"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "https://unsloth.ai/docs/models/qwen3.8",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://ollama.com/library/qwen3.8/tags",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "vLLM",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/Qwen/Qwen3.8-27B",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "SGLang",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/Qwen/Qwen3.8-27B",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "Transformers",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/Qwen/Qwen3.8-27B",
+     "read": "2026-10-12"
+    }
+   ],
+   "license": {
+    "name": "Apache 2.0",
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Qwen",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "27B, dense",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Context",
+     "value": "262,144 tokens natively",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Input",
+     "value": "vision encoder for image and video input",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "Apache 2.0",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "KV cache",
+     "value": "64 KiB per token at f16",
+     "ev": "estimate",
+     "src": 1,
+     "label": "RigCheck calculation"
+    },
+    {
+     "key": "Ollama",
+     "value": "Ollama has qwen3.8:27b",
+     "ev": "official",
+     "src": 3
+    },
+    {
+     "key": "llama.cpp",
+     "value": "llama.cpp supports the architecture, Unsloth publishes GGUF files",
+     "ev": "community",
+     "src": 2,
+     "label": "Unsloth"
+    }
+   ]
+  },
+  {
+   "url": "/qwen-3-8-flash-next/",
+   "name": "Qwen3.8-Flash-Next",
+   "updated": "2026-10-19",
+   "checked": "2026-10-08",
+   "subpages": [],
+   "id": "qwen-3-8-flash-next",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "qwen"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image",
+     "video"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "qwen",
+   "variants": [
+    {
+     "id": "qwen-3-8-flash-next",
+     "label": "Qwen3.8-Flash-Next",
+     "params": {
+      "total": 125,
+      "active": 6,
+      "scope": "language model; the 51B n-gram embedding table and 4B MTP layer are counted separately"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": null,
+    "weights_eta": null,
+    "added": "2026-10-08"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "https://unsloth.ai/docs/models/qwen3.8-next",
+     "read": "2026-10-08"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://ollama.com/library/qwen3.8-flash-next/tags",
+     "read": "2026-10-08"
+    },
+    {
+     "runtime": "LM Studio",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "https://huggingface.co/lmstudio-community/Qwen3.8-Flash-Next-GGUF",
+     "read": "2026-10-08"
+    },
+    {
+     "runtime": "vLLM",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+     "read": "2026-10-08"
+    },
+    {
+     "runtime": "SGLang",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
+     "read": "2026-10-08"
+    },
+    {
+     "runtime": "Strata",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "/strata/",
+     "read": "2026-10-08"
+    }
+   ],
+   "license": {
+    "name": "Qwen Community License 1.0",
+    "flags": [
+     "commercial-terms"
+    ]
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Qwen",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "125B in the language model, 6B active per token; plus 51B n-gram embedding and 4B MTP",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Context",
+     "value": "262,144 tokens natively",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Official weights",
+     "value": "BF16, 360.0 GB; FP8, 185.5 GB",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "Qwen Community License 1.0",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Ollama",
+     "value": "Ollama packages its own builds of qwen3.8-flash-next",
+     "ev": "official",
+     "src": 4
+    },
+    {
+     "key": "llama.cpp",
+     "value": "llama.cpp supports the architecture",
+     "ev": "official",
+     "src": 6,
+     "label": "llama.cpp"
+    },
+    {
+     "key": "vLLM",
+     "value": "Server GPUs, for the official weights",
+     "ev": "official",
+     "src": 5
+    }
+   ]
+  },
+  {
+   "url": "/qwen-image-2-1/",
+   "name": "Qwen-Image-2.1",
+   "updated": "2026-10-19",
+   "checked": "2026-10-12",
+   "subpages": [],
+   "id": "qwen-image-2-1",
+   "role": "model",
+   "parent": null,
+   "checkers": [
+    "image"
+   ],
+   "modality": {
+    "primary": "image",
+    "inputs": [
+     "text",
+     "image"
+    ],
+    "outputs": [
+     "image"
+    ]
+   },
+   "family": "qwen",
+   "variants": [
+    {
+     "id": "qwen-image-2-1",
+     "label": "Qwen-Image-2.1 (Base and Turbo)",
+     "params": {
+      "total": 7,
+      "scope": "visual generation model only; the Qwen3-VL-8B encoder and the VAE are separate"
+     }
+    }
+   ],
+   "dates": {
+    "announced": null,
+    "weights_released": null,
+    "weights_eta": null,
+    "added": "2026-10-12"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "ComfyUI",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "requires": "Base; Turbo sampling not verified here",
+     "evidence": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "Diffusers",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "Turbo needs Diffusers from GitHub (PR #14950)",
+     "evidence": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+     "read": "2026-10-12"
+    },
+    {
+     "runtime": "stable-diffusion.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "requires": "Base GGUF; Turbo GGUF route not verified here",
+     "evidence": "https://github.com/leejet/stable-diffusion.cpp/blob/master/docs/qwen_image_2.1.md",
+     "read": "2026-10-12"
+    }
+   ],
+   "license": {
+    "name": "Qwen Research License",
+    "flags": [
+     "research-only"
+    ]
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Qwen",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "7B visual generation architecture",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Components",
+     "value": "Qwen3-VL-8B text/vision encoder and a model-specific VAE",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Files",
+     "value": "ComfyUI BF16 files total 32.44 GB",
+     "ev": "community",
+     "src": 2
+    },
+    {
+     "key": "License",
+     "value": "Qwen Research License",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "ComfyUI",
+     "value": "Base CUDA ComfyUI and official Diffusers routes are documented; Turbo ComfyUI sampling remains unverified here",
+     "ev": "community",
+     "src": 2
+    },
+    {
+     "key": "stable-diffusion.cpp",
+     "value": "Base GGUF has a stable-diffusion.cpp route",
+     "ev": "community",
+     "src": 3
+    }
+   ]
+  },
+  {
+   "url": "/strata/",
+   "name": "Strata checker",
+   "updated": "2026-10-19",
+   "checked": "2026-10-19",
+   "subpages": [],
+   "id": "strata",
+   "role": "engine",
+   "parent": null,
+   "checkers": [
+    "strata"
+   ],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text",
+     "image"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": null,
+   "variants": [],
+   "dates": {
+    "announced": null,
+    "weights_released": null,
+    "weights_eta": null,
+    "added": "2026-10-07"
+   },
+   "weights": null,
+   "runs": [
+    "qwen-3-8-flash-next"
+   ],
+   "routes": [
+    {
+     "runtime": "Strata",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "Windows / Linux, NVIDIA RTX 20+ or listed AMD",
+     "evidence": "https://github.com/Niko1221/Strata",
+     "read": "2026-10-19"
+    },
+    {
+     "runtime": "Strata",
+     "variants": "all",
+     "where": "local",
+     "status": "experimental",
+     "requires": "Apple Silicon Mac (Metal), macOS 15 or newer",
+     "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md",
+     "read": "2026-10-17"
+    },
+    {
+     "runtime": "Strata",
+     "variants": "all",
+     "where": "local",
+     "status": "experimental",
+     "requires": "older NVIDIA cards such as the GTX 10 series or Tesla P40 / V100 (separate CUDA 12 engine, Windows or Linux)",
+     "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/OLDER_GPUS.md",
+     "read": "2026-10-19"
+    },
+    {
+     "runtime": "Strata",
+     "variants": "all",
+     "where": "local",
+     "status": "experimental",
+     "requires": "older AMD cards such as the Radeon VII / MI50 (Linux build)",
+     "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/OLDER_GPUS.md",
+     "read": "2026-10-19"
+    },
+    {
+     "runtime": "Strata",
+     "variants": "all",
+     "where": "local",
+     "status": "experimental",
+     "requires": "Intel Arc (experimental Linux build)",
+     "evidence": "https://github.com/Niko1221/Strata",
+     "read": "2026-10-19"
+    }
+   ],
+   "license": {
+    "name": "MIT (engine)",
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Type",
+     "value": "Strata is an inference engine, not a model",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Runs",
+     "value": "runs the 125B-class Qwen3.8-Flash-Next model",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "MIT-licensed inference engine",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Minimum GPU",
+     "value": "an NVIDIA GeForce RTX 20–50 series with 8 GB of VRAM (slow; 12 GB recommended)",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "RAM",
+     "value": "32 GB of RAM (64 GB runs every standard size)",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Disk",
+     "value": "~80 GB free on an SSD",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "System",
+     "value": "Windows 10/11 or Linux",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Mac",
+     "value": "through Strata's experimental Metal engine",
+     "ev": "official",
+     "src": 5
+    },
+    {
+     "key": "Older NVIDIA",
+     "value": "experimental and use Strata's separate CUDA 12 engine",
+     "ev": "official",
+     "src": 6
+    }
+   ]
+  }
+ ]
+}

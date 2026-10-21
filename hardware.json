@@ -1,0 +1,782 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+ "note": "memGB as the vendor markets it; bwGBs only where a source is recorded.",
+ "devices": [
+  {
+   "id": "rtx5090",
+   "label": "GeForce RTX 5090 (32 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 32,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx5080",
+   "label": "GeForce RTX 5080 (16 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx5070ti",
+   "label": "GeForce RTX 5070 Ti (16 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx5070",
+   "label": "GeForce RTX 5070 (12 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx5060ti16",
+   "label": "GeForce RTX 5060 Ti (16 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx5060ti8",
+   "label": "GeForce RTX 5060 Ti (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx5060",
+   "label": "GeForce RTX 5060 (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx5050",
+   "label": "GeForce RTX 5050 (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4090",
+   "label": "GeForce RTX 4090 (24 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 24,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4080s",
+   "label": "GeForce RTX 4080 / 4080 Super (16 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4070tis",
+   "label": "GeForce RTX 4070 Ti Super (16 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4070ti",
+   "label": "GeForce RTX 4070 Ti (12 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4070",
+   "label": "GeForce RTX 4070 / 4070 Super (12 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4060ti16",
+   "label": "GeForce RTX 4060 Ti (16 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4060ti8",
+   "label": "GeForce RTX 4060 Ti (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4060",
+   "label": "GeForce RTX 4060 (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx3090",
+   "label": "GeForce RTX 3090 / 3090 Ti (24 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 24,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx3080ti",
+   "label": "GeForce RTX 3080 Ti (12 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx3080_12",
+   "label": "GeForce RTX 3080 (12 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx3080_10",
+   "label": "GeForce RTX 3080 (10 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 10,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx3070",
+   "label": "GeForce RTX 3070 / 3070 Ti (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx3060_12",
+   "label": "GeForce RTX 3060 (12 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx3060_8",
+   "label": "GeForce RTX 3060 / 3060 Ti (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx3050",
+   "label": "GeForce RTX 3050 (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx2080ti",
+   "label": "GeForce RTX 2080 Ti (11 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 11,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx2080",
+   "label": "GeForce RTX 2080 / 2080 Super (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx2070",
+   "label": "GeForce RTX 2070 / 2070 Super (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx2060_12",
+   "label": "GeForce RTX 2060 (12 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx2060",
+   "label": "GeForce RTX 2060 (6 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 6,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx5090m",
+   "label": "GeForce RTX 5090 Laptop (24 GB)",
+   "vendor": "nvidia",
+   "kind": "laptop",
+   "memGB": 24,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4090m",
+   "label": "GeForce RTX 4090 Laptop (16 GB)",
+   "vendor": "nvidia",
+   "kind": "laptop",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4080m",
+   "label": "GeForce RTX 4080 Laptop (12 GB)",
+   "vendor": "nvidia",
+   "kind": "laptop",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtx4070m",
+   "label": "GeForce RTX 4070 Laptop (8 GB)",
+   "vendor": "nvidia",
+   "kind": "laptop",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "gtx1080ti",
+   "label": "GeForce GTX 1080 Ti (11 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 11,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "gtx10",
+   "label": "GeForce GTX 1070 / 1080 (8 GB)",
+   "vendor": "nvidia",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "p40",
+   "label": "Tesla P40 (24 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 24,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "v100_16",
+   "label": "Tesla V100 (16 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "v100_32",
+   "label": "Tesla V100 (32 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 32,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtxpro6000",
+   "label": "NVIDIA RTX PRO 6000 Blackwell (96 GB)",
+   "vendor": "nvidia",
+   "kind": "pro",
+   "memGB": 96,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "b300",
+   "label": "NVIDIA B300 (288 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 288,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "b200",
+   "label": "NVIDIA B200 (180 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 180,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "h200",
+   "label": "NVIDIA H200 (141 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 141,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "h100_sxm5",
+   "label": "NVIDIA H100 SXM5 (80 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 80,
+   "bwGBs": null,
+   "source": "nvidia.com/en-us/data-center/h100 specifications: H100 SXM 80 GB; Kolibri official minimum names SXM5; read 2026-10-12"
+  },
+  {
+   "id": "h100",
+   "label": "NVIDIA H100 / H800 (80 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 80,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "a100",
+   "label": "NVIDIA A100 (80 GB)",
+   "vendor": "nvidia",
+   "kind": "dc",
+   "memGB": 80,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtxspark64",
+   "label": "NVIDIA RTX Spark (64 GB unified)",
+   "vendor": "nvidia",
+   "kind": "apu",
+   "memGB": 64,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rtxspark128",
+   "label": "NVIDIA RTX Spark (128 GB unified)",
+   "vendor": "nvidia",
+   "kind": "apu",
+   "memGB": 128,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "dgxspark",
+   "label": "NVIDIA DGX Spark (128 GB unified)",
+   "vendor": "nvidia",
+   "kind": "apu",
+   "memGB": 128,
+   "bwGBs": 273,
+   "source": "nvidia.com/en-us/products/workstations/dgx-spark (128 GB LPDDR5x coherent unified system memory, 273 GB/s; read 2026-10-08)"
+  },
+  {
+   "id": "jetsonorinnano",
+   "label": "NVIDIA Jetson Orin Nano Super (8 GB)",
+   "vendor": "nvidia",
+   "kind": "apu",
+   "memGB": 8,
+   "bwGBs": 102,
+   "source": "nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit (8GB 128-bit LPDDR5, 102 GB/s in MAXN SUPER mode; read 2026-10-19)"
+  },
+  {
+   "id": "r9700",
+   "label": "Radeon AI PRO R9700 (32 GB)",
+   "vendor": "amd",
+   "kind": "pro",
+   "memGB": 32,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx7900xtx",
+   "label": "Radeon RX 7900 XTX (24 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 24,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx7900xt",
+   "label": "Radeon RX 7900 XT (20 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 20,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx9070xt",
+   "label": "Radeon RX 9070 XT (16 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx9070",
+   "label": "Radeon RX 9070 (16 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx9060xt16",
+   "label": "Radeon RX 9060 XT (16 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx9060xt8",
+   "label": "Radeon RX 9060 XT (8 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx7800xt",
+   "label": "Radeon RX 7800 XT (16 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx7700xt",
+   "label": "Radeon RX 7700 XT (12 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx7600xt",
+   "label": "Radeon RX 7600 XT (16 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx7600",
+   "label": "Radeon RX 7600 (8 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx6900xt",
+   "label": "Radeon RX 6900 XT / 6950 XT (16 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx6800",
+   "label": "Radeon RX 6800 / 6800 XT (16 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "rx6700xt",
+   "label": "Radeon RX 6700 XT (12 GB)",
+   "vendor": "amd",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "mi50",
+   "label": "Radeon VII / Instinct MI50 (16 GB)",
+   "vendor": "amd",
+   "kind": "dc",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "mi355x",
+   "label": "AMD Instinct MI355X (288 GB)",
+   "vendor": "amd",
+   "kind": "dc",
+   "memGB": 288,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "mi300x",
+   "label": "AMD Instinct MI300X (192 GB)",
+   "vendor": "amd",
+   "kind": "dc",
+   "memGB": 192,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "strixhalo",
+   "label": "AMD Ryzen AI Max (Strix Halo)",
+   "vendor": "amd",
+   "kind": "apu",
+   "memGB": null,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "strixhalo128",
+   "label": "AMD Ryzen AI Max+ 395 (128 GB)",
+   "vendor": "amd",
+   "kind": "apu",
+   "memGB": 128,
+   "bwGBs": 256,
+   "source": "amd.com Ryzen AI Max+ 395 specs: 256-bit LPDDR5x, LPDDR5x-8000, max 128 GB (read 2026-10-08); 256 GB/s = 256 bit / 8 × 8000 MT/s, RigCheck calculation"
+  },
+  {
+   "id": "arcb60",
+   "label": "Intel Arc Pro B60 (24 GB)",
+   "vendor": "intel",
+   "kind": "pro",
+   "memGB": 24,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "arca770_16",
+   "label": "Intel Arc A770 (16 GB)",
+   "vendor": "intel",
+   "kind": "consumer",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "arca770_8",
+   "label": "Intel Arc A770 (8 GB)",
+   "vendor": "intel",
+   "kind": "consumer",
+   "memGB": 8,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "arcb580",
+   "label": "Intel Arc B580 (12 GB)",
+   "vendor": "intel",
+   "kind": "consumer",
+   "memGB": 12,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "mac512",
+   "label": "Mac Studio M3 Ultra (512 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 512,
+   "bwGBs": 819,
+   "source": "support.apple.com/en-au/122211 (Mac Studio 2025: M3 Ultra 819GB/s, 96GB configurable to 256GB; read 2026-10-08); 512GB: apple.com/newsroom/2025/03/apple-unveils-new-mac-studio-the-most-powerful-mac-ever/ (\"configured up to 512GB\"), read 2026-10-17"
+  },
+  {
+   "id": "mac256",
+   "label": "Mac Studio M3 Ultra (256 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 256,
+   "bwGBs": 819,
+   "source": "support.apple.com/en-au/122211 (Mac Studio 2025: M3 Ultra 819GB/s, 96GB configurable to 256GB; read 2026-10-08)"
+  },
+  {
+   "id": "m5ultra512",
+   "label": "Mac Studio M5 Ultra (512 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 512,
+   "bwGBs": 1200,
+   "source": "apple.com/mac-studio/specs (M5 Max 40-core GPU 614GB/s up to 128GB; M5 Ultra 1.2TB/s, 256GB or 512GB; read 2026-10-08)"
+  },
+  {
+   "id": "m5ultra256",
+   "label": "Mac Studio M5 Ultra (256 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 256,
+   "bwGBs": 1200,
+   "source": "apple.com/mac-studio/specs (M5 Max 40-core GPU 614GB/s up to 128GB; M5 Ultra 1.2TB/s, 256GB or 512GB; read 2026-10-08)"
+  },
+  {
+   "id": "m5max128",
+   "label": "Mac with M5 Max, 40-core GPU (128 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 128,
+   "bwGBs": 614,
+   "source": "apple.com/mac-studio/specs (M5 Max 40-core GPU 614GB/s up to 128GB; M5 Ultra 1.2TB/s, 256GB or 512GB; read 2026-10-08)"
+  },
+  {
+   "id": "apple",
+   "label": "Apple Silicon Mac (M1–M5)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": null,
+   "bwGBs": null,
+   "source": null
+  },
+  {
+   "id": "mac16",
+   "label": "Apple Silicon Mac (16 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 16,
+   "bwGBs": null,
+   "source": "memory size the visitor picks (any Apple Silicon Mac); not a product specification"
+  },
+  {
+   "id": "mac24",
+   "label": "Apple Silicon Mac (24 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 24,
+   "bwGBs": null,
+   "source": "memory size the visitor picks (any Apple Silicon Mac); not a product specification"
+  },
+  {
+   "id": "mac32",
+   "label": "Apple Silicon Mac (32 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 32,
+   "bwGBs": null,
+   "source": "memory size the visitor picks (any Apple Silicon Mac); not a product specification"
+  },
+  {
+   "id": "mac36",
+   "label": "Apple Silicon Mac (36 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 36,
+   "bwGBs": null,
+   "source": "memory size the visitor picks (any Apple Silicon Mac); not a product specification"
+  },
+  {
+   "id": "mac48",
+   "label": "Apple Silicon Mac (48 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 48,
+   "bwGBs": null,
+   "source": "memory size the visitor picks (any Apple Silicon Mac); not a product specification"
+  },
+  {
+   "id": "mac64",
+   "label": "Apple Silicon Mac (64 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 64,
+   "bwGBs": null,
+   "source": "memory size the visitor picks (any Apple Silicon Mac); not a product specification"
+  },
+  {
+   "id": "mac96",
+   "label": "Apple Silicon Mac (96 GB unified)",
+   "vendor": "apple",
+   "kind": "mac",
+   "memGB": 96,
+   "bwGBs": null,
+   "source": "memory size the visitor picks (any Apple Silicon Mac); not a product specification"
+  },
+  {
+   "id": "igpu",
+   "label": "No dedicated GPU / integrated graphics",
+   "vendor": "none",
+   "kind": "none",
+   "memGB": null,
+   "bwGBs": null,
+   "source": null
+  }
+ ]
+}

@@ -1,0 +1,279 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+ "name": "DeepSeek V4.1 Flash",
+ "page": "https://localrigcheck.com/deepseek-v4-1-flash/",
+ "checker": "https://localrigcheck.com/deepseek-v4-1-flash/#checker",
+ "updated": "2026-10-21",
+ "sourcesChecked": "2026-10-20",
+ "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
+ "tiers": {
+  "good": "an answer without caveats of the checker's own kind; a limit stated in the answer (such as raising a Mac's GPU wired-memory limit, macLimit) still applies",
+  "caveats": "an answer with caveats (part in system RAM, a planning estimate, an unverified peak or route)",
+  "experimental": "only an experimental path",
+  "no": "does not fit, or below the smallest published figure",
+  "na": "unknown: the checker covers no route or source for this hardware"
+ },
+ "checkers": [
+  "deepseek"
+ ],
+ "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp",
+ "answerKinds": [
+  "published route match"
+ ],
+ "sizes": [
+  {
+   "id": "deepseek-v4-1-flash",
+   "label": "DeepSeek V4.1 Flash September release"
+  },
+  {
+   "id": "deepseek-v4-1-flash-1017",
+   "label": "DeepSeek V4.1 Flash 1017 update"
+  }
+ ],
+ "setups": [
+  {
+   "id": "rtx3060_12",
+   "label": "GeForce RTX 3060 (12 GB) + 32 GB RAM",
+   "memGB": 12,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+  },
+  {
+   "id": "rtx4060ti16",
+   "label": "GeForce RTX 4060 Ti (16 GB) + 32 GB RAM",
+   "memGB": 16,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+  },
+  {
+   "id": "rtx3090",
+   "label": "GeForce RTX 3090 / 3090 Ti (24 GB) + 64 GB RAM",
+   "memGB": 24,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+  },
+  {
+   "id": "rtx5090",
+   "label": "GeForce RTX 5090 (32 GB) + 64 GB RAM",
+   "memGB": 32,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+  },
+  {
+   "id": "mac64",
+   "label": "Apple Silicon Mac (64 GB unified)",
+   "memGB": 64,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+  },
+  {
+   "id": "m5max128",
+   "label": "Mac with M5 Max, 40-core GPU (128 GB unified)",
+   "memGB": 128,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+  },
+  {
+   "id": "mac256",
+   "label": "Mac Studio M3 Ultra (256 GB unified)",
+   "memGB": 256,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+  },
+  {
+   "id": "mac512",
+   "label": "Mac Studio M3 Ultra (512 GB unified)",
+   "memGB": 512,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+  }
+ ],
+ "answers": [
+  {
+   "setup": "rtx3060_12",
+   "size": "deepseek-v4-1-flash",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3060_12",
+   "size": "deepseek-v4-1-flash-1017",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx4060ti16",
+   "size": "deepseek-v4-1-flash",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx4060ti16",
+   "size": "deepseek-v4-1-flash-1017",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3090",
+   "size": "deepseek-v4-1-flash",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published route for this hardware (September weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card (the unmerged llama.cpp pull request #28696 reports a run only on a DGX Spark). RigCheck does not turn file sizes into a fit for this model, so this is not a \"does not fit\" answer, only the absence of a sourced route.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3090",
+   "size": "deepseek-v4-1-flash-1017",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published route for this hardware (1017 weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card (the unmerged llama.cpp pull request #28696 reports a run only on a DGX Spark). Experimental for 1017: Unsloth estimates 128–145 GB of RAM plus VRAM combined for its 1-bit builds (from 233.0 GB, Engram table on SSD) in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop, but names no setup for this card, and this checker does not ask for system RAM. RigCheck does not turn file sizes into a fit for this model, so this is not a \"does not fit\" answer, only the absence of a sourced route.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx5090",
+   "size": "deepseek-v4-1-flash",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published route for this hardware (September weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card (the unmerged llama.cpp pull request #28696 reports a run only on a DGX Spark). RigCheck does not turn file sizes into a fit for this model, so this is not a \"does not fit\" answer, only the absence of a sourced route.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx5090",
+   "size": "deepseek-v4-1-flash-1017",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published route for this hardware (1017 weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card (the unmerged llama.cpp pull request #28696 reports a run only on a DGX Spark). Experimental for 1017: Unsloth estimates 128–145 GB of RAM plus VRAM combined for its 1-bit builds (from 233.0 GB, Engram table on SSD) in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop, but names no setup for this card, and this checker does not ask for system RAM. RigCheck does not turn file sizes into a fit for this model, so this is not a \"does not fit\" answer, only the absence of a sourced route.",
+   "macLimit": false
+  },
+  {
+   "setup": "mac64",
+   "size": "deepseek-v4-1-flash",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "macLimit": false
+  },
+  {
+   "setup": "mac64",
+   "size": "deepseek-v4-1-flash-1017",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "macLimit": false
+  },
+  {
+   "setup": "m5max128",
+   "size": "deepseek-v4-1-flash",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches DwarfStar's 128 GB route: Q2 with SSD streaming (September weights)",
+   "pick": null,
+   "where": null,
+   "conditions": "DwarfStar runs its Q2 file (365.7 GB) on one 128 GB Mac by streaming routed experts from SSD (--ssd-streaming), with the expert cache sized automatically. DwarfStar publishes no V4.1 speed for a 128 GB Mac (its one Mac figure is Q4 resident on a 512 GB M3 Ultra). Two 128 GB machines can instead hold it resident with tensor parallelism (set machines to two). Image input works on Metal with its separate 0.97 GB vision encoder. DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 188.83 GiB of Engram tables are always read from the file).",
+   "macLimit": false
+  },
+  {
+   "setup": "m5max128",
+   "size": "deepseek-v4-1-flash-1017",
+   "tier": "experimental",
+   "answerKind": "published route match",
+   "answer": "Experimental: DwarfStar's September setup applied to its 1017 file: Q2 with SSD streaming (1017 weights)",
+   "pick": null,
+   "where": null,
+   "conditions": "DwarfStar runs its Q2 file (365.7 GB) on one 128 GB Mac by streaming routed experts from SSD (--ssd-streaming), with the expert cache sized automatically. Two 128 GB machines can instead hold it resident with tensor parallelism (set machines to two). DwarfStar documents and tests these setups with its September file only. On October 19, 2026 it published DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (365.7 GB, the size of its September Q2; its name gives the same IQ2_XXS / Q2_K mix) and pointed its Q2 download target at it, whose help text names SSD streaming on one 128 GB Mac, tensor parallelism on two, or a larger resident Mac. RigCheck applies the September setup to it. No 1017 speed or 1017 Q4 file is published; its 1017 MXFP4-experts GGUF (501.6 GB) has no documented setup. DwarfStar's vision encoder is from the September checkpoint; it does not say whether it works with the 1017 file. DwarfStar is a community engine, not DeepSeek's code; these setups are documented for its September file, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 188.83 GiB of Engram tables are always read from the file). Experimental alternative for 1017: Unsloth says its UD-IQ1_S GGUF (233.0 GB; its 110.6 GB Engram table stays on SSD via mmap) works on 128 GB RAM setups such as a MacBook, DGX Spark or RTX Spark, and estimates 128–145 GB of RAM plus VRAM for its 1-bit builds, the top of a 128 GB machine (runtime and context can need more); it runs only in Unsloth's unmerged llama.cpp pull request #30817 branch or Unsloth Desktop, with no published speed.",
+   "macLimit": false
+  },
+  {
+   "setup": "mac256",
+   "size": "deepseek-v4-1-flash",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches DwarfStar: Q2 main weights fully resident on a 256 GB Mac (September weights)",
+   "pick": null,
+   "where": null,
+   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (151.77 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra). Image input works on Metal with its separate 0.97 GB vision encoder. DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 188.83 GiB of Engram tables are always read from the file).",
+   "macLimit": false
+  },
+  {
+   "setup": "mac256",
+   "size": "deepseek-v4-1-flash-1017",
+   "tier": "experimental",
+   "answerKind": "published route match",
+   "answer": "Experimental: DwarfStar's September setup applied to its 1017 file: Q2 main weights fully resident on a 256 GB Mac (1017 weights)",
+   "pick": null,
+   "where": null,
+   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (151.77 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB and is September only. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra, September weights). Experimental for 1017: Unsloth says its 3-bit UD-IQ3_XXS (394.7 GB) works on 256 GB RAM setups such as a Mac Studio, the bottom of its 256–290 GB estimate for 3-bit, in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop. DwarfStar documents and tests these setups with its September file only. On October 19, 2026 it published DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (365.7 GB, the size of its September Q2; its name gives the same IQ2_XXS / Q2_K mix) and pointed its Q2 download target at it, whose help text names SSD streaming on one 128 GB Mac, tensor parallelism on two, or a larger resident Mac. RigCheck applies the September setup to it. No 1017 speed or 1017 Q4 file is published; its 1017 MXFP4-experts GGUF (501.6 GB) has no documented setup. DwarfStar's vision encoder is from the September checkpoint; it does not say whether it works with the 1017 file. DwarfStar is a community engine, not DeepSeek's code; these setups are documented for its September file, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 188.83 GiB of Engram tables are always read from the file).",
+   "macLimit": false
+  },
+  {
+   "setup": "mac512",
+   "size": "deepseek-v4-1-flash",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches DwarfStar: Q2 or Q4 fully resident on a 512 GB Mac (September weights)",
+   "pick": null,
+   "where": null,
+   "conditions": "DwarfStar names a 512 GB Mac as the resident target for its Q4 file (518.6 GB in two parts; 294.15 GiB of main weights) and says full residency was tested on an M3 Ultra with 512 GB. Its Q2 file (151.77 GiB of main weights) also fits resident on any 256 GB or larger Mac. DwarfStar's QA record for Q4 fully resident on a 512 GB M3 Ultra (36,864-token allocation, medians of three sweeps): 341.75 tokens/s prefill and 18.69 tokens/s generation at a 4,096-token context, 18.11 tokens/s generation at 32,768. That is the only published Mac speed for V4.1: M3 Ultra with Q4, none for Q2 or the M5 Ultra. Image input works on Metal with its separate 0.97 GB vision encoder. DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 188.83 GiB of Engram tables are always read from the file).",
+   "macLimit": false
+  },
+  {
+   "setup": "mac512",
+   "size": "deepseek-v4-1-flash-1017",
+   "tier": "experimental",
+   "answerKind": "published route match",
+   "answer": "Experimental: DwarfStar's September setup applied to its 1017 file: Q2 main weights fully resident on a 512 GB Mac (1017 weights)",
+   "pick": null,
+   "where": null,
+   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (151.77 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB and is September only. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra, September weights). Experimental for 1017: Unsloth says its 3-bit UD-IQ3_XXS (394.7 GB) works on 256 GB RAM setups such as a Mac Studio, the bottom of its 256–290 GB estimate for 3-bit, and estimates 315 GB of RAM plus VRAM for its 8-bit build (508.4 GB), in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop. DwarfStar documents and tests these setups with its September file only. On October 19, 2026 it published DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (365.7 GB, the size of its September Q2; its name gives the same IQ2_XXS / Q2_K mix) and pointed its Q2 download target at it, whose help text names SSD streaming on one 128 GB Mac, tensor parallelism on two, or a larger resident Mac. RigCheck applies the September setup to it. No 1017 speed or 1017 Q4 file is published; its 1017 MXFP4-experts GGUF (501.6 GB) has no documented setup. DwarfStar's vision encoder is from the September checkpoint; it does not say whether it works with the 1017 file. DwarfStar is a community engine, not DeepSeek's code; these setups are documented for its September file, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 188.83 GiB of Engram tables are always read from the file).",
+   "macLimit": false
+  }
+ ]
+}

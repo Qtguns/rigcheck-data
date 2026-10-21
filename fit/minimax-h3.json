@@ -1,0 +1,187 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+ "name": "MiniMax H3",
+ "page": "https://localrigcheck.com/minimax-h3/",
+ "checker": "https://localrigcheck.com/minimax-h3/#checker",
+ "updated": "2026-10-19",
+ "sourcesChecked": "2026-10-12",
+ "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
+ "tiers": {
+  "good": "an answer without caveats of the checker's own kind; a limit stated in the answer (such as raising a Mac's GPU wired-memory limit, macLimit) still applies",
+  "caveats": "an answer with caveats (part in system RAM, a planning estimate, an unverified peak or route)",
+  "experimental": "only an experimental path",
+  "no": "does not fit, or below the smallest published figure",
+  "na": "unknown: the checker covers no route or source for this hardware"
+ },
+ "checkers": [
+  "h3"
+ ],
+ "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive",
+ "answerKinds": [
+  "published recipe match"
+ ],
+ "sizes": [
+  {
+   "id": "minimax-h3",
+   "label": "MiniMax H3"
+  }
+ ],
+ "setups": [
+  {
+   "id": "rtx3060_12",
+   "label": "GeForce RTX 3060 (12 GB) + 32 GB RAM",
+   "memGB": 12,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive"
+  },
+  {
+   "id": "rtx4060ti16",
+   "label": "GeForce RTX 4060 Ti (16 GB) + 32 GB RAM",
+   "memGB": 16,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive"
+  },
+  {
+   "id": "rtx3090",
+   "label": "GeForce RTX 3090 / 3090 Ti (24 GB) + 64 GB RAM",
+   "memGB": 24,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive"
+  },
+  {
+   "id": "rtx5090",
+   "label": "GeForce RTX 5090 (32 GB) + 64 GB RAM",
+   "memGB": 32,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive"
+  },
+  {
+   "id": "mac64",
+   "label": "Apple Silicon Mac (64 GB unified)",
+   "memGB": 64,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive"
+  },
+  {
+   "id": "m5max128",
+   "label": "Mac with M5 Max, 40-core GPU (128 GB unified)",
+   "memGB": 128,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive"
+  },
+  {
+   "id": "mac256",
+   "label": "Mac Studio M3 Ultra (256 GB unified)",
+   "memGB": 256,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive"
+  },
+  {
+   "id": "mac512",
+   "label": "Mac Studio M3 Ultra (512 GB unified)",
+   "memGB": 512,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "local H3-Base FL2VA recipes, assuming an NVMe drive"
+  }
+ ],
+ "answers": [
+  {
+   "setup": "rtx3060_12",
+   "size": "minimax-h3",
+   "tier": "caveats",
+   "answerKind": "published recipe match",
+   "answer": "Hardware memory matches a published video recipe; exact clip peak unverified",
+   "pick": null,
+   "where": null,
+   "conditions": "Matching recipes: SGLang Recipe A (lab): one card, DiT, text encoder and VAE streamed from the checkpoint file on an NVMe drive (Recipe A), BF16; measured at 864×480 (at the native 768P the cookbook says to use video_vae=24 if the decode runs out of memory, not measured); lab run with VRAM capped at 12 GiB and a simulated 32 GB host: shows the memory fits, not your card's speed; a real 32 GB machine re-reads the weights from disk on every step. H3-Base FL2VA, source recipe canvases only. Disk-streaming routes assume an NVMe drive. Host-RAM and lab assumptions remain in the full checker; full 2K needs an API.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx4060ti16",
+   "size": "minimax-h3",
+   "tier": "caveats",
+   "answerKind": "published recipe match",
+   "answer": "Hardware memory matches a published video recipe; exact clip peak unverified",
+   "pick": null,
+   "where": null,
+   "conditions": "Matching recipes: SGLang Recipe A (lab): one card, DiT, text encoder and VAE streamed from the checkpoint file on an NVMe drive (Recipe A), BF16; measured at 864×480 (at the native 768P the cookbook says to use video_vae=24 if the decode runs out of memory, not measured); lab run with VRAM capped at 12 GiB and a simulated 32 GB host: shows the memory fits, not your card's speed; a real 32 GB machine re-reads the weights from disk on every step. H3-Base FL2VA, source recipe canvases only. Disk-streaming routes assume an NVMe drive. Host-RAM and lab assumptions remain in the full checker; full 2K needs an API.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3090",
+   "size": "minimax-h3",
+   "tier": "caveats",
+   "answerKind": "published recipe match",
+   "answer": "Hardware memory matches a published video recipe; exact clip peak unverified",
+   "pick": null,
+   "where": null,
+   "conditions": "Matching recipes: SGLang, one 24 GB card (measured): one card, DiT and text encoder streamed layer by layer; GPU peak about 18 GB; RTX 4090 D: 1344×768, 107 frames, 20 steps in 405.6 s at BF16, 303.3 s with convrot_int8 (host RAM not stated for this run; we require the 32 GB of the cookbook's smallest recipe (RigCheck assumption); a 4090 on a 32 GB host has not been measured) | SGLang Recipe A (lab): one card, DiT, text encoder and VAE streamed from the checkpoint file on an NVMe drive (Recipe A), BF16; measured at 864×480 (at the native 768P the cookbook says to use video_vae=24 if the decode runs out of memory, not measured); lab run with VRAM capped at 12 GiB and a simulated 32 GB host: shows the memory fits, not your card's speed; a real 32 GB machine re-reads the weights from disk on every step. H3-Base FL2VA, source recipe canvases only. Disk-streaming routes assume an NVMe drive. Host-RAM and lab assumptions remain in the full checker; full 2K needs an API.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx5090",
+   "size": "minimax-h3",
+   "tier": "caveats",
+   "answerKind": "published recipe match",
+   "answer": "Hardware memory matches a published video recipe; exact clip peak unverified",
+   "pick": null,
+   "where": null,
+   "conditions": "Matching recipes: SGLang, one 24 GB card (measured): one card, DiT and text encoder streamed layer by layer; GPU peak about 18 GB; RTX 4090 D: 1344×768, 107 frames, 20 steps in 405.6 s at BF16, 303.3 s with convrot_int8 (host RAM not stated for this run; we require the 32 GB of the cookbook's smallest recipe (RigCheck assumption); a 4090 on a 32 GB host has not been measured) | SGLang Recipe A (lab): one card, DiT, text encoder and VAE streamed from the checkpoint file on an NVMe drive (Recipe A), BF16; measured at 864×480 (at the native 768P the cookbook says to use video_vae=24 if the decode runs out of memory, not measured); lab run with VRAM capped at 12 GiB and a simulated 32 GB host: shows the memory fits, not your card's speed; a real 32 GB machine re-reads the weights from disk on every step. H3-Base FL2VA, source recipe canvases only. Disk-streaming routes assume an NVMe drive. Host-RAM and lab assumptions remain in the full checker; full 2K needs an API.",
+   "macLimit": false
+  },
+  {
+   "setup": "mac64",
+   "size": "minimax-h3",
+   "tier": "na",
+   "answerKind": "published recipe match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published H3 recipe checked here for this device.",
+   "macLimit": false
+  },
+  {
+   "setup": "m5max128",
+   "size": "minimax-h3",
+   "tier": "na",
+   "answerKind": "published recipe match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published video recipe matches this quick setup. H3-Base FL2VA, source recipe canvases only. Disk-streaming routes assume an NVMe drive. Host-RAM and lab assumptions remain in the full checker; full 2K needs an API.",
+   "macLimit": false
+  },
+  {
+   "setup": "mac256",
+   "size": "minimax-h3",
+   "tier": "na",
+   "answerKind": "published recipe match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published video recipe matches this quick setup. H3-Base FL2VA, source recipe canvases only. Disk-streaming routes assume an NVMe drive. Host-RAM and lab assumptions remain in the full checker; full 2K needs an API.",
+   "macLimit": false
+  },
+  {
+   "setup": "mac512",
+   "size": "minimax-h3",
+   "tier": "na",
+   "answerKind": "published recipe match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published video recipe matches this quick setup. H3-Base FL2VA, source recipe canvases only. Disk-streaming routes assume an NVMe drive. Host-RAM and lab assumptions remain in the full checker; full 2K needs an API.",
+   "macLimit": false
+  }
+ ]
+}

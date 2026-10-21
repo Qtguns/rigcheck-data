@@ -1,0 +1,1532 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+ "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
+ "generated": "2026-10-21",
+ "models": [
+  {
+   "name": "Qwen-Image-2.1 / Turbo",
+   "page": "https://localrigcheck.com/qwen-image-2-1/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "kind": "image",
+   "components": {
+    "base": {
+     "bf16": {
+      "name": "diffusion_models/qwen_image_2.1_bf16.safetensors",
+      "bytes": 14230280616,
+      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/diffusion_models/qwen_image_2.1_bf16.safetensors"
+     },
+     "int8": {
+      "name": "diffusion_models/qwen_image_2.1_int8_convrot.safetensors",
+      "bytes": 7256783064,
+      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/diffusion_models/qwen_image_2.1_int8_convrot.safetensors"
+     }
+    },
+    "turbo": {
+     "bf16": {
+      "name": "diffusion_models/qwen_image_2.1_turbo_bf16.safetensors",
+      "bytes": 14230280616,
+      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/diffusion_models/qwen_image_2.1_turbo_bf16.safetensors"
+     },
+     "int8": {
+      "name": "diffusion_models/qwen_image_2.1_turbo_int8_convrot.safetensors",
+      "bytes": 7256787829,
+      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/diffusion_models/qwen_image_2.1_turbo_int8_convrot.safetensors"
+     }
+    },
+    "encoder_bf16": {
+     "name": "text_encoders/qwen3vl_8b_bf16.safetensors",
+     "bytes": 17534334616,
+     "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/text_encoders/qwen3vl_8b_bf16.safetensors"
+    },
+    "encoder_int8": {
+     "name": "text_encoders/qwen3vl_8b_int8_convrot.safetensors",
+     "bytes": 9350798360,
+     "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/text_encoders/qwen3vl_8b_int8_convrot.safetensors"
+    },
+    "vae": {
+     "name": "vae/qwen_image_2.1_vae_bf16.safetensors",
+     "bytes": 675509688,
+     "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/vae/qwen_image_2.1_vae_bf16.safetensors"
+    },
+    "gguf": {
+     "name": "qwen-image-2.1-Q4_K_M.gguf",
+     "bytes": 4199565024,
+     "url": "https://huggingface.co/unsloth/Qwen-Image-2.1-GGUF/blob/main/qwen-image-2.1-Q4_K_M.gguf"
+    },
+    "encoder_gguf": {
+     "name": "Qwen3-VL-8B-Instruct-UD-Q4_K_XL.gguf",
+     "bytes": 5148699488,
+     "url": "https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-GGUF/blob/main/Qwen3-VL-8B-Instruct-UD-Q4_K_XL.gguf"
+    },
+    "vision": {
+     "name": "mmproj-BF16.gguf",
+     "bytes": 1162569280,
+     "url": "https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-GGUF/blob/main/mmproj-BF16.gguf"
+    }
+   },
+   "note": "Complete file bytes; uncalibrated image workspace, OS and residency assumptions explained on page. Turbo ComfyUI sampling and GGUF runtime are unverified here; the documented Turbo Diffusers route uses the complete official checkpoint."
+  },
+  {
+   "name": "Kolibri-1",
+   "page": "https://localrigcheck.com/kolibri-1/",
+   "updated": "2026-10-21",
+   "sourcesChecked": "2026-10-12",
+   "kind": "moe-text",
+   "totalParameters": 78103074560,
+   "activeParameters": 3457573120,
+   "officialWeightBytes": 78841467208,
+   "fp8RawCacheGB32K": 0.3565568,
+   "note": "Raw cache lower bound, not allocation. Official plugin and independent patched GGUF have separate hardware evidence."
+  },
+  {
+   "name": "MiniMax H3",
+   "page": "https://localrigcheck.com/minimax-h3/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "kind": "video-audio",
+   "originalTaskComponentBytes": {
+    "transformer": 66280485936,
+    "text_encoder": 66714912872,
+    "video_vae": 10415548320,
+    "audio_vae": 605429308
+   },
+   "recipes": [
+    {
+     "id": "sgl_h200x4",
+     "name": "SGLang on 4 GPUs (Ulysses4)",
+     "tier": "resident",
+     "runtime": "SGLang",
+     "vendor": "nvidia",
+     "gpus": 4,
+     "minVram": 141,
+     "only": [
+      "h200"
+     ],
+     "ram": null,
+     "kind": "measured",
+     "on": [
+      "h200"
+     ],
+     "onLabel": "4× H200",
+     "src": "SGLang cookbook",
+     "setup": "4 GPUs, all weights resident (Ulysses4), BF16",
+     "result": "74.4 s for a 1344×768, 5-second, 50-step request with the warmup set to that resolution (84.1 s with the default warmup); 94.3 GB peak per GPU"
+    },
+    {
+     "id": "sgl_h100x4",
+     "name": "SGLang on 4 GPUs (TP2 + Ulysses2)",
+     "tier": "resident",
+     "runtime": "SGLang",
+     "vendor": "nvidia",
+     "gpus": 4,
+     "minVram": 80,
+     "only": [
+      "h100",
+      "h200"
+     ],
+     "ram": null,
+     "kind": "measured",
+     "on": [
+      "h100"
+     ],
+     "onLabel": "4× H100 80 GB",
+     "src": "SGLang cookbook",
+     "setup": "4 GPUs, all weights resident (TP2 + Ulysses2), BF16; the cookbook says it also fits 141 GB H200s",
+     "result": "runs resident with a 66.0 GB peak per GPU"
+    },
+    {
+     "id": "dif_2x80",
+     "name": "diffusers on 2 cards, BF16",
+     "tier": "resident",
+     "runtime": "diffusers",
+     "vendor": "nvidia",
+     "gpus": 2,
+     "minVram": 80,
+     "ram": null,
+     "kind": "documented",
+     "on": [],
+     "src": "diffusers docs",
+     "setup": "pipeline split across 2 cards (text encoder on one, the rest on the other), full BF16",
+     "result": "documented; no timing published"
+    },
+    {
+     "id": "dif_2x48",
+     "name": "diffusers on 2 cards, int8",
+     "tier": "resident",
+     "runtime": "diffusers",
+     "vendor": "nvidia",
+     "gpus": 2,
+     "minVram": 48,
+     "ram": null,
+     "kind": "documented",
+     "on": [],
+     "src": "diffusers docs",
+     "setup": "pipeline split across 2 cards, transformer and text encoder quantized to int8 as they load",
+     "result": "documented; no timing published"
+    },
+    {
+     "id": "sgl_amd1",
+     "name": "SGLang on 1 AMD Instinct GPU",
+     "tier": "resident",
+     "runtime": "SGLang",
+     "vendor": "amd",
+     "gpus": 1,
+     "minVram": 192,
+     "only": [
+      "mi300x",
+      "mi355x"
+     ],
+     "ram": null,
+     "kind": "measured",
+     "on": [
+      "mi300x",
+      "mi355x"
+     ],
+     "onLabel": "MI300X / MI355X",
+     "src": "SGLang cookbook",
+     "setup": "1 AMD Instinct GPU, BF16, AITER attention",
+     "result": {
+      "mi300x": "978.1 s denoise + 36.0 s decode for a 1344×768, 209-frame, 50-step request; 137.6 GB peak",
+      "mi355x": "288.8 s denoise + 24.0 s decode for a 1344×768, 209-frame, 50-step request; 137.7 GB peak"
+     }
+    },
+    {
+     "id": "sgl_spark",
+     "name": "SGLang on DGX Spark",
+     "tier": "offload",
+     "runtime": "SGLang",
+     "vendor": "spark",
+     "gpus": 1,
+     "minVram": 128,
+     "ram": null,
+     "kind": "measured",
+     "on": [
+      "dgxspark"
+     ],
+     "onLabel": "DGX Spark",
+     "src": "SGLang cookbook",
+     "setup": "launched with no extra flags; automatic offload engages on its own",
+     "result": "about 12 min per warm 480P request; a text-encoding stage of about 5.5 min per request; about 12 min to load"
+    },
+    {
+     "id": "dif_80",
+     "name": "diffusers on one 80 GB card",
+     "tier": "offload",
+     "runtime": "diffusers",
+     "vendor": "nvidia",
+     "gpus": 1,
+     "minVram": 80,
+     "ram": {
+      "holds": 144,
+      "assumed": true
+     },
+     "kind": "documented",
+     "on": [],
+     "src": "diffusers docs",
+     "setup": "one 80 GB card, auto CPU offload (components move on and off the GPU), BF16",
+     "result": "documented; no timing published",
+     "ramNote": "host RAM not stated by diffusers; we count the 144 GB (decimal; 134 GiB) of BF16 files for one task in RAM, plus 8 GB for the OS (RigCheck assumption)"
+    },
+    {
+     "id": "sgl_2x32",
+     "name": "SGLang on 2 cards with layerwise offload",
+     "tier": "offload",
+     "runtime": "SGLang",
+     "vendor": "nvidia",
+     "gpus": 2,
+     "minVram": 32,
+     "only": [
+      "rtx5090"
+     ],
+     "ram": {
+      "host": 384
+     },
+     "kind": "measured",
+     "on": [
+      "rtx5090"
+     ],
+     "onLabel": "2× RTX 5090",
+     "src": "SGLang cookbook",
+     "setup": "2 cards, TP2 + layerwise offload, 20 DiT blocks resident, BF16, on a 384 GiB-class host (sold as 384 GB)",
+     "result": "559.7 s for a 1344×768, 5-second, 50-step request; 26.3 GiB peak per GPU (377 GiB host)"
+    },
+    {
+     "id": "vll_2x24",
+     "name": "vLLM-Omni on 2 cards with layerwise offload",
+     "tier": "offload",
+     "runtime": "vLLM-Omni",
+     "vendor": "nvidia",
+     "gpus": 2,
+     "minVram": 24,
+     "only": [
+      "rtx4090",
+      "rtx5090"
+     ],
+     "ram": {
+      "host": 384
+     },
+     "kind": "documented",
+     "on": [],
+     "src": "vLLM recipe",
+     "setup": "2× RTX 4090 (12 resident DiT layers, 1024×576 starting shape, requests must pass aspect_ratio=16:9) or 2× RTX 5090 (20 resident layers, 1344×768), TP2 with distributed layerwise offload, on a 384 GiB-class host",
+     "result": "documented; no timing published"
+    },
+    {
+     "id": "sgl_5090",
+     "name": "SGLang, one 32 GB card",
+     "tier": "offload",
+     "runtime": "SGLang",
+     "vendor": "nvidia",
+     "gpus": 1,
+     "minVram": 32,
+     "ram": {
+      "host": 60
+     },
+     "swapGB": 8,
+     "kind": "measured",
+     "on": [
+      "rtx5090"
+     ],
+     "onLabel": "an RTX 5090 desktop with 60 GB of RAM and 8 GB swap",
+     "src": "SGLang cookbook",
+     "setup": "one card, layerwise offload with 14 DiT layers resident, BF16 (lossless)",
+     "result": "112 s per 864×480, 124-frame, 20-step request (5.1 s per step), on a desktop with a Ryzen 9 9950X, 60 GB of RAM, an 8 GB swap file (full by the end) and a PCIe 5.0 NVMe drive"
+    },
+    {
+     "id": "sgl_b",
+     "name": "SGLang Recipe B",
+     "tier": "offload",
+     "runtime": "SGLang",
+     "vendor": "nvidia",
+     "gpus": 1,
+     "minVram": 16,
+     "ram": {
+      "holds": 116.7
+     },
+     "kind": "lab",
+     "on": [],
+     "src": "SGLang cookbook",
+     "ramNote": "its lab run pinned 116.7 GB; the cookbook elsewhere says about 96 GB of host RAM is enough for this flag, so this threshold is conservative",
+     "setup": "one card, layerwise offload with 4 DiT layers resident; pins about 117 GB of weights in host RAM (Recipe B); measured at 864×480 (at the native 768P the cookbook says to drop the resident layers first, not measured)",
+     "result": "lab run with VRAM capped at 16 GiB on an unnamed lab GPU: shows the memory fits, not your card's speed"
+    },
+    {
+     "id": "sgl_4090",
+     "name": "SGLang, one 24 GB card",
+     "tier": "offload",
+     "runtime": "SGLang",
+     "vendor": "nvidia",
+     "gpus": 1,
+     "minVram": 24,
+     "ram": {
+      "host": 32,
+      "assumed": true
+     },
+     "kind": "measured",
+     "on": [],
+     "onLabel": "an RTX 4090 D (not a standard RTX 4090; host RAM not stated)",
+     "src": "SGLang cookbook",
+     "ramNote": "host RAM not stated for this run; we require the 32 GB of the cookbook's smallest recipe (RigCheck assumption); a 4090 on a 32 GB host has not been measured",
+     "setup": "one card, DiT and text encoder streamed layer by layer; GPU peak about 18 GB",
+     "result": "RTX 4090 D: 1344×768, 107 frames, 20 steps in 405.6 s at BF16, 303.3 s with convrot_int8"
+    },
+    {
+     "id": "dif_int8",
+     "name": "diffusers int8 with block offload",
+     "tier": "offload",
+     "runtime": "diffusers",
+     "vendor": "nvidia",
+     "gpus": 1,
+     "minVram": 24,
+     "ram": {
+      "holds": 75,
+      "assumed": true
+     },
+     "kind": "documented",
+     "on": [],
+     "src": "diffusers docs",
+     "ramNote": "diffusers states about 75 GB in RAM for the 12–16 GB variant of this int8 recipe; we use the same figure here, plus 8 GB for the OS (RigCheck assumption)",
+     "setup": "transformer and text encoder quantized to int8 as they load, transformer blocks streamed from RAM",
+     "result": "documented; no timing published"
+    },
+    {
+     "id": "dif_int8_small",
+     "name": "diffusers int8, small canvas",
+     "tier": "offload",
+     "runtime": "diffusers",
+     "vendor": "nvidia",
+     "gpus": 1,
+     "minVram": 12,
+     "ram": {
+      "holds": 75
+     },
+     "kind": "documented",
+     "on": [],
+     "src": "diffusers docs",
+     "setup": "the int8 recipe with the video VAE offloaded too and a small canvas such as 960×544 (diffusers: about 75 GB in RAM)",
+     "result": "documented; no timing published"
+    },
+    {
+     "id": "sgl_a",
+     "name": "SGLang Recipe A",
+     "tier": "offload",
+     "runtime": "SGLang",
+     "vendor": "nvidia",
+     "gpus": 1,
+     "minVram": 12,
+     "ram": {
+      "host": 32
+     },
+     "kind": "lab",
+     "on": [],
+     "src": "SGLang cookbook",
+     "setup": "one card, DiT, text encoder and VAE streamed from the checkpoint file on an NVMe drive (Recipe A), BF16; measured at 864×480 (at the native 768P the cookbook says to use video_vae=24 if the decode runs out of memory, not measured)",
+     "result": "lab run with VRAM capped at 12 GiB and a simulated 32 GB host: shows the memory fits, not your card's speed; a real 32 GB machine re-reads the weights from disk on every step"
+    }
+   ],
+   "note": "Match only published runtime recipes and stated shapes; no chat KV estimate. Full 2K pipeline remains API-dependent."
+  },
+  {
+   "name": "Nemotron 3.5 (Bolt 74B-A9B, Super VL 120B-A12B)",
+   "page": "https://localrigcheck.com/nemotron-3-5/",
+   "updated": "2026-10-20",
+   "sourcesChecked": "2026-10-17",
+   "kind": "moe-vision-text",
+   "superVlUnslothBudgetsGB": [
+    {
+     "gb": 192,
+     "quants": "Q8_0 (8-bit, 132 GB)"
+    },
+    {
+     "gb": 160,
+     "quants": "UD-Q5_K_XL or UD-Q6_K_XL (111–121 GB)"
+    },
+    {
+     "gb": 128,
+     "quants": "UD-Q4_K_XL (4-bit, 86.9 GB), Unsloth's recommended balance"
+    },
+    {
+     "gb": 96,
+     "quants": "UD-Q3_K_XL (65.8 GB) or NVFP4 (79 GB)"
+    },
+    {
+     "gb": 80,
+     "quants": "UD-IQ2_M, UD-Q2_K_XL or UD-IQ3_XXS (55.9–59.8 GB)"
+    },
+    {
+     "gb": 64,
+     "quants": "UD-IQ1_M (46.1 GB) or UD-IQ2_XXS (51.1 GB)"
+    }
+   ],
+   "note": "Route matches only: NVIDIA llama.cpp / vLLM recipes and Unsloth memory budgets; no fit is computed from file sizes."
+  },
+  {
+   "name": "FLUX 3 Image Klein",
+   "page": "https://localrigcheck.com/flux-3-image-klein/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-17",
+   "kind": "image",
+   "comfyFiles": {
+    "model": {
+     "bf16": {
+      "name": "diffusion_models/flux3-image-klein-bf16.safetensors",
+      "bytes": 11097404512,
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/diffusion_models/flux3-image-klein-bf16.safetensors"
+     },
+     "int8": {
+      "name": "diffusion_models/flux3-image-klein-int8-convrot.safetensors",
+      "bytes": 5827874779,
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/diffusion_models/flux3-image-klein-int8-convrot.safetensors"
+     },
+     "nvfp4": {
+      "name": "diffusion_models/flux3-image-klein-nvfp4.safetensors",
+      "bytes": 5277685632,
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/diffusion_models/flux3-image-klein-nvfp4.safetensors"
+     }
+    },
+    "encoder": {
+     "bf16": {
+      "name": "text_encoders/qwen3vl_4b_bf16.safetensors",
+      "bytes": 8875719408,
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/text_encoders/qwen3vl_4b_bf16.safetensors"
+     },
+     "int8": {
+      "name": "text_encoders/qwen3vl_4b_int8_convrot.safetensors",
+      "bytes": 4858559240,
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/text_encoders/qwen3vl_4b_int8_convrot.safetensors"
+     }
+    },
+    "upsampler": {
+     "bf16": {
+      "name": "text_encoders/qwen3.5_9b_flux3_prompt_upsampler_bf16.safetensors",
+      "bytes": 18819722392,
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/text_encoders/qwen3.5_9b_flux3_prompt_upsampler_bf16.safetensors"
+     },
+     "int8": {
+      "name": "text_encoders/qwen3.5_9b_flux3_prompt_upsampler_int8_convrot.safetensors",
+      "bytes": 9748113996,
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/text_encoders/qwen3.5_9b_flux3_prompt_upsampler_int8_convrot.safetensors"
+     },
+     "w4a8": {
+      "name": "text_encoders/qwen3.5_9b_flux3_prompt_upsampler_w4a8.safetensors",
+      "bytes": 6724090780,
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/text_encoders/qwen3.5_9b_flux3_prompt_upsampler_w4a8.safetensors"
+     }
+    },
+    "vae": {
+     "name": "vae/flux2-vae.safetensors",
+     "bytes": 336211292,
+     "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/vae/flux2-vae.safetensors"
+    }
+   },
+   "note": "Route matches only: BFL's 8 GB int8 ComfyUI guidance; the Blackwell requirement is for BFL's own NVFP4 code, none is stated for the NVFP4 ComfyUI files; BF16 residency is file arithmetic, labelled as such."
+  },
+  {
+   "name": "GLM-5.3-Flash",
+   "page": "https://localrigcheck.com/glm-5-3-flash/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-17",
+   "kind": "moe-text",
+   "unslothTotalMemoryGB": [
+    {
+     "gb": 650,
+     "bits": "BF16",
+     "file": "BF16 (641.6 GB)"
+    },
+    {
+     "gb": 350,
+     "bits": "8-bit",
+     "file": "Q8_0 (341.0 GB)"
+    },
+    {
+     "gb": 210,
+     "bits": "4-bit",
+     "file": "UD-Q4_K_XL (199.7 GB)"
+    },
+    {
+     "gb": 162,
+     "bits": "4-bit",
+     "file": "UD-IQ4_XS (156.8 GB)"
+    },
+    {
+     "gb": 150,
+     "bits": "3-bit",
+     "file": "UD-Q3_K_XL (147.5 GB)"
+    },
+    {
+     "gb": 128,
+     "bits": "3-bit",
+     "file": "UD-IQ3_XXS (120.4 GB)"
+    },
+    {
+     "gb": 115,
+     "bits": "2-bit",
+     "file": "UD-IQ2_XXS (101.8 GB) or UD-Q2_K_XL (108.7 GB)"
+    },
+    {
+     "gb": 100,
+     "bits": "1-bit",
+     "file": "UD-IQ1_S (93.1 GB) or UD-IQ1_M (97.6 GB)"
+    }
+   ],
+   "note": "Route matches only: Unsloth's total-memory table (RAM + VRAM, or unified memory) and KTransformers' FP8 route; which file fits each end of a range is RigCheck's reading."
+  },
+  {
+   "name": "DeepSeek V4.1 Flash",
+   "page": "https://localrigcheck.com/deepseek-v4-1-flash/",
+   "updated": "2026-10-21",
+   "sourcesChecked": "2026-10-20",
+   "kind": "moe-text",
+   "dwarfStarFiles": {
+    "q2": {
+     "name": "DwarfStar DeepSeek-V4.1-Flash-Q2.gguf (September weights)",
+     "file": "DeepSeek-V4.1-Flash-Q2.gguf",
+     "url": "https://huggingface.co/antirez/deepseek-v4.1-flash-gguf/tree/main",
+     "bytes": 365713686528
+    },
+    "q2_1017": {
+     "name": "DwarfStar DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (1017 weights)",
+     "file": "DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf",
+     "url": "https://huggingface.co/antirez/deepseek-v4.1-flash-gguf/tree/main",
+     "bytes": 365713686528
+    },
+    "q4": {
+     "name": "DwarfStar DeepSeek-V4.1-Flash-Q4.gguf, two parts (September weights)",
+     "url": "https://huggingface.co/antirez/deepseek-v4.1-flash-gguf/tree/main",
+     "bytes": 518596067328
+    }
+   },
+   "note": "Route matches only: DwarfStar's documented setups for its GGUF of the September DeepSeek-V4.1-Flash weights (one 128 GB Mac or DGX Spark with SSD streaming, two of them with tensor parallelism, 256 GB and 512 GB Macs resident). For the 1017 weights the page lists experimental and community routes instead (DwarfStar's 1017 Q2 file, not yet in its guides; Unsloth's 1017 GGUF on an unmerged llama.cpp branch; oMLX builds); no fit is computed from file sizes."
+  },
+  {
+   "name": "Qwen3.8-27B",
+   "page": "https://localrigcheck.com/qwen-3-8-27b/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "runtime": "llama.cpp (Unsloth GGUF)",
+   "layers": 64,
+   "maxContext": 262144,
+   "mmprojGB": 0.9,
+   "kvGBAt32K_f16": 2.147,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "bf16",
+     "label": "BF16",
+     "gb": 54.7,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 2.5427968,
+     "outputWeightsGB": 2.5427968,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 29,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 1.3508608,
+     "outputWeightsGB": 1.3508608,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "ud_q6_k_xl",
+     "label": "UD-Q6_K_XL",
+     "gb": 25.3,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 1.042944,
+     "outputWeightsGB": 1.3508608,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "ud_q5_k_xl",
+     "label": "UD-Q5_K_XL",
+     "gb": 20.9,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 1.042944,
+     "outputWeightsGB": 1.3508608,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL",
+     "gb": 17.6,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 0.7151616,
+     "outputWeightsGB": 1.042944,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "ud_iq4_xs",
+     "label": "UD-IQ4_XS",
+     "gb": 14.3,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 0.546304,
+     "outputWeightsGB": 0.8740864,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "ud_q3_k_xl",
+     "label": "UD-Q3_K_XL",
+     "gb": 13.1,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 0.546304,
+     "outputWeightsGB": 0.8740864,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 10.9,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 0.4171776,
+     "outputWeightsGB": 0.7151616,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "ud_q2_k_xl",
+     "label": "UD-Q2_K_XL",
+     "gb": 9.8,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 0.4171776,
+     "outputWeightsGB": 0.7151616,
+     "tiedOutput": false,
+     "blockCount": 65,
+     "mtpLayers": 1
+    },
+    {
+     "key": "ud_iq2_xxs",
+     "label": "UD-IQ2_XXS",
+     "gb": 7.3,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 0.4171776,
+     "outputWeightsGB": 0.546304,
+     "tiedOutput": false,
+     "blockCount": 64,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_iq1_s",
+     "label": "UD-IQ1_S",
+     "gb": 6.2,
+     "repo": "unsloth/Qwen3.8-27B-GGUF",
+     "inputEmbeddingGB": 0.4171776,
+     "outputWeightsGB": 0.546304,
+     "tiedOutput": false,
+     "blockCount": 64,
+     "mtpLayers": 0
+    }
+   ],
+   "stateGB": 0.157,
+   "buffersGB": 1.5
+  },
+  {
+   "name": "Gemma 4 31B",
+   "page": "https://localrigcheck.com/gemma-4/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "runtime": "llama.cpp (Unsloth GGUF)",
+   "layers": 60,
+   "maxContext": 262144,
+   "mmprojGB": 1.2,
+   "kvGBAt32K_f16": 3.943,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "bf16",
+     "label": "BF16",
+     "gb": 61.4,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 2.818572288,
+     "outputWeightsGB": 2.818572288,
+     "tiedOutput": true
+    },
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 32.6,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 1.497366528,
+     "outputWeightsGB": 1.497366528,
+     "tiedOutput": true
+    },
+    {
+     "key": "q6_k",
+     "label": "Q6_K",
+     "gb": 25.2,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 1.15605504,
+     "outputWeightsGB": 1.15605504,
+     "tiedOutput": true
+    },
+    {
+     "key": "q5_k_m",
+     "label": "Q5_K_M",
+     "gb": 21.7,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 0.968884224,
+     "outputWeightsGB": 0.968884224,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL",
+     "gb": 18.8,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 0.968884224,
+     "outputWeightsGB": 0.968884224,
+     "tiedOutput": true
+    },
+    {
+     "key": "q4_k_m",
+     "label": "Q4_K_M",
+     "gb": 18.3,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 0.792723456,
+     "outputWeightsGB": 0.792723456,
+     "tiedOutput": true
+    },
+    {
+     "key": "iq4_xs",
+     "label": "IQ4_XS",
+     "gb": 16.4,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 0.792723456,
+     "outputWeightsGB": 0.792723456,
+     "tiedOutput": true
+    },
+    {
+     "key": "q3_k_m",
+     "label": "Q3_K_M",
+     "gb": 14.7,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 0.60555264,
+     "outputWeightsGB": 0.60555264,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 11.8,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 0.60555264,
+     "outputWeightsGB": 0.60555264,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq2_xxs",
+     "label": "UD-IQ2_XXS",
+     "gb": 8.5,
+     "repo": "unsloth/gemma-4-31B-it-GGUF",
+     "inputEmbeddingGB": 0.60555264,
+     "outputWeightsGB": 0.60555264,
+     "tiedOutput": true
+    }
+   ],
+   "kind": "dense",
+   "buffersGB": 1.5
+  },
+  {
+   "name": "Gemma 4 26B-A4B",
+   "page": "https://localrigcheck.com/gemma-4/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "runtime": "llama.cpp (Unsloth GGUF)",
+   "layers": 30,
+   "maxContext": 262144,
+   "mmprojGB": 1.2,
+   "kvGBAt32K_f16": 0.986,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "bf16",
+     "label": "BF16",
+     "gb": 50.5,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 1.476395008,
+     "outputWeightsGB": 1.476395008,
+     "tiedOutput": true
+    },
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 26.9,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.784334848,
+     "outputWeightsGB": 0.784334848,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_q6_k_xl",
+     "label": "UD-Q6_K_XL",
+     "gb": 23.3,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.784334848,
+     "outputWeightsGB": 0.784334848,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_q5_k_xl",
+     "label": "UD-Q5_K_XL",
+     "gb": 21.2,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.784334848,
+     "outputWeightsGB": 0.784334848,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL",
+     "gb": 17,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.784334848,
+     "outputWeightsGB": 0.784334848,
+     "tiedOutput": true
+    },
+    {
+     "key": "mxfp4_moe",
+     "label": "MXFP4_MOE",
+     "gb": 16.6,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.784334848,
+     "outputWeightsGB": 0.784334848,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq4_xs",
+     "label": "UD-IQ4_XS",
+     "gb": 13.6,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.784334848,
+     "outputWeightsGB": 0.784334848,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_q3_k_xl",
+     "label": "UD-Q3_K_XL",
+     "gb": 12.9,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.784334848,
+     "outputWeightsGB": 0.784334848,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 11.4,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.60555264,
+     "outputWeightsGB": 0.60555264,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq2_xxs",
+     "label": "UD-IQ2_XXS",
+     "gb": 9.9,
+     "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+     "inputEmbeddingGB": 0.415236096,
+     "outputWeightsGB": 0.415236096,
+     "tiedOutput": true
+    }
+   ],
+   "kind": "moe",
+   "buffersGB": 1.5
+  },
+  {
+   "name": "Gemma 4 12B",
+   "page": "https://localrigcheck.com/gemma-4/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "runtime": "llama.cpp (Unsloth GGUF)",
+   "layers": 48,
+   "maxContext": 262144,
+   "mmprojGB": 0.2,
+   "kvGBAt32K_f16": 1.04,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "bf16",
+     "label": "BF16",
+     "gb": 23.8,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 2.01326592,
+     "outputWeightsGB": 2.01326592,
+     "tiedOutput": true
+    },
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 12.7,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 1.06954752,
+     "outputWeightsGB": 1.06954752,
+     "tiedOutput": true
+    },
+    {
+     "key": "q6_k",
+     "label": "Q6_K",
+     "gb": 9.8,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 0.8257536,
+     "outputWeightsGB": 0.8257536,
+     "tiedOutput": true
+    },
+    {
+     "key": "q5_k_m",
+     "label": "Q5_K_M",
+     "gb": 8.4,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 0.69206016,
+     "outputWeightsGB": 0.69206016,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL",
+     "gb": 7.4,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 0.69206016,
+     "outputWeightsGB": 0.69206016,
+     "tiedOutput": true
+    },
+    {
+     "key": "q4_k_m",
+     "label": "Q4_K_M",
+     "gb": 7.1,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 0.56623104,
+     "outputWeightsGB": 0.56623104,
+     "tiedOutput": true
+    },
+    {
+     "key": "iq4_xs",
+     "label": "IQ4_XS",
+     "gb": 6.4,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 0.56623104,
+     "outputWeightsGB": 0.56623104,
+     "tiedOutput": true
+    },
+    {
+     "key": "q3_k_m",
+     "label": "Q3_K_M",
+     "gb": 5.7,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 0.4325376,
+     "outputWeightsGB": 0.4325376,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 4.6,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 0.4325376,
+     "outputWeightsGB": 0.4325376,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq2_m",
+     "label": "UD-IQ2_M",
+     "gb": 4.2,
+     "repo": "unsloth/gemma-4-12b-it-GGUF",
+     "inputEmbeddingGB": 0.4325376,
+     "outputWeightsGB": 0.4325376,
+     "tiedOutput": true
+    }
+   ],
+   "kind": "dense",
+   "buffersGB": 1.5
+  },
+  {
+   "name": "Gemma 4 E4B",
+   "page": "https://localrigcheck.com/gemma-4/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "runtime": "llama.cpp (Unsloth GGUF)",
+   "layers": 42,
+   "maxContext": 131072,
+   "mmprojGB": 1,
+   "kvGBAt32K_f16": 0.579,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "bf16",
+     "label": "BF16",
+     "gb": 15.1,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 6.979321856,
+     "outputWeightsGB": 1.34217728,
+     "tiedOutput": true
+    },
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 8.2,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 3.7077647359999997,
+     "outputWeightsGB": 0.71303168,
+     "tiedOutput": true
+    },
+    {
+     "key": "q6_k",
+     "label": "Q6_K",
+     "gb": 7.1,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 3.545235456,
+     "outputWeightsGB": 0.5505024,
+     "tiedOutput": true
+    },
+    {
+     "key": "q5_k_m",
+     "label": "Q5_K_M",
+     "gb": 5.5,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 2.399141888,
+     "outputWeightsGB": 0.46137344,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL",
+     "gb": 5.1,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 2.399141888,
+     "outputWeightsGB": 0.46137344,
+     "tiedOutput": true
+    },
+    {
+     "key": "q4_k_m",
+     "label": "Q4_K_M",
+     "gb": 5,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 2.315255808,
+     "outputWeightsGB": 0.37748736,
+     "tiedOutput": true
+    },
+    {
+     "key": "iq4_xs",
+     "label": "IQ4_XS",
+     "gb": 4.7,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 2.315255808,
+     "outputWeightsGB": 0.37748736,
+     "tiedOutput": true
+    },
+    {
+     "key": "q3_k_m",
+     "label": "Q3_K_M",
+     "gb": 4.1,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 1.873805312,
+     "outputWeightsGB": 0.2883584,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 3.7,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 1.873805312,
+     "outputWeightsGB": 0.2883584,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq2_m",
+     "label": "UD-IQ2_M",
+     "gb": 3.5,
+     "repo": "unsloth/gemma-4-E4B-it-GGUF",
+     "inputEmbeddingGB": 1.873805312,
+     "outputWeightsGB": 0.2883584,
+     "tiedOutput": true
+    }
+   ],
+   "kind": "dense",
+   "buffersGB": 1.5
+  },
+  {
+   "name": "Gemma 4 E2B",
+   "page": "https://localrigcheck.com/gemma-4/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "runtime": "llama.cpp (Unsloth GGUF)",
+   "layers": 35,
+   "maxContext": 131072,
+   "mmprojGB": 1,
+   "kvGBAt32K_f16": 0.214,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "bf16",
+     "label": "BF16",
+     "gb": 9.3,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 5.502926848,
+     "outputWeightsGB": 0.805306368,
+     "tiedOutput": true
+    },
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 5,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 2.9234298880000003,
+     "outputWeightsGB": 0.427819008,
+     "tiedOutput": true
+    },
+    {
+     "key": "q6_k",
+     "label": "Q6_K",
+     "gb": 4.5,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 2.82591232,
+     "outputWeightsGB": 0.33030144,
+     "tiedOutput": true
+    },
+    {
+     "key": "q5_k_m",
+     "label": "Q5_K_M",
+     "gb": 3.4,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 1.891631104,
+     "outputWeightsGB": 0.276824064,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL",
+     "gb": 3.2,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 1.891631104,
+     "outputWeightsGB": 0.276824064,
+     "tiedOutput": true
+    },
+    {
+     "key": "q4_k_m",
+     "label": "Q4_K_M",
+     "gb": 3.1,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 1.841299456,
+     "outputWeightsGB": 0.226492416,
+     "tiedOutput": true
+    },
+    {
+     "key": "iq4_xs",
+     "label": "IQ4_XS",
+     "gb": 3,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 1.841299456,
+     "outputWeightsGB": 0.226492416,
+     "tiedOutput": true
+    },
+    {
+     "key": "q3_k_m",
+     "label": "Q3_K_M",
+     "gb": 2.5,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 1.4942208,
+     "outputWeightsGB": 0.17301504,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 2.4,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 1.4942208,
+     "outputWeightsGB": 0.17301504,
+     "tiedOutput": true
+    },
+    {
+     "key": "ud_iq2_m",
+     "label": "UD-IQ2_M",
+     "gb": 2.3,
+     "repo": "unsloth/gemma-4-E2B-it-GGUF",
+     "inputEmbeddingGB": 1.4942208,
+     "outputWeightsGB": 0.17301504,
+     "tiedOutput": true
+    }
+   ],
+   "kind": "dense",
+   "buffersGB": 1.5
+  },
+  {
+   "name": "Mistral Medium 3.5",
+   "page": "https://localrigcheck.com/mistral-medium-3-5/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-12",
+   "runtime": "llama.cpp (Unsloth GGUF)",
+   "layers": 88,
+   "maxContext": 262144,
+   "mmprojGB": 5.4,
+   "kvGBAt32K_f16": 11.811,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 132.9,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 1.711276032,
+     "outputWeightsGB": 1.711276032,
+     "tiedOutput": false
+    },
+    {
+     "key": "q6_k",
+     "label": "Q6_K",
+     "gb": 102.6,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 1.32120576,
+     "outputWeightsGB": 1.32120576,
+     "tiedOutput": false
+    },
+    {
+     "key": "q5_k_m",
+     "label": "Q5_K_M",
+     "gb": 88.3,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 1.107296256,
+     "outputWeightsGB": 1.32120576,
+     "tiedOutput": false
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL (Unsloth dynamic 4-bit)",
+     "gb": 75.7,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 0.905969664,
+     "outputWeightsGB": 1.32120576,
+     "tiedOutput": false
+    },
+    {
+     "key": "q4_k_m",
+     "label": "Q4_K_M",
+     "gb": 74.9,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 0.905969664,
+     "outputWeightsGB": 1.32120576,
+     "tiedOutput": false
+    },
+    {
+     "key": "iq4_xs",
+     "label": "IQ4_XS",
+     "gb": 67.1,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 0.905969664,
+     "outputWeightsGB": 1.32120576,
+     "tiedOutput": false
+    },
+    {
+     "key": "q3_k_m",
+     "label": "Q3_K_M",
+     "gb": 60.6,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 0.69206016,
+     "outputWeightsGB": 1.32120576,
+     "tiedOutput": false
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 49.3,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 0.69206016,
+     "outputWeightsGB": 1.107296256,
+     "tiedOutput": false
+    },
+    {
+     "key": "ud_iq2_m",
+     "label": "UD-IQ2_M",
+     "gb": 44.1,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 0.69206016,
+     "outputWeightsGB": 1.107296256,
+     "tiedOutput": false
+    },
+    {
+     "key": "ud_iq2_xxs",
+     "label": "UD-IQ2_XXS",
+     "gb": 34.9,
+     "repo": "unsloth/Mistral-Medium-3.5-128B-GGUF",
+     "inputEmbeddingGB": 0.69206016,
+     "outputWeightsGB": 1.107296256,
+     "tiedOutput": false
+    }
+   ],
+   "buffersFractionOfFile": 0.05
+  },
+  {
+   "name": "Qwen3.8-Flash-Next",
+   "page": "https://localrigcheck.com/qwen-3-8-flash-next/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-08",
+   "runtime": "llama.cpp (Unsloth GGUF)",
+   "kvGBAt32K_f16": 1.007,
+   "files": [
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 188.2,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 54.40026112,
+     "cpuInputEmbeddingGB": 0.6754304,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 94.1
+    },
+    {
+     "key": "ud_q6_k_xl",
+     "label": "UD-Q6_K_XL",
+     "gb": 169.2,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 54.40026112,
+     "cpuInputEmbeddingGB": 0.6754304,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 94.1
+    },
+    {
+     "key": "ud_q5_k_xl",
+     "label": "UD-Q5_K_XL",
+     "gb": 158.3,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 54.40026112,
+     "cpuInputEmbeddingGB": 0.6754304,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 93.7
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL",
+     "gb": 111.3,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 28.80013824,
+     "cpuInputEmbeddingGB": 0.6754304,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 92.3
+    },
+    {
+     "key": "ud_iq4_xs",
+     "label": "UD-IQ4_XS",
+     "gb": 93.7,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 28.80013824,
+     "cpuInputEmbeddingGB": 0.6754304,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 89.6
+    },
+    {
+     "key": "ud_q3_k_xl",
+     "label": "UD-Q3_K_XL",
+     "gb": 90,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 28.80013824,
+     "cpuInputEmbeddingGB": 0.6754304,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 88.3
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 82,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 28.80013824,
+     "cpuInputEmbeddingGB": 0.521472,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 85.4
+    },
+    {
+     "key": "ud_q2_k_xl",
+     "label": "UD-Q2_K_XL",
+     "gb": 78.9,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 28.80013824,
+     "cpuInputEmbeddingGB": 0.4370432,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 82.7
+    },
+    {
+     "key": "ud_iq1_m",
+     "label": "UD-IQ1_M",
+     "gb": 74.5,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 28.80013824,
+     "cpuInputEmbeddingGB": 0.3575808,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 79.7
+    },
+    {
+     "key": "ud_iq1_s",
+     "label": "UD-IQ1_S",
+     "gb": 72.5,
+     "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
+     "ngramTableGB": 28.80013824,
+     "cpuInputEmbeddingGB": 0.3575808,
+     "hostBuffersGB": 0.5,
+     "top1VsBF16Pct": 77.3
+    }
+   ]
+  },
+  {
+   "name": "Mistral Large 4",
+   "page": "https://localrigcheck.com/mistral-large-4/",
+   "updated": "2026-10-19",
+   "sourcesChecked": "2026-10-08",
+   "weightsReleased": false,
+   "totalParamsB": 1050,
+   "activeParamsB": 52,
+   "note": "No weights yet: sizes are parameters × assumed bits per weight.",
+   "formats": [
+    {
+     "key": "bf16",
+     "label": "BF16 (full precision)",
+     "assumedBitsPerWeight": 16,
+     "estimatedGB": 2100
+    },
+    {
+     "key": "fp8",
+     "label": "FP8",
+     "assumedBitsPerWeight": 8,
+     "estimatedGB": 1050
+    },
+    {
+     "key": "q8_0",
+     "label": "Q8_0 (GGUF)",
+     "assumedBitsPerWeight": 8.5,
+     "estimatedGB": 1116
+    },
+    {
+     "key": "q6_k",
+     "label": "Q6_K (GGUF)",
+     "assumedBitsPerWeight": 6.6,
+     "estimatedGB": 866
+    },
+    {
+     "key": "q4_k_m",
+     "label": "Q4_K_M (GGUF)",
+     "assumedBitsPerWeight": 4.8,
+     "estimatedGB": 630
+    },
+    {
+     "key": "nvfp4",
+     "label": "NVFP4",
+     "assumedBitsPerWeight": 4.5,
+     "estimatedGB": 591
+    },
+    {
+     "key": "mxfp4",
+     "label": "MXFP4",
+     "assumedBitsPerWeight": 4.25,
+     "estimatedGB": 558
+    },
+    {
+     "key": "q3_k_m",
+     "label": "Q3_K_M (GGUF)",
+     "assumedBitsPerWeight": 3.9,
+     "estimatedGB": 512
+    },
+    {
+     "key": "q2_k",
+     "label": "Q2_K (GGUF)",
+     "assumedBitsPerWeight": 3,
+     "estimatedGB": 394
+    },
+    {
+     "key": "iq2_xxs",
+     "label": "IQ2_XXS (GGUF)",
+     "assumedBitsPerWeight": 2.1,
+     "estimatedGB": 276
+    },
+    {
+     "key": "iq1_s",
+     "label": "IQ1_S (GGUF)",
+     "assumedBitsPerWeight": 1.6,
+     "estimatedGB": 210
+    }
+   ]
+  }
+ ]
+}

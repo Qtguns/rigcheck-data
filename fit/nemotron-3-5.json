@@ -1,0 +1,279 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+ "name": "Nemotron 3.5",
+ "page": "https://localrigcheck.com/nemotron-3-5/",
+ "checker": "https://localrigcheck.com/nemotron-3-5/#checker",
+ "updated": "2026-10-20",
+ "sourcesChecked": "2026-10-17",
+ "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
+ "tiers": {
+  "good": "an answer without caveats of the checker's own kind; a limit stated in the answer (such as raising a Mac's GPU wired-memory limit, macLimit) still applies",
+  "caveats": "an answer with caveats (part in system RAM, a planning estimate, an unverified peak or route)",
+  "experimental": "only an experimental path",
+  "no": "does not fit, or below the smallest published figure",
+  "na": "unknown: the checker covers no route or source for this hardware"
+ },
+ "checkers": [
+  "nemotron"
+ ],
+ "quickSetup": "graphics cards: Bolt and Super VL on one card with the RAM given: NVIDIA's llama.cpp recipes at their own context (64K / 256K), else Unsloth's short-context memory budgets; Macs: Bolt and Super VL in unified memory: Unsloth's short-context memory budgets (NVIDIA names no Mac setup)",
+ "answerKinds": [
+  "published route match"
+ ],
+ "sizes": [
+  {
+   "id": "nemotron-3-5-bolt",
+   "label": "Nemotron 3.5 Bolt 74B-A9B"
+  },
+  {
+   "id": "nemotron-3-5-super-vl",
+   "label": "Nemotron 3.5 Super VL 120B-A12B"
+  }
+ ],
+ "setups": [
+  {
+   "id": "rtx3060_12",
+   "label": "GeForce RTX 3060 (12 GB) + 32 GB RAM",
+   "memGB": 12,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "Bolt and Super VL on one card with the RAM given: NVIDIA's llama.cpp recipes at their own context (64K / 256K), else Unsloth's short-context memory budgets"
+  },
+  {
+   "id": "rtx4060ti16",
+   "label": "GeForce RTX 4060 Ti (16 GB) + 32 GB RAM",
+   "memGB": 16,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "Bolt and Super VL on one card with the RAM given: NVIDIA's llama.cpp recipes at their own context (64K / 256K), else Unsloth's short-context memory budgets"
+  },
+  {
+   "id": "rtx3090",
+   "label": "GeForce RTX 3090 / 3090 Ti (24 GB) + 64 GB RAM",
+   "memGB": 24,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "Bolt and Super VL on one card with the RAM given: NVIDIA's llama.cpp recipes at their own context (64K / 256K), else Unsloth's short-context memory budgets"
+  },
+  {
+   "id": "rtx5090",
+   "label": "GeForce RTX 5090 (32 GB) + 64 GB RAM",
+   "memGB": 32,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "Bolt and Super VL on one card with the RAM given: NVIDIA's llama.cpp recipes at their own context (64K / 256K), else Unsloth's short-context memory budgets"
+  },
+  {
+   "id": "mac64",
+   "label": "Apple Silicon Mac (64 GB unified)",
+   "memGB": 64,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "Bolt and Super VL in unified memory: Unsloth's short-context memory budgets (NVIDIA names no Mac setup)"
+  },
+  {
+   "id": "m5max128",
+   "label": "Mac with M5 Max, 40-core GPU (128 GB unified)",
+   "memGB": 128,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "Bolt and Super VL in unified memory: Unsloth's short-context memory budgets (NVIDIA names no Mac setup)"
+  },
+  {
+   "id": "mac256",
+   "label": "Mac Studio M3 Ultra (256 GB unified)",
+   "memGB": 256,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "Bolt and Super VL in unified memory: Unsloth's short-context memory budgets (NVIDIA names no Mac setup)"
+  },
+  {
+   "id": "mac512",
+   "label": "Mac Studio M3 Ultra (512 GB unified)",
+   "memGB": 512,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "Bolt and Super VL in unified memory: Unsloth's short-context memory budgets (NVIDIA names no Mac setup)"
+  }
+ ],
+ "answers": [
+  {
+   "setup": "rtx3060_12",
+   "size": "nemotron-3-5-bolt",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's short-context budget: about 32 GB of RAM or unified memory",
+   "pick": null,
+   "where": null,
+   "conditions": "This card is outside the architectures NVIDIA's GGUF card lists (Ada Lovelace, Blackwell), and NVIDIA publishes no recipe for it. Unsloth budgets around 32 GB of RAM or unified memory for short-context use (48–64 GB for more headroom) with its 22 GB IQ2_XXS GGUF in llama.cpp; longer contexts, images and video need more. This system RAM is 32 GB. That is Unsloth's planning estimate, not a measured run on this hardware.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3060_12",
+   "size": "nemotron-3-5-super-vl",
+   "tier": "no",
+   "answerKind": "published route match",
+   "answer": "Below Unsloth's smallest memory budget for Super VL (64 GB)",
+   "pick": null,
+   "where": null,
+   "conditions": "Unsloth plans at least 64 GB of RAM or unified memory for its smallest GGUF (UD-IQ1_M, 46.1 GB); llama.cpp can split the model across RAM and VRAM. This setup counts 12 GB of VRAM + 32 GB of RAM = 44 GB.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx4060ti16",
+   "size": "nemotron-3-5-bolt",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's short-context budget: about 32 GB of RAM or unified memory",
+   "pick": null,
+   "where": null,
+   "conditions": "NVIDIA publishes no recipe for a 16 GB card; its discrete-GPU recipes start at 32 GB. Unsloth budgets around 32 GB of RAM or unified memory for short-context use (48–64 GB for more headroom) with its 22 GB IQ2_XXS GGUF in llama.cpp; longer contexts, images and video need more. This system RAM is 32 GB. That is Unsloth's planning estimate, not a measured run on this hardware.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx4060ti16",
+   "size": "nemotron-3-5-super-vl",
+   "tier": "no",
+   "answerKind": "published route match",
+   "answer": "Below Unsloth's smallest memory budget for Super VL (64 GB)",
+   "pick": null,
+   "where": null,
+   "conditions": "Unsloth plans at least 64 GB of RAM or unified memory for its smallest GGUF (UD-IQ1_M, 46.1 GB); llama.cpp can split the model across RAM and VRAM. This setup counts 16 GB of VRAM + 32 GB of RAM = 48 GB.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3090",
+   "size": "nemotron-3-5-bolt",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's short-context budget: about 32 GB of RAM or unified memory",
+   "pick": null,
+   "where": null,
+   "conditions": "This card is outside the architectures NVIDIA's GGUF card lists (Ada Lovelace, Blackwell), and NVIDIA publishes no recipe for it. Unsloth budgets around 32 GB of RAM or unified memory for short-context use (48–64 GB for more headroom) with its 22 GB IQ2_XXS GGUF in llama.cpp; longer contexts, images and video need more. This system RAM is 64 GB. That is Unsloth's planning estimate, not a measured run on this hardware.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3090",
+   "size": "nemotron-3-5-super-vl",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's 80 GB budget: UD-IQ2_M, UD-Q2_K_XL or UD-IQ3_XXS (55.9–59.8 GB)",
+   "pick": null,
+   "where": null,
+   "conditions": "Unsloth's planning estimate for a modest context, including the OS, runtime, KV cache and vision file; not a measured run. This setup counts 24 GB of VRAM + 64 GB of RAM = 88 GB. Longer contexts and video need more.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx5090",
+   "size": "nemotron-3-5-bolt",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches NVIDIA's 28GB llama.cpp recipe: 64K context, q8_0 KV cache, one request at a time",
+   "pick": null,
+   "where": null,
+   "conditions": "NVIDIA's 256K-context recipe needs an RTX Spark 128 GB or a 48 GB+ discrete GPU; this hardware gets the 65,536-token recipe. Build the latest llama.cpp from source first. No speed is published for this machine; NVIDIA's 84 tokens per second is from a 128 GB RTX Spark.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx5090",
+   "size": "nemotron-3-5-super-vl",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's 96 GB budget: UD-Q3_K_XL (65.8 GB) or NVFP4 (79 GB)",
+   "pick": null,
+   "where": null,
+   "conditions": "Unsloth's planning estimate for a modest context, including the OS, runtime, KV cache and vision file; not a measured run. This setup counts 32 GB of VRAM + 64 GB of RAM = 96 GB. Longer contexts and video need more.",
+   "macLimit": false
+  },
+  {
+   "setup": "mac64",
+   "size": "nemotron-3-5-bolt",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's short-context budget: about 32 GB of RAM or unified memory (after raising the Mac's GPU wired-memory limit)",
+   "pick": null,
+   "where": null,
+   "conditions": "NVIDIA names no Mac setup; Unsloth's llama.cpp guide covers Metal builds. Unsloth budgets around 32 GB of RAM or unified memory for short-context use (48–64 GB for more headroom) with its 22 GB IQ2_XXS GGUF in llama.cpp; longer contexts, images and video need more. This unified memory is 64 GB. That is Unsloth's planning estimate, not a measured run on this hardware. On a Mac, raise the GPU wired-memory limit first.",
+   "macLimit": true
+  },
+  {
+   "setup": "mac64",
+   "size": "nemotron-3-5-super-vl",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's 64 GB budget: UD-IQ1_M (46.1 GB) or UD-IQ2_XXS (51.1 GB) (after raising the Mac's GPU wired-memory limit)",
+   "pick": null,
+   "where": null,
+   "conditions": "Unsloth's planning estimate for a modest context, including the OS, runtime, KV cache and vision file; not a measured run. This setup counts 64 GB of unified memory (counted once). Longer contexts and video need more. On a Mac, raise the GPU wired-memory limit first.",
+   "macLimit": true
+  },
+  {
+   "setup": "m5max128",
+   "size": "nemotron-3-5-bolt",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's short-context budget: about 32 GB of RAM or unified memory (after raising the Mac's GPU wired-memory limit)",
+   "pick": null,
+   "where": null,
+   "conditions": "NVIDIA names no Mac setup; Unsloth's llama.cpp guide covers Metal builds. Unsloth budgets around 32 GB of RAM or unified memory for short-context use (48–64 GB for more headroom) with its 22 GB IQ2_XXS GGUF in llama.cpp; longer contexts, images and video need more. This unified memory is 128 GB. That is Unsloth's planning estimate, not a measured run on this hardware. On a Mac, raise the GPU wired-memory limit first.",
+   "macLimit": true
+  },
+  {
+   "setup": "m5max128",
+   "size": "nemotron-3-5-super-vl",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's 128 GB budget: UD-Q4_K_XL (4-bit, 86.9 GB), Unsloth's recommended balance (after raising the Mac's GPU wired-memory limit)",
+   "pick": null,
+   "where": null,
+   "conditions": "Unsloth's planning estimate for a modest context, including the OS, runtime, KV cache and vision file; not a measured run. This setup counts 128 GB of unified memory (counted once). Longer contexts and video need more. On a Mac, raise the GPU wired-memory limit first.",
+   "macLimit": true
+  },
+  {
+   "setup": "mac256",
+   "size": "nemotron-3-5-bolt",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's short-context budget: about 32 GB of RAM or unified memory (after raising the Mac's GPU wired-memory limit)",
+   "pick": null,
+   "where": null,
+   "conditions": "NVIDIA names no Mac setup; Unsloth's llama.cpp guide covers Metal builds. Unsloth budgets around 32 GB of RAM or unified memory for short-context use (48–64 GB for more headroom) with its 22 GB IQ2_XXS GGUF in llama.cpp; longer contexts, images and video need more. This unified memory is 256 GB. That is Unsloth's planning estimate, not a measured run on this hardware. On a Mac, raise the GPU wired-memory limit first.",
+   "macLimit": true
+  },
+  {
+   "setup": "mac256",
+   "size": "nemotron-3-5-super-vl",
+   "tier": "caveats",
+   "answerKind": "published route match",
+   "answer": "Matches Unsloth's 192 GB budget: Q8_0 (8-bit, 132 GB) (after raising the Mac's GPU wired-memory limit)",
+   "pick": null,
+   "where": null,
+   "conditions": "Unsloth's planning estimate for a modest context, including the OS, runtime, KV cache and vision file; not a measured run. This setup counts 256 GB of unified memory (counted once). Longer contexts and video need more. On a Mac, raise the GPU wired-memory limit first.",
+   "macLimit": true
+  },
+  {
+   "setup": "mac512",
+   "size": "nemotron-3-5-bolt",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published Nemotron 3.5 route checked here for this device.",
+   "macLimit": false
+  },
+  {
+   "setup": "mac512",
+   "size": "nemotron-3-5-super-vl",
+   "tier": "na",
+   "answerKind": "published route match",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "No published Nemotron 3.5 route checked here for this device.",
+   "macLimit": false
+  }
+ ]
+}

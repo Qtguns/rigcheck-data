@@ -1,0 +1,187 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+ "name": "Strata checker",
+ "page": "https://localrigcheck.com/strata/",
+ "checker": "https://localrigcheck.com/strata/#checker",
+ "updated": "2026-10-19",
+ "sourcesChecked": "2026-10-19",
+ "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
+ "tiers": {
+  "good": "an answer without caveats of the checker's own kind; a limit stated in the answer (such as raising a Mac's GPU wired-memory limit, macLimit) still applies",
+  "caveats": "an answer with caveats (part in system RAM, a planning estimate, an unverified peak or route)",
+  "experimental": "only an experimental path",
+  "no": "does not fit, or below the smallest published figure",
+  "na": "unknown: the checker covers no route or source for this hardware"
+ },
+ "checkers": [
+  "strata"
+ ],
+ "quickSetup": "graphics cards: the better of Windows and Linux, an NVMe SSD; Macs: macOS with Strata's experimental Metal engine, an NVMe SSD",
+ "answerKinds": [
+  "Strata's published requirements"
+ ],
+ "sizes": [
+  {
+   "id": "strata",
+   "label": "Strata checker"
+  }
+ ],
+ "setups": [
+  {
+   "id": "rtx3060_12",
+   "label": "GeForce RTX 3060 (12 GB) + 32 GB RAM",
+   "memGB": 12,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "the better of Windows and Linux, an NVMe SSD"
+  },
+  {
+   "id": "rtx4060ti16",
+   "label": "GeForce RTX 4060 Ti (16 GB) + 32 GB RAM",
+   "memGB": 16,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "the better of Windows and Linux, an NVMe SSD"
+  },
+  {
+   "id": "rtx3090",
+   "label": "GeForce RTX 3090 / 3090 Ti (24 GB) + 64 GB RAM",
+   "memGB": 24,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "the better of Windows and Linux, an NVMe SSD"
+  },
+  {
+   "id": "rtx5090",
+   "label": "GeForce RTX 5090 (32 GB) + 64 GB RAM",
+   "memGB": 32,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "the better of Windows and Linux, an NVMe SSD"
+  },
+  {
+   "id": "mac64",
+   "label": "Apple Silicon Mac (64 GB unified)",
+   "memGB": 64,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "macOS with Strata's experimental Metal engine, an NVMe SSD"
+  },
+  {
+   "id": "m5max128",
+   "label": "Mac with M5 Max, 40-core GPU (128 GB unified)",
+   "memGB": 128,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "macOS with Strata's experimental Metal engine, an NVMe SSD"
+  },
+  {
+   "id": "mac256",
+   "label": "Mac Studio M3 Ultra (256 GB unified)",
+   "memGB": 256,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "macOS with Strata's experimental Metal engine, an NVMe SSD"
+  },
+  {
+   "id": "mac512",
+   "label": "Mac Studio M3 Ultra (512 GB unified)",
+   "memGB": 512,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "macOS with Strata's experimental Metal engine, an NVMe SSD"
+  }
+ ],
+ "answers": [
+  {
+   "setup": "rtx3060_12",
+   "size": "strata",
+   "tier": "caveats",
+   "answerKind": "Strata's published requirements",
+   "answer": "meets Strata's requirements, with caveats: Coder (IQ1_M)",
+   "pick": "Coder (IQ1_M)",
+   "where": null,
+   "conditions": "On a 32 GB PC setup runs it in low-RAM mode.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx4060ti16",
+   "size": "strata",
+   "tier": "caveats",
+   "answerKind": "Strata's published requirements",
+   "answer": "meets Strata's requirements, with caveats: Coder (IQ1_M)",
+   "pick": "Coder (IQ1_M)",
+   "where": null,
+   "conditions": "On a 32 GB PC setup runs it in low-RAM mode.",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3090",
+   "size": "strata",
+   "tier": "good",
+   "answerKind": "Strata's published requirements",
+   "answer": "meets Strata's requirements: IQ2_XS",
+   "pick": "IQ2_XS",
+   "where": null,
+   "conditions": "",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx5090",
+   "size": "strata",
+   "tier": "good",
+   "answerKind": "Strata's published requirements",
+   "answer": "meets Strata's requirements: IQ2_XS",
+   "pick": "IQ2_XS",
+   "where": null,
+   "conditions": "",
+   "macLimit": false
+  },
+  {
+   "setup": "mac64",
+   "size": "strata",
+   "tier": "experimental",
+   "answerKind": "Strata's published requirements",
+   "answer": "experimental path only: Q2_0",
+   "pick": "Q2_0",
+   "where": null,
+   "conditions": "Measured on one Mac (M5 Max 128 GB).",
+   "macLimit": false
+  },
+  {
+   "setup": "m5max128",
+   "size": "strata",
+   "tier": "experimental",
+   "answerKind": "Strata's published requirements",
+   "answer": "experimental path only: IQ3_S",
+   "pick": "IQ3_S",
+   "where": null,
+   "conditions": "Measured on one Mac (M5 Max 128 GB).",
+   "macLimit": false
+  },
+  {
+   "setup": "mac256",
+   "size": "strata",
+   "tier": "experimental",
+   "answerKind": "Strata's published requirements",
+   "answer": "experimental path only: IQ3_S",
+   "pick": "IQ3_S",
+   "where": null,
+   "conditions": "Measured on one Mac (M5 Max 128 GB).",
+   "macLimit": false
+  },
+  {
+   "setup": "mac512",
+   "size": "strata",
+   "tier": "experimental",
+   "answerKind": "Strata's published requirements",
+   "answer": "experimental path only: IQ3_S",
+   "pick": "IQ3_S",
+   "where": null,
+   "conditions": "Measured on one Mac (M5 Max 128 GB).",
+   "macLimit": false
+  }
+ ]
+}
