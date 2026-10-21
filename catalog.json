@@ -1745,8 +1745,8 @@
   {
    "url": "/strata/",
    "name": "Strata checker",
-   "updated": "2026-10-19",
-   "checked": "2026-10-19",
+   "updated": "2026-10-21",
+   "checked": "2026-10-21",
    "subpages": [],
    "id": "strata",
    "role": "engine",
@@ -1782,18 +1782,18 @@
      "variants": "all",
      "where": "local",
      "status": "official",
-     "requires": "Windows / Linux, NVIDIA RTX 20+ or listed AMD",
+     "requires": "Windows / Linux, NVIDIA RTX 20+ or listed AMD, 32 GB of RAM and VRAM together",
      "evidence": "https://github.com/Niko1221/Strata",
-     "read": "2026-10-19"
+     "read": "2026-10-21"
     },
     {
      "runtime": "Strata",
      "variants": "all",
      "where": "local",
      "status": "experimental",
-     "requires": "Apple Silicon Mac (Metal), macOS 15 or newer",
+     "requires": "Apple Silicon Mac (Metal, ready-made in the Mac app), macOS 15 or newer",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md",
-     "read": "2026-10-17"
+     "read": "2026-10-21"
     },
     {
      "runtime": "Strata",
@@ -1802,7 +1802,7 @@
      "status": "experimental",
      "requires": "older NVIDIA cards such as the GTX 10 series or Tesla P40 / V100 (separate CUDA 12 engine, Windows or Linux)",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/OLDER_GPUS.md",
-     "read": "2026-10-19"
+     "read": "2026-10-21"
     },
     {
      "runtime": "Strata",
@@ -1811,7 +1811,7 @@
      "status": "experimental",
      "requires": "older AMD cards such as the Radeon VII / MI50 (Linux build)",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/OLDER_GPUS.md",
-     "read": "2026-10-19"
+     "read": "2026-10-21"
     },
     {
      "runtime": "Strata",
@@ -1820,7 +1820,7 @@
      "status": "experimental",
      "requires": "Intel Arc (experimental Linux build)",
      "evidence": "https://github.com/Niko1221/Strata",
-     "read": "2026-10-19"
+     "read": "2026-10-21"
     }
    ],
    "license": {
@@ -1850,11 +1850,11 @@
      "key": "Minimum GPU",
      "value": "an NVIDIA GeForce RTX 20–50 series with 8 GB of VRAM (slow; 12 GB recommended)",
      "ev": "official",
-     "src": 1
+     "src": 10
     },
     {
-     "key": "RAM",
-     "value": "32 GB of RAM (64 GB runs every standard size)",
+     "key": "Memory",
+     "value": "32 GB of RAM and graphics memory (VRAM) together",
      "ev": "official",
      "src": 1
     },
@@ -1872,7 +1872,7 @@
     },
     {
      "key": "Mac",
-     "value": "through Strata's experimental Metal engine",
+     "value": "through Strata's Metal engine, ready-made in its Mac app",
      "ev": "official",
      "src": 5
     },

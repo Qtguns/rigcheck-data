@@ -3,8 +3,8 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "page": "https://localrigcheck.com/strata/",
- "updated": "2026-10-19",
- "sourcesChecked": "2026-10-19",
+ "updated": "2026-10-21",
+ "sourcesChecked": "2026-10-21",
  "engine": "Strata (github.com/Niko1221/Strata)",
  "sizes": [
   {
@@ -49,6 +49,20 @@
    "expertsGB": 59.5,
    "minRamGB": 48,
    "downloadGB": 94
+  },
+  {
+   "key": "Gyro_S",
+   "label": "Gyro-S (agentionai)",
+   "expertsGB": null,
+   "minRamGB": null,
+   "downloadGB": 58.5
+  },
+  {
+   "key": "Gyro_M",
+   "label": "Gyro-M (agentionai)",
+   "expertsGB": null,
+   "minRamGB": null,
+   "downloadGB": 92
   }
  ],
  "benchmarks": [
