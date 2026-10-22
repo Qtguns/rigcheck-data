@@ -3,7 +3,7 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
- "generated": "2026-10-21",
+ "generated": "2026-10-22",
  "models": [
   {
    "name": "Qwen-Image-2.1 / Turbo",
@@ -84,7 +84,7 @@
   {
    "name": "MiniMax H3",
    "page": "https://localrigcheck.com/minimax-h3/",
-   "updated": "2026-10-19",
+   "updated": "2026-10-22",
    "sourcesChecked": "2026-10-12",
    "kind": "video-audio",
    "originalTaskComponentBytes": {
@@ -1233,6 +1233,133 @@
    ],
    "kind": "dense",
    "buffersGB": 1.5
+  },
+  {
+   "name": "LFM2.5-24B-A2B",
+   "page": "https://localrigcheck.com/lfm-2-5-24b-a2b/",
+   "updated": "2026-10-22",
+   "sourcesChecked": "2026-10-22",
+   "runtime": "llama.cpp (Liquid AI and Unsloth GGUF)",
+   "layers": 40,
+   "maxContext": 131072,
+   "mmprojGB": 0,
+   "kvGBAt32K_f16": 0.671,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "bf16",
+     "label": "BF16",
+     "gb": 48,
+     "repo": "LiquidAI/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.524288,
+     "outputWeightsGB": 0.524288,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 25.5,
+     "repo": "LiquidAI/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.278528,
+     "outputWeightsGB": 0.278528,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "q6_k",
+     "label": "Q6_K",
+     "gb": 19.7,
+     "repo": "LiquidAI/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.21504,
+     "outputWeightsGB": 0.21504,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "q5_k_m",
+     "label": "Q5_K_M",
+     "gb": 17,
+     "repo": "LiquidAI/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.21504,
+     "outputWeightsGB": 0.21504,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "q4_k_m",
+     "label": "Q4_K_M",
+     "gb": 14.5,
+     "repo": "LiquidAI/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.21504,
+     "outputWeightsGB": 0.21504,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "qad_q4_0",
+     "label": "QAD-Q4_0",
+     "gb": 13.6,
+     "repo": "LiquidAI/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.21504,
+     "outputWeightsGB": 0.21504,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_q3_k_xl",
+     "label": "UD-Q3_K_XL",
+     "gb": 10.9,
+     "repo": "unsloth/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.278528,
+     "outputWeightsGB": 0.278528,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 9,
+     "repo": "unsloth/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.21504,
+     "outputWeightsGB": 0.21504,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_q2_k_xl",
+     "label": "UD-Q2_K_XL",
+     "gb": 8,
+     "repo": "unsloth/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.180224,
+     "outputWeightsGB": 0.180224,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_iq2_xxs",
+     "label": "UD-IQ2_XXS",
+     "gb": 7.5,
+     "repo": "unsloth/LFM2.5-24B-A2B-GGUF",
+     "inputEmbeddingGB": 0.147456,
+     "outputWeightsGB": 0.147456,
+     "tiedOutput": true,
+     "blockCount": 40,
+     "mtpLayers": 0
+    }
+   ],
+   "convStateGB": 0.000492,
+   "buffersGB": 1.3
   },
   {
    "name": "Mistral Medium 3.5",

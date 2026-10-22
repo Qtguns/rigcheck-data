@@ -754,9 +754,163 @@
    ]
   },
   {
+   "url": "/lfm-2-5-24b-a2b/",
+   "name": "LFM2.5-24B-A2B",
+   "updated": "2026-10-22",
+   "checked": "2026-10-22",
+   "subpages": [],
+   "id": "lfm-2-5-24b-a2b",
+   "role": "model",
+   "parent": null,
+   "checkers": [],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "lfm",
+   "variants": [
+    {
+     "id": "lfm-2-5-24b-a2b",
+     "label": "LFM2.5-24B-A2B",
+     "params": {
+      "total": 24.0,
+      "active": 2.45,
+      "scope": "mixture of experts, text only"
+     }
+    }
+   ],
+   "dates": {
+    "announced": "2026-10-13",
+    "weights_released": "2026-10-13",
+    "weights_eta": null,
+    "added": "2026-10-22"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
+     "read": "2026-10-22"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://ollama.com/library/lfm2.5/tags",
+     "read": "2026-10-22"
+    },
+    {
+     "runtime": "MLX",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+     "read": "2026-10-22"
+    },
+    {
+     "runtime": "LM Studio",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+     "read": "2026-10-22"
+    },
+    {
+     "runtime": "vLLM",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+     "read": "2026-10-22"
+    },
+    {
+     "runtime": "SGLang",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+     "read": "2026-10-22"
+    },
+    {
+     "runtime": "Transformers",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+     "read": "2026-10-22"
+    }
+   ],
+   "license": {
+    "name": "LFM Open License v1.0",
+    "flags": [
+     "commercial-terms"
+    ]
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Liquid AI",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "24.0B total, 2.45B active per token",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Context",
+     "value": "131,072 tokens",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Input",
+     "value": "text only",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "LFM Open License v1.0",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "KV cache",
+     "value": "20 KiB per token at f16",
+     "ev": "estimate",
+     "src": 1,
+     "label": "RigCheck calculation"
+    },
+    {
+     "key": "llama.cpp",
+     "value": "Liquid AI publishes GGUF files for llama.cpp",
+     "ev": "official",
+     "src": 2
+    },
+    {
+     "key": "Ollama",
+     "value": "Ollama has lfm2.5:24b",
+     "ev": "official",
+     "src": 4
+    }
+   ]
+  },
+  {
    "url": "/minimax-h3/",
    "name": "MiniMax H3",
-   "updated": "2026-10-19",
+   "updated": "2026-10-22",
    "checked": "2026-10-12",
    "subpages": [],
    "id": "minimax-h3",
