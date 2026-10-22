@@ -5,7 +5,7 @@
  "name": "Qwen3.8-27B",
  "page": "https://localrigcheck.com/qwen-3-8-27b/",
  "checker": "https://localrigcheck.com/qwen-3-8-27b/#checker",
- "updated": "2026-10-19",
+ "updated": "2026-10-22",
  "sourcesChecked": "2026-10-12",
  "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
  "tiers": {

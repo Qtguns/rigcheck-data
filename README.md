@@ -14,6 +14,7 @@ version in between is not kept; the live files are the reference.
 | `strata.json` | Strata engine: size options, memory needs and benchmarks, each with its source and type (measured, community report or estimate) |
 | `hardware.json` | The graphics cards and Macs the checkers offer: label, vendor, memory and, where a source is recorded, bandwidth |
 | `catalog.json` | The model catalog: model pages, variants, input and output types and which checkers answer for each |
+| `lab.json` | RigCheck Lab's own measurements, one record per run: file and checksum, host, llama.cpp build, command, speed samples, peak GPU memory, outcome and correction history |
 | `fit/<model>.json` | Each model page's "Common setups" table: the checker's quick answer on eight fixed setups, with its conditions |
 
 File sizes, published benchmarks and publishers' memory tables come from the sources named on each page. Fit answers

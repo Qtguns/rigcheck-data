@@ -1,0 +1,2480 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck Lab, https://localrigcheck.com",
+ "method": "https://localrigcheck.com/methodology/#lab",
+ "note": "One record per llama-bench process; withdrawn and corrected records stay, with their corrections. The raw output each record names in its raw field (llama-bench JSON, host offer, logs) is kept in RigCheck's own repository and is available on request.",
+ "records": [
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-gemma-4-26b-a4b-ud-iq3-xxs-32k-r1",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 11416548832,
+    "sha256": "3b7aec683e176e1d957d007e0fb590611d82aec4db358d99b7f9714b6bc7bfc2"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 1,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 1561.5,
+     "stdev_tps": 26.25,
+     "samples_tps": [
+      1565.37,
+      1533.53,
+      1585.6
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 65.33,
+     "stdev_tps": 0.14,
+     "samples_tps": [
+      65.17,
+      65.41,
+      65.43
+     ]
+    },
+    "gpu_memory_peak_mib": 12572,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:47:12Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/gemma-4-26b-a4b-32768-r1.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-gemma-4-26b-a4b-ud-iq3-xxs-32k-r2",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 11416548832,
+    "sha256": "3b7aec683e176e1d957d007e0fb590611d82aec4db358d99b7f9714b6bc7bfc2"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 2,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 1557.8,
+     "stdev_tps": 25.55,
+     "samples_tps": [
+      1565.77,
+      1529.21,
+      1578.4
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 65.33,
+     "stdev_tps": 0.16,
+     "samples_tps": [
+      65.14,
+      65.42,
+      65.42
+     ]
+    },
+    "gpu_memory_peak_mib": 12572,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:47:39Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/gemma-4-26b-a4b-32768-r2.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-gemma-4-26b-a4b-ud-iq3-xxs-32k-r3",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 11416548832,
+    "sha256": "3b7aec683e176e1d957d007e0fb590611d82aec4db358d99b7f9714b6bc7bfc2"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 3,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 1561.05,
+     "stdev_tps": 25.54,
+     "samples_tps": [
+      1557.85,
+      1537.26,
+      1588.04
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 65.23,
+     "stdev_tps": 0.13,
+     "samples_tps": [
+      65.09,
+      65.35,
+      65.25
+     ]
+    },
+    "gpu_memory_peak_mib": 12572,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:48:06Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/gemma-4-26b-a4b-32768-r3.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-gemma-4-26b-a4b-ud-iq3-xxs-4k-r1",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 11416548832,
+    "sha256": "3b7aec683e176e1d957d007e0fb590611d82aec4db358d99b7f9714b6bc7bfc2"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 1,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 2907.07,
+     "stdev_tps": 90.99,
+     "samples_tps": [
+      2945.38,
+      2803.19,
+      2972.64
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 76.51,
+     "stdev_tps": 0.24,
+     "samples_tps": [
+      76.24,
+      76.66,
+      76.63
+     ]
+    },
+    "gpu_memory_peak_mib": 11984,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:46:22Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/gemma-4-26b-a4b-4096-r1.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-gemma-4-26b-a4b-ud-iq3-xxs-4k-r2",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 11416548832,
+    "sha256": "3b7aec683e176e1d957d007e0fb590611d82aec4db358d99b7f9714b6bc7bfc2"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 2,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 2908.07,
+     "stdev_tps": 99.33,
+     "samples_tps": [
+      2937.74,
+      2797.29,
+      2989.18
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 76.48,
+     "stdev_tps": 0.24,
+     "samples_tps": [
+      76.21,
+      76.62,
+      76.61
+     ]
+    },
+    "gpu_memory_peak_mib": 11984,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:46:33Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/gemma-4-26b-a4b-4096-r2.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-gemma-4-26b-a4b-ud-iq3-xxs-4k-r3",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 11416548832,
+    "sha256": "3b7aec683e176e1d957d007e0fb590611d82aec4db358d99b7f9714b6bc7bfc2"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 3,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 2914.97,
+     "stdev_tps": 102.16,
+     "samples_tps": [
+      2950.81,
+      2799.73,
+      2994.38
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 76.51,
+     "stdev_tps": 0.25,
+     "samples_tps": [
+      76.22,
+      76.66,
+      76.66
+     ]
+    },
+    "gpu_memory_peak_mib": 11984,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:46:45Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/gemma-4-26b-a4b-4096-r3.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-qwen-3-8-27b-ud-iq3-xxs-32k-r1",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 10934860704,
+    "sha256": "c0b7c3038681ed2e3040456c1dd45f9858b6c2290bed172c70388a94874f3eee"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 1,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 578.55,
+     "stdev_tps": 5.3,
+     "samples_tps": [
+      580.48,
+      572.56,
+      582.62
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 19.77,
+     "stdev_tps": 0.02,
+     "samples_tps": [
+      19.74,
+      19.78,
+      19.78
+     ]
+    },
+    "gpu_memory_peak_mib": 12820,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:36:28Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/qwen-3-8-27b-32768-r1.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-qwen-3-8-27b-ud-iq3-xxs-32k-r2",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 10934860704,
+    "sha256": "c0b7c3038681ed2e3040456c1dd45f9858b6c2290bed172c70388a94874f3eee"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 2,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 577.75,
+     "stdev_tps": 5.01,
+     "samples_tps": [
+      579.08,
+      572.21,
+      581.96
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 19.77,
+     "stdev_tps": 0.02,
+     "samples_tps": [
+      19.74,
+      19.78,
+      19.78
+     ]
+    },
+    "gpu_memory_peak_mib": 12820,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:37:39Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/qwen-3-8-27b-32768-r2.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-qwen-3-8-27b-ud-iq3-xxs-32k-r3",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 10934860704,
+    "sha256": "c0b7c3038681ed2e3040456c1dd45f9858b6c2290bed172c70388a94874f3eee"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 3,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 577.94,
+     "stdev_tps": 5.1,
+     "samples_tps": [
+      580.63,
+      572.06,
+      581.12
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 19.77,
+     "stdev_tps": 0.02,
+     "samples_tps": [
+      19.75,
+      19.78,
+      19.78
+     ]
+    },
+    "gpu_memory_peak_mib": 12820,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:38:51Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/qwen-3-8-27b-32768-r3.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-qwen-3-8-27b-ud-iq3-xxs-4k-r1",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 10934860704,
+    "sha256": "c0b7c3038681ed2e3040456c1dd45f9858b6c2290bed172c70388a94874f3eee"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 1,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 946.12,
+     "stdev_tps": 15.23,
+     "samples_tps": [
+      953.38,
+      928.61,
+      956.36
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 22.92,
+     "stdev_tps": 0.03,
+     "samples_tps": [
+      22.88,
+      22.94,
+      22.94
+     ]
+    },
+    "gpu_memory_peak_mib": 11000,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:34:22Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/qwen-3-8-27b-4096-r1.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-qwen-3-8-27b-ud-iq3-xxs-4k-r2",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 10934860704,
+    "sha256": "c0b7c3038681ed2e3040456c1dd45f9858b6c2290bed172c70388a94874f3eee"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 2,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 945.21,
+     "stdev_tps": 15.3,
+     "samples_tps": [
+      952.22,
+      927.66,
+      955.74
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 22.92,
+     "stdev_tps": 0.03,
+     "samples_tps": [
+      22.88,
+      22.94,
+      22.94
+     ]
+    },
+    "gpu_memory_peak_mib": 11000,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:34:49Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/qwen-3-8-27b-4096-r2.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t131403z-16gb-m39330-qwen-3-8-27b-ud-iq3-xxs-4k-r3",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-IQ3_XXS.gguf",
+    "quant": "UD-IQ3_XXS",
+    "bytes": 10934860704,
+    "sha256": "c0b7c3038681ed2e3040456c1dd45f9858b6c2290bed172c70388a94874f3eee"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 39330,
+    "host_id": 98690,
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_memory_mib": 16380,
+    "gpu_count": 1,
+    "driver": "580.173.02",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 165.0,
+    "power_limit_note": null,
+    "pcie": {
+     "gen_max": 3,
+     "width_max": 8,
+     "listed_bandwidth_gbps": 6.0
+    },
+    "cpu": "Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz",
+    "cpu_cores_allocated": 6.0,
+    "ram_gib_allocated": 31.2,
+    "host_cpu_threads": 6,
+    "host_ram_gib": 31.2,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-IQ3_XXS.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 6,
+    "repetitions": 3,
+    "run": 3,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 945.26,
+     "stdev_tps": 14.72,
+     "samples_tps": [
+      950.74,
+      928.59,
+      956.46
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 22.92,
+     "stdev_tps": 0.03,
+     "samples_tps": [
+      22.88,
+      22.94,
+      22.94
+     ]
+    },
+    "gpu_memory_peak_mib": 11000,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 10,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:35:16Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T131403Z-16gb-m39330/qwen-3-8-27b-4096-r3.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-gemma-4-26b-a4b-ud-q4-k-xl-32k-r1",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17010980576,
+    "sha256": "ef728c8e0c337fd1067b947af006e38a9ef2419e56feced4fd29b4bf0636e30c"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 1,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 6232.58,
+     "stdev_tps": 457.54,
+     "samples_tps": [
+      6304.33,
+      5743.4,
+      6650
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 146.31,
+     "stdev_tps": 0.95,
+     "samples_tps": [
+      145.22,
+      146.89,
+      146.83
+     ]
+    },
+    "gpu_memory_peak_mib": 18197,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:05:40Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/gemma-4-26b-a4b-32768-r1.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-gemma-4-26b-a4b-ud-q4-k-xl-32k-r2",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17010980576,
+    "sha256": "ef728c8e0c337fd1067b947af006e38a9ef2419e56feced4fd29b4bf0636e30c"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 2,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 6231.08,
+     "stdev_tps": 570.42,
+     "samples_tps": [
+      6218.6,
+      5666.99,
+      6807.64
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 142.61,
+     "stdev_tps": 3.05,
+     "samples_tps": [
+      142.17,
+      139.81,
+      145.86
+     ]
+    },
+    "gpu_memory_peak_mib": 18197,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:05:57Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/gemma-4-26b-a4b-32768-r2.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-gemma-4-26b-a4b-ud-q4-k-xl-32k-r3",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17010980576,
+    "sha256": "ef728c8e0c337fd1067b947af006e38a9ef2419e56feced4fd29b4bf0636e30c"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 3,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 6232.57,
+     "stdev_tps": 518.03,
+     "samples_tps": [
+      6341.13,
+      5668.86,
+      6687.72
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 146.01,
+     "stdev_tps": 0.92,
+     "samples_tps": [
+      144.96,
+      146.67,
+      146.39
+     ]
+    },
+    "gpu_memory_peak_mib": 18197,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:06:13Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/gemma-4-26b-a4b-32768-r3.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-gemma-4-26b-a4b-ud-q4-k-xl-4k-r1",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17010980576,
+    "sha256": "ef728c8e0c337fd1067b947af006e38a9ef2419e56feced4fd29b4bf0636e30c"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 1,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 8909.66,
+     "stdev_tps": 1001.33,
+     "samples_tps": [
+      9085.13,
+      7832.2,
+      9811.66
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 163.25,
+     "stdev_tps": 1.14,
+     "samples_tps": [
+      161.99,
+      164.21,
+      163.57
+     ]
+    },
+    "gpu_memory_peak_mib": 17597,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:05:01Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/gemma-4-26b-a4b-4096-r1.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-gemma-4-26b-a4b-ud-q4-k-xl-4k-r2",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17010980576,
+    "sha256": "ef728c8e0c337fd1067b947af006e38a9ef2419e56feced4fd29b4bf0636e30c"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 2,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 8849.82,
+     "stdev_tps": 994.3,
+     "samples_tps": [
+      9053.64,
+      7769.4,
+      9726.42
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 163.03,
+     "stdev_tps": 1.23,
+     "samples_tps": [
+      161.61,
+      163.73,
+      163.74
+     ]
+    },
+    "gpu_memory_peak_mib": 17609,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:05:12Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/gemma-4-26b-a4b-4096-r2.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-gemma-4-26b-a4b-ud-q4-k-xl-4k-r3",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "gemma-4-26b-a4b",
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17010980576,
+    "sha256": "ef728c8e0c337fd1067b947af006e38a9ef2419e56feced4fd29b4bf0636e30c"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 3,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 8922.31,
+     "stdev_tps": 1038.66,
+     "samples_tps": [
+      9153.61,
+      7787.49,
+      9825.82
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 163.35,
+     "stdev_tps": 1.1,
+     "samples_tps": [
+      162.08,
+      164.13,
+      163.83
+     ]
+    },
+    "gpu_memory_peak_mib": 17597,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:05:24Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/gemma-4-26b-a4b-4096-r3.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/gemma-4/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-qwen-3-8-27b-ud-q4-k-xl-32k-r1",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17559178144,
+    "sha256": "3f227079003add2511437e5b1e94812e363385225bf6a9b47b0054a72bc8b01e"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 1,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 2418.66,
+     "stdev_tps": 152.4,
+     "samples_tps": [
+      2483.64,
+      2244.54,
+      2527.79
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 43.57,
+     "stdev_tps": 0.15,
+     "samples_tps": [
+      43.4,
+      43.65,
+      43.66
+     ]
+    },
+    "gpu_memory_peak_mib": 18951,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:00:46Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/qwen-3-8-27b-32768-r1.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-qwen-3-8-27b-ud-q4-k-xl-32k-r2",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17559178144,
+    "sha256": "3f227079003add2511437e5b1e94812e363385225bf6a9b47b0054a72bc8b01e"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 2,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 2424.46,
+     "stdev_tps": 134.14,
+     "samples_tps": [
+      2463.36,
+      2275.17,
+      2534.85
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 43.58,
+     "stdev_tps": 0.1,
+     "samples_tps": [
+      43.47,
+      43.66,
+      43.62
+     ]
+    },
+    "gpu_memory_peak_mib": 18951,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:01:19Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/qwen-3-8-27b-32768-r2.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-qwen-3-8-27b-ud-q4-k-xl-32k-r3",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17559178144,
+    "sha256": "3f227079003add2511437e5b1e94812e363385225bf6a9b47b0054a72bc8b01e"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 32256 -r 3 -o json",
+    "context_target": 32768,
+    "context_note": "Prompt processing: 512 tokens timed after 32256 untimed tokens (context 32768 requested). Generation: 128 tokens timed after the same 32256 untimed tokens (context 32384 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 3,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 32256,
+     "context_requested": 32768,
+     "mean_tps": 2408.87,
+     "stdev_tps": 152.17,
+     "samples_tps": [
+      2471.88,
+      2235.31,
+      2519.42
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 32256,
+     "context_requested": 32384,
+     "mean_tps": 43.59,
+     "stdev_tps": 0.14,
+     "samples_tps": [
+      43.43,
+      43.67,
+      43.68
+     ]
+    },
+    "gpu_memory_peak_mib": 18951,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:01:51Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/qwen-3-8-27b-32768-r3.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-qwen-3-8-27b-ud-q4-k-xl-4k-r1",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17559178144,
+    "sha256": "3f227079003add2511437e5b1e94812e363385225bf6a9b47b0054a72bc8b01e"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 1,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 3143.81,
+     "stdev_tps": 239.97,
+     "samples_tps": [
+      3234.43,
+      2871.72,
+      3325.27
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 47.9,
+     "stdev_tps": 0.17,
+     "samples_tps": [
+      47.7,
+      48.0,
+      48.0
+     ]
+    },
+    "gpu_memory_peak_mib": 17131,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:59:39Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/qwen-3-8-27b-4096-r1.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-qwen-3-8-27b-ud-q4-k-xl-4k-r2",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17559178144,
+    "sha256": "3f227079003add2511437e5b1e94812e363385225bf6a9b47b0054a72bc8b01e"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 2,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 3159.33,
+     "stdev_tps": 225.72,
+     "samples_tps": [
+      3260.65,
+      2900.71,
+      3316.63
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 47.85,
+     "stdev_tps": 0.16,
+     "samples_tps": [
+      47.67,
+      47.96,
+      47.92
+     ]
+    },
+    "gpu_memory_peak_mib": 17131,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T13:59:56Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/qwen-3-8-27b-4096-r2.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  },
+  {
+   "schema": 1,
+   "id": "lab-2026-10-21t135058z-4090-m47598-qwen-3-8-27b-ud-q4-k-xl-4k-r3",
+   "status": "current",
+   "label": "RigCheck measurement",
+   "identity": {
+    "model": "qwen-3-8-27b",
+    "repo": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+    "file": "Qwen3.8-27B-UD-Q4_K_XL.gguf",
+    "quant": "UD-Q4_K_XL",
+    "bytes": 17559178144,
+    "sha256": "3f227079003add2511437e5b1e94812e363385225bf6a9b47b0054a72bc8b01e"
+   },
+   "environment": {
+    "provider": "Vast.ai",
+    "machine_id": 47598,
+    "host_id": 55116,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_count": 1,
+    "driver": "580.142",
+    "cuda_driver_api": "13.0",
+    "power_limit_w": 400.0,
+    "power_limit_note": "host power limit 400 W; the card ships at 450 W",
+    "pcie": {
+     "gen_max": 4,
+     "width_max": 16,
+     "listed_bandwidth_gbps": 18.6
+    },
+    "cpu": "AMD EPYC 7402 24-Core Processor",
+    "cpu_cores_allocated": 12.0,
+    "ram_gib_allocated": 62.9,
+    "host_cpu_threads": 48,
+    "host_ram_gib": 251.5,
+    "runtime": "llama.cpp",
+    "build": 11783,
+    "commit": "339f3242c",
+    "backend": "CUDA",
+    "image": "ghcr.io/ggml-org/llama.cpp:full-cuda-b11783"
+   },
+   "workload": {
+    "tool": "llama-bench",
+    "command": "llama-bench -m Qwen3.8-27B-UD-Q4_K_XL.gguf -ngl 99 -fa 1 -ctk f16 -ctv f16 -p 512 -n 128 -d 3584 -r 3 -o json",
+    "context_target": 4096,
+    "context_note": "Prompt processing: 512 tokens timed after 3584 untimed tokens (context 4096 requested). Generation: 128 tokens timed after the same 3584 untimed tokens (context 3712 requested). The size llama.cpp actually allocated (it may round up) was not recorded.",
+    "gpu_layers": "all (-ngl 99)",
+    "flash_attention": true,
+    "kv_cache": "f16",
+    "batch": 2048,
+    "ubatch": 512,
+    "cpu_threads": 24,
+    "repetitions": 3,
+    "run": 3,
+    "runs_in_cell": 3
+   },
+   "result": {
+    "capacity": "fits",
+    "supported": true,
+    "loaded": true,
+    "ran": true,
+    "outcome": "ran",
+    "prompt_processing": {
+     "timed_tokens": 512,
+     "start_depth": 3584,
+     "context_requested": 4096,
+     "mean_tps": 3152.13,
+     "stdev_tps": 236.62,
+     "samples_tps": [
+      3208.2,
+      2892.5,
+      3355.68
+     ]
+    },
+    "generation": {
+     "timed_tokens": 128,
+     "start_depth": 3584,
+     "context_requested": 3712,
+     "mean_tps": 47.87,
+     "stdev_tps": 0.11,
+     "samples_tps": [
+      47.74,
+      47.92,
+      47.94
+     ]
+    },
+    "gpu_memory_peak_mib": 17131,
+    "gpu_memory_idle_mib": null,
+    "gpu_memory_first_sample_mib": 0,
+    "gpu_memory_note": "whole GPU memory.used, about every 200 ms; no idle value before loading was taken (first_sample is the first reading while llama-bench started)",
+    "error": null
+   },
+   "measured": "2026-10-21T14:00:14Z",
+   "published": "2026-10-22",
+   "valid_until_note": "Valid for this llama.cpp build and file revision; a new build or file can change speed.",
+   "rights": {
+    "license": "CC BY 4.0",
+    "attribution": "RigCheck Lab, https://localrigcheck.com"
+   },
+   "raw": "data/lab/raw/2026-10-21T135058Z-4090-m47598/qwen-3-8-27b-4096-r3.json",
+   "corrections": [],
+   "page": "https://localrigcheck.com/qwen-3-8-27b/"
+  }
+ ]
+}

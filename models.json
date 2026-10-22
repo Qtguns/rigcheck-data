@@ -564,7 +564,7 @@
   {
    "name": "Qwen3.8-27B",
    "page": "https://localrigcheck.com/qwen-3-8-27b/",
-   "updated": "2026-10-19",
+   "updated": "2026-10-22",
    "sourcesChecked": "2026-10-12",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "layers": 64,
@@ -702,7 +702,7 @@
   {
    "name": "Gemma 4 31B",
    "page": "https://localrigcheck.com/gemma-4/",
-   "updated": "2026-10-19",
+   "updated": "2026-10-22",
    "sourcesChecked": "2026-10-12",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "layers": 60,
@@ -809,7 +809,7 @@
   {
    "name": "Gemma 4 26B-A4B",
    "page": "https://localrigcheck.com/gemma-4/",
-   "updated": "2026-10-19",
+   "updated": "2026-10-22",
    "sourcesChecked": "2026-10-12",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "layers": 30,
@@ -916,7 +916,7 @@
   {
    "name": "Gemma 4 12B",
    "page": "https://localrigcheck.com/gemma-4/",
-   "updated": "2026-10-19",
+   "updated": "2026-10-22",
    "sourcesChecked": "2026-10-12",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "layers": 48,
@@ -1023,7 +1023,7 @@
   {
    "name": "Gemma 4 E4B",
    "page": "https://localrigcheck.com/gemma-4/",
-   "updated": "2026-10-19",
+   "updated": "2026-10-22",
    "sourcesChecked": "2026-10-12",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "layers": 42,
@@ -1130,7 +1130,7 @@
   {
    "name": "Gemma 4 E2B",
    "page": "https://localrigcheck.com/gemma-4/",
-   "updated": "2026-10-19",
+   "updated": "2026-10-22",
    "sourcesChecked": "2026-10-12",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "layers": 35,
