@@ -3,7 +3,7 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
- "generated": "2026-10-22",
+ "generated": "2026-10-25",
  "models": [
   {
    "name": "Qwen-Image-2.1 / Turbo",
@@ -84,7 +84,7 @@
   {
    "name": "MiniMax H3",
    "page": "https://localrigcheck.com/minimax-h3/",
-   "updated": "2026-10-22",
+   "updated": "2026-10-25",
    "sourcesChecked": "2026-10-12",
    "kind": "video-audio",
    "originalTaskComponentBytes": {
@@ -392,7 +392,7 @@
   {
    "name": "Nemotron 3.5 (Bolt 74B-A9B, Super VL 120B-A12B)",
    "page": "https://localrigcheck.com/nemotron-3-5/",
-   "updated": "2026-10-20",
+   "updated": "2026-10-24",
    "sourcesChecked": "2026-10-17",
    "kind": "moe-vision-text",
    "superVlUnslothBudgetsGB": [
@@ -537,7 +537,7 @@
   {
    "name": "DeepSeek V4.1 Flash",
    "page": "https://localrigcheck.com/deepseek-v4-1-flash/",
-   "updated": "2026-10-21",
+   "updated": "2026-10-24",
    "sourcesChecked": "2026-10-20",
    "kind": "moe-text",
    "dwarfStarFiles": {
@@ -1359,6 +1359,77 @@
     }
    ],
    "convStateGB": 0.000492,
+   "buffersGB": 1.3
+  },
+  {
+   "name": "Recursive Flint",
+   "page": "https://localrigcheck.com/recursive-flint/",
+   "updated": "2026-10-23",
+   "sourcesChecked": "2026-10-23",
+   "runtime": "llama.cpp (Recursive and LM Studio GGUF)",
+   "layers": 49,
+   "maxContext": 262144,
+   "mmprojGB": 0,
+   "kvGBAt32K_f16": 1.031,
+   "hostBuffersGB": 0.5,
+   "commandPlacement": "Explicit whole-layer split; automatic fit disabled",
+   "files": [
+    {
+     "key": "q8_0",
+     "label": "Q8_0",
+     "gb": 42.4,
+     "repo": "lmstudio-community/flint-GGUF",
+     "inputEmbeddingGB": 0.326713344,
+     "outputWeightsGB": 0.326713344,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "q6_k",
+     "label": "Q6_K",
+     "gb": 32.7,
+     "repo": "lmstudio-community/flint-GGUF",
+     "inputEmbeddingGB": 0.25224192,
+     "outputWeightsGB": 0.25224192,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "q4_1",
+     "label": "Q4_1 (official INT4)",
+     "gb": 26,
+     "repo": "RecursiveSI/flint-int4-gguf",
+     "inputEmbeddingGB": 1.229979648,
+     "outputWeightsGB": 0.19218432,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "q4_k_m",
+     "label": "Q4_K_M",
+     "gb": 24.2,
+     "repo": "lmstudio-community/flint-GGUF",
+     "inputEmbeddingGB": 0.172965888,
+     "outputWeightsGB": 0.25224192,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "nvfp4",
+     "label": "NVFP4 (official)",
+     "gb": 22.9,
+     "repo": "RecursiveSI/flint-nvfp4-gguf",
+     "inputEmbeddingGB": 0.614989824,
+     "outputWeightsGB": 0.17296592,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    }
+   ],
    "buffersGB": 1.3
   },
   {

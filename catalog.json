@@ -5,7 +5,7 @@
   {
    "url": "/deepseek-v4-1-flash/",
    "name": "DeepSeek V4.1 Flash",
-   "updated": "2026-10-21",
+   "updated": "2026-10-24",
    "checked": "2026-10-20",
    "subpages": [],
    "id": "deepseek-v4-1-flash",
@@ -58,9 +58,9 @@
      "variants": "all",
      "where": "local",
      "status": "community",
-     "requires": "its own Q2 GGUF (365.7 GB) on a fast SSD; SSD streaming on one 128 GB Mac or DGX Spark, documented for the September file (its 1017 file is not yet in its guides); its Q4 is September only",
+     "requires": "its own Q2 GGUF (365.7 GB) on a fast SSD; SSD streaming on one 128 GB Mac or DGX Spark, documented with its 1017 file (its September Q2 file is still downloadable); its Q4 is September only",
      "evidence": "https://github.com/antirez/ds4/blob/main/docs/MODELS.md",
-     "read": "2026-10-20"
+     "read": "2026-10-24"
     },
     {
      "runtime": "llama.cpp",
@@ -147,10 +147,10 @@
     },
     {
      "key": "DwarfStar",
-     "value": "streams its 365.7 GB Q2 file of the September weights from SSD on one 128 GB Mac or DGX Spark",
+     "value": "streams its 365.7 GB Q2 file of the 1017 weights from SSD on one 128 GB Mac or DGX Spark",
      "ev": "community",
      "src": 4,
-     "variant": "DeepSeek V4.1 Flash September release"
+     "variant": "DeepSeek V4.1 Flash 1017 update"
     },
     {
      "key": "Ollama",
@@ -910,7 +910,7 @@
   {
    "url": "/minimax-h3/",
    "name": "MiniMax H3",
-   "updated": "2026-10-22",
+   "updated": "2026-10-25",
    "checked": "2026-10-12",
    "subpages": [],
    "id": "minimax-h3",
@@ -1299,7 +1299,7 @@
   {
    "url": "/nemotron-3-5/",
    "name": "Nemotron 3.5",
-   "updated": "2026-10-20",
+   "updated": "2026-10-24",
    "checked": "2026-10-17",
    "subpages": [],
    "id": "nemotron-3-5",
@@ -1388,9 +1388,9 @@
      ],
      "where": "local",
      "status": "official",
-     "requires": "NVFP4 weights on one DGX Spark, one H200, two H100s or one GB200",
+     "requires": "NVFP4 weights on one DGX Spark, one RTX PRO 6000, one H200, two H100s or one GB200",
      "evidence": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
-     "read": "2026-10-17"
+     "read": "2026-10-24"
     },
     {
      "runtime": "Ollama",
@@ -1893,6 +1893,144 @@
      "value": "Base GGUF has a stable-diffusion.cpp route",
      "ev": "community",
      "src": 3
+    }
+   ]
+  },
+  {
+   "url": "/recursive-flint/",
+   "name": "Recursive Flint",
+   "updated": "2026-10-23",
+   "checked": "2026-10-23",
+   "subpages": [],
+   "id": "recursive-flint",
+   "role": "model",
+   "parent": null,
+   "checkers": [],
+   "modality": {
+    "primary": "text",
+    "inputs": [
+     "text"
+    ],
+    "outputs": [
+     "text"
+    ]
+   },
+   "family": "flint",
+   "variants": [
+    {
+     "id": "recursive-flint",
+     "label": "Recursive Flint",
+     "params": {
+      "total": 39.8,
+      "active": 2.5,
+      "scope": "mixture of experts, text only"
+     }
+    }
+   ],
+   "dates": {
+    "announced": "2026-10-21",
+    "weights_released": "2026-10-21",
+    "weights_eta": null,
+    "added": "2026-10-23"
+   },
+   "weights": "released",
+   "routes": [
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://huggingface.co/RecursiveSI/flint-int4-gguf",
+     "read": "2026-10-23"
+    },
+    {
+     "runtime": "Ollama",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "evidence": "https://ollama.com/library/flint/tags",
+     "read": "2026-10-23"
+    },
+    {
+     "runtime": "rec",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "Apple M4 Pro, M5 Pro or M5 Max with 48 GB",
+     "evidence": "https://github.com/recursive-oss/rec",
+     "read": "2026-10-23"
+    },
+    {
+     "runtime": "LM Studio",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "evidence": "https://huggingface.co/lmstudio-community/flint-GGUF",
+     "read": "2026-10-23"
+    },
+    {
+     "runtime": "SGLang",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "one B300 or H200 data-center GPU",
+     "evidence": "https://huggingface.co/RecursiveSI/flint",
+     "read": "2026-10-23"
+    }
+   ],
+   "license": {
+    "name": "Apache 2.0",
+    "flags": []
+   },
+   "sheet": [
+    {
+     "key": "Developer",
+     "value": "Recursive",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Params",
+     "value": "39.8B total, about 2.5B active per token",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Context",
+     "value": "262,144 tokens",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Input",
+     "value": "text only",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "License",
+     "value": "Apache 2.0",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "KV cache",
+     "value": "28 KiB per token at f16",
+     "ev": "estimate",
+     "src": 1,
+     "label": "RigCheck calculation"
+    },
+    {
+     "key": "llama.cpp",
+     "value": "Recursive publishes GGUF files for llama.cpp",
+     "ev": "official",
+     "src": 2
+    },
+    {
+     "key": "Ollama",
+     "value": "Ollama has flint",
+     "ev": "official",
+     "src": 5
     }
    ]
   },
