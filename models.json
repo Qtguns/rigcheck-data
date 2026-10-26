@@ -3,7 +3,7 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
- "generated": "2026-10-25",
+ "generated": "2026-10-26",
  "models": [
   {
    "name": "Qwen-Image-2.1 / Turbo",
@@ -537,7 +537,7 @@
   {
    "name": "DeepSeek V4.1 Flash",
    "page": "https://localrigcheck.com/deepseek-v4-1-flash/",
-   "updated": "2026-10-24",
+   "updated": "2026-10-26",
    "sourcesChecked": "2026-10-20",
    "kind": "moe-text",
    "dwarfStarFiles": {
@@ -559,7 +559,7 @@
      "bytes": 518596067328
     }
    },
-   "note": "Route matches only: DwarfStar's documented setups for its GGUF of the September DeepSeek-V4.1-Flash weights (one 128 GB Mac or DGX Spark with SSD streaming, two of them with tensor parallelism, 256 GB and 512 GB Macs resident). For the 1017 weights the page lists experimental and community routes instead (DwarfStar's 1017 Q2 file, not yet in its guides; Unsloth's 1017 GGUF on an unmerged llama.cpp branch; oMLX builds); no fit is computed from file sizes."
+   "note": "Route matches only: DwarfStar's documented setups for its Q2 GGUF of either checkpoint (one 128 GB Mac or DGX Spark with SSD streaming, two of them with tensor parallelism, 256 GB and 512 GB Macs resident) and its September Q4 on a 512 GB Mac; for the 1017 weights also Strata's route (ISTA-DASLab's 1.75 to 2.25 bpw sets on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700, at least 46 GB of RAM, NVMe SSD) and Unsloth's experimental 1017 GGUF on an unmerged llama.cpp branch; no fit is computed from file sizes."
   },
   {
    "name": "Qwen3.8-27B",

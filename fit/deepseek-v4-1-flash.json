@@ -5,7 +5,7 @@
  "name": "DeepSeek V4.1 Flash",
  "page": "https://localrigcheck.com/deepseek-v4-1-flash/",
  "checker": "https://localrigcheck.com/deepseek-v4-1-flash/#checker",
- "updated": "2026-10-24",
+ "updated": "2026-10-26",
  "sourcesChecked": "2026-10-20",
  "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
  "tiers": {
@@ -18,7 +18,7 @@
  "checkers": [
   "deepseek"
  ],
- "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp",
+ "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp",
  "answerKinds": [
   "published route match"
  ],
@@ -39,7 +39,7 @@
    "memGB": 12,
    "ramGB": 32,
    "unified": false,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
   },
   {
    "id": "rtx4060ti16",
@@ -47,7 +47,7 @@
    "memGB": 16,
    "ramGB": 32,
    "unified": false,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
   },
   {
    "id": "rtx3090",
@@ -55,7 +55,7 @@
    "memGB": 24,
    "ramGB": 64,
    "unified": false,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
   },
   {
    "id": "rtx5090",
@@ -63,7 +63,7 @@
    "memGB": 32,
    "ramGB": 64,
    "unified": false,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
   },
   {
    "id": "mac64",
@@ -71,7 +71,7 @@
    "memGB": 64,
    "ramGB": null,
    "unified": true,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
   },
   {
    "id": "m5max128",
@@ -79,7 +79,7 @@
    "memGB": 128,
    "ramGB": null,
    "unified": true,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
   },
   {
    "id": "mac256",
@@ -87,7 +87,7 @@
    "memGB": 256,
    "ramGB": null,
    "unified": true,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
   },
   {
    "id": "mac512",
@@ -95,7 +95,7 @@
    "memGB": 512,
    "ramGB": null,
    "unified": true,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented for the September weights, experimental for 1017), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
   }
  ],
  "answers": [
@@ -107,7 +107,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "conditions": "No published route for this hardware (September weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card with these weights (Strata's route is for 1017 only). RigCheck computes no fit from file sizes here, so this is not a \"does not fit\" answer, only no sourced route.",
    "macLimit": false
   },
   {
@@ -118,7 +118,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "conditions": "Below Strata's 46 GB RAM minimum (1017 weights). Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context, text only, one request at a time. Windows on RTX 30 is built but was not run. With 16 GiB of graphics memory or less it defaults to Faster (5 of 6 experts per token); --full-quality uses all 6. This checker does not ask for system RAM.",
    "macLimit": false
   },
   {
@@ -129,7 +129,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "conditions": "No published route for this hardware (September weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card with these weights (Strata's route is for 1017 only). RigCheck computes no fit from file sizes here, so this is not a \"does not fit\" answer, only no sourced route.",
    "macLimit": false
   },
   {
@@ -140,7 +140,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "No published DeepSeek V4.1 Flash route checked here for this device.",
+   "conditions": "Below Strata's 46 GB RAM minimum (1017 weights). Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context, text only, one request at a time. With 16 GiB of graphics memory or less it defaults to Faster (5 of 6 experts per token); --full-quality uses all 6. This checker does not ask for system RAM.",
    "macLimit": false
   },
   {
@@ -151,18 +151,18 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "No published route for this hardware (September weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card (the unmerged llama.cpp pull request #28696 reports a run only on a DGX Spark). RigCheck does not turn file sizes into a fit for this model, so this is not a \"does not fit\" answer, only the absence of a sourced route.",
+   "conditions": "No published route for this hardware (September weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card with these weights (Strata's route is for 1017 only). RigCheck computes no fit from file sizes here, so this is not a \"does not fit\" answer, only no sourced route.",
    "macLimit": false
   },
   {
    "setup": "rtx3090",
    "size": "deepseek-v4-1-flash-1017",
-   "tier": "na",
+   "tier": "caveats",
    "answerKind": "published route match",
-   "answer": "unknown",
+   "answer": "Matches Strata: its 1.75–2.25 bpw sets with 46 GB of RAM or more (1017 weights)",
    "pick": null,
    "where": null,
-   "conditions": "No published route for this hardware (1017 weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card (the unmerged llama.cpp pull request #28696 reports a run only on a DGX Spark). Experimental for 1017: Unsloth estimates 128–145 GB of RAM plus VRAM combined for its 1-bit builds (from 233.0 GB, Engram table on SSD) in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop, but names no setup for this card, and this checker does not ask for system RAM. RigCheck does not turn file sizes into a fit for this model, so this is not a \"does not fit\" answer, only the absence of a sourced route.",
+   "conditions": "Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context, text only, one request at a time. Windows on RTX 30 is built but was not run. This checker does not ask for system RAM.",
    "macLimit": false
   },
   {
@@ -173,18 +173,18 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "No published route for this hardware (September weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card (the unmerged llama.cpp pull request #28696 reports a run only on a DGX Spark). RigCheck does not turn file sizes into a fit for this model, so this is not a \"does not fit\" answer, only the absence of a sourced route.",
+   "conditions": "No published route for this hardware (September weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card with these weights (Strata's route is for 1017 only). RigCheck computes no fit from file sizes here, so this is not a \"does not fit\" answer, only no sourced route.",
    "macLimit": false
   },
   {
    "setup": "rtx5090",
    "size": "deepseek-v4-1-flash-1017",
-   "tier": "na",
+   "tier": "caveats",
    "answerKind": "published route match",
-   "answer": "unknown",
+   "answer": "Matches Strata: its 1.75–2.25 bpw sets with 46 GB of RAM or more (1017 weights)",
    "pick": null,
    "where": null,
-   "conditions": "No published route for this hardware (1017 weights). DwarfStar names CUDA support for V4.1 only on the DGX Spark, and no source publishes a setup for this card (the unmerged llama.cpp pull request #28696 reports a run only on a DGX Spark). Experimental for 1017: Unsloth estimates 128–145 GB of RAM plus VRAM combined for its 1-bit builds (from 233.0 GB, Engram table on SSD) in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop, but names no setup for this card, and this checker does not ask for system RAM. RigCheck does not turn file sizes into a fit for this model, so this is not a \"does not fit\" answer, only the absence of a sourced route.",
+   "conditions": "Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context, text only, one request at a time. This checker does not ask for system RAM.",
    "macLimit": false
   },
   {
@@ -217,7 +217,7 @@
    "answer": "Matches DwarfStar's 128 GB route: Q2 with SSD streaming (September weights)",
    "pick": null,
    "where": null,
-   "conditions": "DwarfStar runs its Q2 file (365.7 GB) on one 128 GB Mac by streaming routed experts from SSD (--ssd-streaming), with the expert cache sized automatically. DwarfStar publishes no V4.1 speed for a 128 GB Mac (its one Mac figure is Q4 resident on a 512 GB M3 Ultra). Two 128 GB machines can instead hold it resident with tensor parallelism (set machines to two). DwarfStar's V4.1 guide now documents its Q2 setups with the 1017 file; this September Q2 file is still in its repository, and its published V4.1 speeds were measured with it. Image input works on Metal with its separate 0.97 GB vision encoder. DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file).",
+   "conditions": "DwarfStar runs its Q2 file (365.7 GB) on one 128 GB Mac by streaming routed experts from SSD (--ssd-streaming), with the expert cache sized automatically. DwarfStar publishes no V4.1 speed for a 128 GB Mac (its one Mac figure is Q4 resident on a 512 GB M3 Ultra). Two 128 GB machines can instead hold it resident with tensor parallelism (set machines to two). DwarfStar's guide now documents its Q2 setups with the 1017 file; this September file is still in its repository, and its V4.1 speeds were measured with it. Image input works on Metal with its separate 0.97 GB vision encoder. DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file).",
    "macLimit": false
   },
   {
@@ -228,7 +228,7 @@
    "answer": "Matches DwarfStar's 128 GB route: Q2 with SSD streaming (1017 weights)",
    "pick": null,
    "where": null,
-   "conditions": "DwarfStar runs its Q2 file (365.7 GB) on one 128 GB Mac by streaming routed experts from SSD (--ssd-streaming), with the expert cache sized automatically. Two 128 GB machines can instead hold it resident with tensor parallelism (set machines to two). DwarfStar's V4.1 guide documents these setups with its 1017 Q2 file, DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (read October 24, 2026); every V4.1 speed it publishes was measured with its September file, before the 1017 file existed, so none is given here. Image input works on Metal with its separate 0.97 GB vision encoder (DwarfStar's guide pairs it with the 1017 file). DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file). Experimental alternative for 1017: Unsloth says its UD-IQ1_S GGUF (233.0 GB; its 110.6 GB Engram table stays on SSD via mmap) works on 128 GB RAM setups such as a MacBook, DGX Spark or RTX Spark, and estimates 128–145 GB of RAM plus VRAM for its 1-bit builds, the top of a 128 GB machine (runtime and context can need more); it runs only in Unsloth's unmerged llama.cpp pull request #30817 branch or Unsloth Desktop, with no published speed.",
+   "conditions": "DwarfStar runs its Q2 file (365.7 GB) on one 128 GB Mac by streaming routed experts from SSD (--ssd-streaming), with the expert cache sized automatically. Two 128 GB machines can instead hold it resident with tensor parallelism (set machines to two). DwarfStar's V4.1 guide documents these setups with its 1017 Q2 file, DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (read October 24, 2026); its V4.1 speeds were all measured with its September file, before the 1017 file existed, so none is given here. Image input works on Metal with its separate 0.97 GB vision encoder (DwarfStar's guide pairs it with the 1017 file). DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file). Experimental alternative for 1017: Unsloth says its UD-IQ1_S GGUF (233.0 GB, its 110.6 GB Engram table on SSD via mmap) works on 128 GB RAM setups such as a MacBook, DGX Spark or RTX Spark; its 128–145 GB RAM plus VRAM estimate for 1-bit is the top of a 128 GB machine (runtime and context can need more). It runs in Unsloth's unmerged llama.cpp pull request #30817 branch or Unsloth Desktop, no published speed.",
    "macLimit": false
   },
   {
@@ -239,7 +239,7 @@
    "answer": "Matches DwarfStar: Q2 main weights fully resident on a 256 GB Mac (September weights)",
    "pick": null,
    "where": null,
-   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (152 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra). DwarfStar's V4.1 guide now documents its Q2 setups with the 1017 file; this September Q2 file is still in its repository, and its published V4.1 speeds were measured with it. Image input works on Metal with its separate 0.97 GB vision encoder. DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file).",
+   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (152 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra). DwarfStar's guide now documents its Q2 setups with the 1017 file; this September file is still in its repository, and its V4.1 speeds were measured with it. Image input works on Metal with its separate 0.97 GB vision encoder. DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file).",
    "macLimit": false
   },
   {
@@ -250,7 +250,7 @@
    "answer": "Matches DwarfStar: Q2 main weights fully resident on a 256 GB Mac (1017 weights)",
    "pick": null,
    "where": null,
-   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (152 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB and is September only; its 1017 MXFP4 build (467 GiB on disk, 278 GiB of main weights) has a download target but no named hardware. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra, September weights). Experimental for 1017: Unsloth says its 3-bit UD-IQ3_XXS (394.7 GB) works on 256 GB RAM setups such as a Mac Studio, the bottom of its 256–290 GB estimate for 3-bit, in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop. DwarfStar's V4.1 guide documents these setups with its 1017 Q2 file, DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (read October 24, 2026); every V4.1 speed it publishes was measured with its September file, before the 1017 file existed, so none is given here. Image input works on Metal with its separate 0.97 GB vision encoder (DwarfStar's guide pairs it with the 1017 file). DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file).",
+   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (152 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB and is September only; its 1017 MXFP4 build (467 GiB on disk, 278 GiB of main weights) has a download target but no named hardware. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra, September weights). Experimental for 1017: Unsloth says its 3-bit UD-IQ3_XXS (394.7 GB) works on 256 GB RAM setups such as a Mac Studio, the bottom of its 256–290 GB estimate for 3-bit, in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop. DwarfStar's V4.1 guide documents these setups with its 1017 Q2 file, DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (read October 24, 2026); its V4.1 speeds were all measured with its September file, before the 1017 file existed, so none is given here. Image input works on Metal with its separate 0.97 GB vision encoder (DwarfStar's guide pairs it with the 1017 file). DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file).",
    "macLimit": false
   },
   {
@@ -272,7 +272,7 @@
    "answer": "Matches DwarfStar: Q2 main weights fully resident on a 512 GB Mac (1017 weights)",
    "pick": null,
    "where": null,
-   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (152 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB and is September only; its 1017 MXFP4 build (467 GiB on disk, 278 GiB of main weights) has a download target but no named hardware. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra, September weights). Experimental for 1017: Unsloth says its 3-bit UD-IQ3_XXS (394.7 GB) works on 256 GB RAM setups such as a Mac Studio, the bottom of its 256–290 GB estimate for 3-bit, and estimates 315 GB of RAM plus VRAM for its 8-bit build (508.4 GB), in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop. DwarfStar's V4.1 guide documents these setups with its 1017 Q2 file, DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (read October 24, 2026); every V4.1 speed it publishes was measured with its September file, before the 1017 file existed, so none is given here. Image input works on Metal with its separate 0.97 GB vision encoder (DwarfStar's guide pairs it with the 1017 file). DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file).",
+   "conditions": "DwarfStar says a 256 GB or larger Mac can hold all main weights of its Q2 file (152 GiB of the 365.7 GB file). Its Q4 file needs SSD streaming below 512 GB and is September only; its 1017 MXFP4 build (467 GiB on disk, 278 GiB of main weights) has a download target but no named hardware. DwarfStar publishes no V4.1 speed for this setup (its one Mac figure is Q4 resident on a 512 GB M3 Ultra, September weights). Experimental for 1017: Unsloth says its 3-bit UD-IQ3_XXS (394.7 GB) works on 256 GB RAM setups such as a Mac Studio, the bottom of its 256–290 GB estimate for 3-bit, and estimates 315 GB of RAM plus VRAM for its 8-bit build (508.4 GB), in its unmerged llama.cpp pull request #30817 branch or Unsloth Desktop. DwarfStar's V4.1 guide documents these setups with its 1017 Q2 file, DeepSeek-V4.1-Flash-1017-IQ2_XXS-Q2_K-imatrix.gguf (read October 24, 2026); its V4.1 speeds were all measured with its September file, before the 1017 file existed, so none is given here. Image input works on Metal with its separate 0.97 GB vision encoder (DwarfStar's guide pairs it with the 1017 file). DwarfStar is a community engine, not DeepSeek's code; these are its documented setups, not a RigCheck estimate. Keep the GGUF on a fast local SSD (the 189 GiB of Engram tables are always read from the file).",
    "macLimit": false
   }
  ]

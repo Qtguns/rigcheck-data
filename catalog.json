@@ -5,7 +5,7 @@
   {
    "url": "/deepseek-v4-1-flash/",
    "name": "DeepSeek V4.1 Flash",
-   "updated": "2026-10-24",
+   "updated": "2026-10-26",
    "checked": "2026-10-20",
    "subpages": [],
    "id": "deepseek-v4-1-flash",
@@ -63,13 +63,24 @@
      "read": "2026-10-24"
     },
     {
+     "runtime": "Strata",
+     "variants": [
+      "deepseek-v4-1-flash-1017"
+     ],
+     "where": "local",
+     "status": "community",
+     "requires": "an NVIDIA RTX 30, 40 or 50 card with 12 GB or more (Windows, Linux) or a Radeon AI PRO R9700 (Linux), at least 46 GB of RAM, an NVMe SSD and 239 to 274 GB for ISTA-DASLab's 1.75 to 2.25 bpw GGUF sets; 8K context, text only",
+     "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/DEEPSEEK41.md",
+     "read": "2026-10-26"
+    },
+    {
      "runtime": "llama.cpp",
      "variants": "all",
      "where": "local",
      "status": "experimental",
-     "requires": "an unmerged branch: Unsloth's pull request #30817 for its 1017 GGUF from 233.0 GB (Unsloth: 128 GB RAM setups such as a MacBook, DGX Spark or RTX Spark), or pull request #28696 for mrfakename's 1017 GGUF from 264.5 GB (no hardware named) or your own conversion of the September weights (Q2_K reported on one DGX Spark)",
-     "evidence": "https://unsloth.ai/docs/models/deepseek-v4.1-flash",
-     "read": "2026-10-20"
+     "requires": "mainline support merged October 25, 2026 (pull request #31086, release b11870), but no source says which published GGUF loads in it: Unsloth's guide still builds its unmerged pull request #30817 branch for its 1017 GGUF from 233.0 GB (Unsloth: 128 GB RAM setups such as a MacBook, DGX Spark or RTX Spark); mrfakename's 1017 GGUF from 264.5 GB names the unmerged pull request #28696 (no hardware named), where a Q2_K conversion of the September weights was reported on one DGX Spark",
+     "evidence": "https://github.com/ggml-org/llama.cpp/pull/31086",
+     "read": "2026-10-26"
     },
     {
      "runtime": "oMLX",
@@ -141,7 +152,7 @@
     },
     {
      "key": "llama.cpp",
-     "value": "Not in mainline",
+     "value": "Mainline support merged October 25, 2026 (pull request #31086); no source says which published GGUF loads in it",
      "ev": "community",
      "src": 3
     },
@@ -153,10 +164,17 @@
      "variant": "DeepSeek V4.1 Flash 1017 update"
     },
     {
+     "key": "Strata",
+     "value": "an RTX 30, 40 or 50 card with 12 GB or more (or a Radeon AI PRO R9700 on Linux), at least 46 GB of RAM",
+     "ev": "community",
+     "src": 9,
+     "variant": "DeepSeek V4.1 Flash 1017 update"
+    },
+    {
      "key": "Ollama",
      "value": "Ollama and LM Studio offer the model only in their clouds",
      "ev": "official",
-     "src": 7
+     "src": 8
     }
    ]
   },
