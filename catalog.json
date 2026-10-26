@@ -2055,8 +2055,8 @@
   {
    "url": "/strata/",
    "name": "Strata checker",
-   "updated": "2026-10-21",
-   "checked": "2026-10-21",
+   "updated": "2026-10-26",
+   "checked": "2026-10-26",
    "subpages": [],
    "id": "strata",
    "role": "engine",
@@ -2092,9 +2092,9 @@
      "variants": "all",
      "where": "local",
      "status": "official",
-     "requires": "Windows / Linux, NVIDIA RTX 20+ or listed AMD, 32 GB of RAM and VRAM together",
+     "requires": "Windows / Linux, NVIDIA RTX 20+ or listed AMD (12 GB of VRAM recommended), RAM and VRAM for the chosen size",
      "evidence": "https://github.com/Niko1221/Strata",
-     "read": "2026-10-21"
+     "read": "2026-10-26"
     },
     {
      "runtime": "Strata",
@@ -2103,7 +2103,7 @@
      "status": "experimental",
      "requires": "Apple Silicon Mac (Metal, ready-made in the Mac app), macOS 15 or newer",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md",
-     "read": "2026-10-21"
+     "read": "2026-10-26"
     },
     {
      "runtime": "Strata",
@@ -2112,25 +2112,25 @@
      "status": "experimental",
      "requires": "older NVIDIA cards such as the GTX 10 series or Tesla P40 / V100 (separate CUDA 12 engine, Windows or Linux)",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/OLDER_GPUS.md",
-     "read": "2026-10-21"
+     "read": "2026-10-26"
     },
     {
      "runtime": "Strata",
      "variants": "all",
      "where": "local",
      "status": "experimental",
-     "requires": "older AMD cards such as the Radeon VII / MI50 (Linux build)",
+     "requires": "older AMD cards such as the Radeon VII / MI50 (Linux source build)",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/OLDER_GPUS.md",
-     "read": "2026-10-21"
+     "read": "2026-10-26"
     },
     {
      "runtime": "Strata",
      "variants": "all",
      "where": "local",
      "status": "experimental",
-     "requires": "Intel Arc (experimental Linux build)",
-     "evidence": "https://github.com/Niko1221/Strata",
-     "read": "2026-10-21"
+     "requires": "Intel Arc on Linux (Terminal engine package; model preparation through the source workflow)",
+     "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/INTEL_ARC.md",
+     "read": "2026-10-26"
     }
    ],
    "license": {
@@ -2157,22 +2157,22 @@
      "src": 1
     },
     {
-     "key": "Minimum GPU",
-     "value": "an NVIDIA GeForce RTX 20–50 series with 8 GB of VRAM (slow; 12 GB recommended)",
+     "key": "GPU",
+     "value": "12 GB of VRAM or more is recommended",
      "ev": "official",
-     "src": 10
+     "src": 6
     },
     {
      "key": "Memory",
-     "value": "32 GB of RAM and graphics memory (VRAM) together",
+     "value": "RAM and VRAM together, less 5 GB for the system",
      "ev": "official",
-     "src": 1
+     "src": 11
     },
     {
      "key": "Disk",
-     "value": "~80 GB free on an SSD",
+     "value": "66–76 GB of download for Q2_0, IQ2_XS or IQ3_XXS",
      "ev": "official",
-     "src": 1
+     "src": 2
     },
     {
      "key": "System",

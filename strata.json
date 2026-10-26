@@ -3,8 +3,8 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "page": "https://localrigcheck.com/strata/",
- "updated": "2026-10-21",
- "sourcesChecked": "2026-10-21",
+ "updated": "2026-10-26",
+ "sourcesChecked": "2026-10-26",
  "engine": "Strata (github.com/Niko1221/Strata)",
  "sizes": [
   {
@@ -121,9 +121,9 @@
   {
    "key": "rtx5060ti16",
    "card": "RTX 5060 Ti 16 GB",
-   "config": "official estimate from the RTX 5070 runs (same CPU, 64 GB RAM), ±20%",
+   "config": "official estimate from the RTX 5070 runs (same CPU, 64 GB RAM), ±20%, before engine 0.1.13",
    "type": "estimate",
-   "source": "https://github.com/Niko1221/Strata/blob/main/docs/DETAILS.md#other-gpus-estimated",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/DETAILS.md#other-gpus-estimated-before-engine-0113",
    "outputTokS": {
     "Q2_0": 87,
     "IQ2_XS": 77,
@@ -140,9 +140,9 @@
   {
    "key": "rtx3090",
    "card": "RTX 3090 24 GB",
-   "config": "official estimate from the RTX 5070 runs (same CPU, 64 GB RAM), ±20%",
+   "config": "official estimate from the RTX 5070 runs (same CPU, 64 GB RAM), ±20%, before engine 0.1.13",
    "type": "estimate",
-   "source": "https://github.com/Niko1221/Strata/blob/main/docs/DETAILS.md#other-gpus-estimated",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/DETAILS.md#other-gpus-estimated-before-engine-0113",
    "outputTokS": {
     "Q2_0": 140,
     "IQ2_XS": 128,
@@ -176,11 +176,11 @@
   {
    "key": "r9700",
    "card": "Radeon AI PRO R9700 32 GB",
-   "config": "Linux, 32K context, 4K prompt, 128 greedy tokens (AMD_HIP.md end-to-end test)",
+   "config": "Ryzen 9 3900X, 47 GB RAM, Linux, engine 0.1.30, 32K context, 4K prompt, 128 greedy tokens (later engines are faster)",
    "type": "measured",
    "source": "https://github.com/Niko1221/Strata/blob/main/docs/AMD_HIP.md",
    "outputTokS": {
-    "Coder": 46
+    "Coder": 45.5
    },
    "outputTokSAt128K": null,
    "promptTokSAt32K": null,
@@ -206,7 +206,7 @@
    "card": "M5 Max 128 GB",
    "config": "macOS 27.2, model in memory, setup's defaults (MTP), short question",
    "type": "measured",
-   "source": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md#measured-m5-max-128-gb-macos-272",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md#measured-m5-max-128-gb",
    "outputTokS": {
     "Q2_0": 119.5,
     "IQ3_XXS": 108.9,
@@ -224,7 +224,7 @@
    "card": "M4 Mac mini 32 GB",
    "config": "experts streamed from the SSD and read from the model file (not setup's experts copy), one token per step (no MTP), short question",
    "type": "measured",
-   "source": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md#m4-mac-mini-32-gb-experts-streamed-from-the-ssd",
+   "source": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md#measured-m5-max-128-gb",
    "outputTokS": {
     "Q2_0": 14.1,
     "IQ3_XXS": 10
@@ -240,13 +240,11 @@
    "type": "community",
    "source": "https://github.com/Niko1221/Strata/blob/main/docs/AMD_HIP.md",
    "outputTokS": {
-    "Coder": 29
+    "Coder": 27.1
    },
    "outputTokSAt128K": null,
    "promptTokSAt32K": null,
-   "outputRange": {
-    "Coder": "27–31"
-   }
+   "outputRange": null
   }
  ],
  "note": "type: measured = official measurement, estimate = official estimate (±20%), community = community report. Speeds belong to the size and setup they were measured on."

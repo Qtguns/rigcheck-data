@@ -5,8 +5,8 @@
  "name": "Strata checker",
  "page": "https://localrigcheck.com/strata/",
  "checker": "https://localrigcheck.com/strata/#checker",
- "updated": "2026-10-21",
- "sourcesChecked": "2026-10-21",
+ "updated": "2026-10-26",
+ "sourcesChecked": "2026-10-26",
  "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
  "tiers": {
   "good": "an answer without caveats of the checker's own kind; a limit stated in the answer (such as raising a Mac's GPU wired-memory limit, macLimit) still applies",
@@ -111,10 +111,10 @@
    "size": "strata",
    "tier": "caveats",
    "answerKind": "Strata's published requirements",
-   "answer": "meets Strata's requirements, with caveats: IQ3_XXS",
-   "pick": "IQ3_XXS",
+   "answer": "meets Strata's requirements, with caveats: IQ2_XS",
+   "pick": "IQ2_XS",
    "where": null,
-   "conditions": "Your RAM cannot hold this size's experts (about 53 GB of RAM), so Strata switches to low-RAM mode by itself and reads the experts the card does not hold from the SSD while it answers.",
+   "conditions": "Your RAM cannot hold this size's experts (about 46 GB of RAM), so Strata switches to low-RAM mode by itself and reads the experts the card does not hold from the SSD while it answers.",
    "macLimit": false
   },
   {
