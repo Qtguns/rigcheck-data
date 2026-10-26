@@ -1,0 +1,187 @@
+{
+ "license": "CC BY 4.0",
+ "attribution": "RigCheck, https://localrigcheck.com",
+ "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+ "name": "LFM2.5-24B-A2B",
+ "page": "https://localrigcheck.com/lfm-2-5-24b-a2b/",
+ "checker": "https://localrigcheck.com/lfm-2-5-24b-a2b/#checker",
+ "updated": "2026-10-26",
+ "sourcesChecked": "2026-10-22",
+ "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
+ "tiers": {
+  "good": "an answer without caveats of the checker's own kind; a limit stated in the answer (such as raising a Mac's GPU wired-memory limit, macLimit) still applies",
+  "caveats": "an answer with caveats (part in system RAM, a planning estimate, an unverified peak or route)",
+  "experimental": "only an experimental path",
+  "no": "does not fit, or below the smallest published figure",
+  "na": "unknown: the checker covers no route or source for this hardware"
+ },
+ "checkers": [
+  "lfm25"
+ ],
+ "quickSetup": "graphics cards: llama.cpp on one graphics card, a 32K context; Macs: llama.cpp in unified memory, a 32K context",
+ "answerKinds": [
+  "capacity estimate"
+ ],
+ "sizes": [
+  {
+   "id": "lfm-2-5-24b-a2b",
+   "label": "LFM2.5-24B-A2B"
+  }
+ ],
+ "setups": [
+  {
+   "id": "rtx3060_12",
+   "label": "GeForce RTX 3060 (12 GB) + 32 GB RAM",
+   "memGB": 12,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "llama.cpp on one graphics card, a 32K context"
+  },
+  {
+   "id": "rtx4060ti16",
+   "label": "GeForce RTX 4060 Ti (16 GB) + 32 GB RAM",
+   "memGB": 16,
+   "ramGB": 32,
+   "unified": false,
+   "quickSetup": "llama.cpp on one graphics card, a 32K context"
+  },
+  {
+   "id": "rtx3090",
+   "label": "GeForce RTX 3090 / 3090 Ti (24 GB) + 64 GB RAM",
+   "memGB": 24,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "llama.cpp on one graphics card, a 32K context"
+  },
+  {
+   "id": "rtx5090",
+   "label": "GeForce RTX 5090 (32 GB) + 64 GB RAM",
+   "memGB": 32,
+   "ramGB": 64,
+   "unified": false,
+   "quickSetup": "llama.cpp on one graphics card, a 32K context"
+  },
+  {
+   "id": "mac64",
+   "label": "Apple Silicon Mac (64 GB unified)",
+   "memGB": 64,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "llama.cpp in unified memory, a 32K context"
+  },
+  {
+   "id": "m5max128",
+   "label": "Mac with M5 Max, 40-core GPU (128 GB unified)",
+   "memGB": 128,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "llama.cpp in unified memory, a 32K context"
+  },
+  {
+   "id": "mac256",
+   "label": "Mac Studio M3 Ultra (256 GB unified)",
+   "memGB": 256,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "llama.cpp in unified memory, a 32K context"
+  },
+  {
+   "id": "mac512",
+   "label": "Mac Studio M3 Ultra (512 GB unified)",
+   "memGB": 512,
+   "ramGB": null,
+   "unified": true,
+   "quickSetup": "llama.cpp in unified memory, a 32K context"
+  }
+ ],
+ "answers": [
+  {
+   "setup": "rtx3060_12",
+   "size": "lfm-2-5-24b-a2b",
+   "tier": "good",
+   "answerKind": "capacity estimate",
+   "answer": "fits: UD-IQ3_XXS, GPU memory (input embeddings in system RAM)",
+   "pick": "UD-IQ3_XXS",
+   "where": "GPU memory (input embeddings in system RAM)",
+   "conditions": "",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx4060ti16",
+   "size": "lfm-2-5-24b-a2b",
+   "tier": "good",
+   "answerKind": "capacity estimate",
+   "answer": "fits: UD-Q3_K_XL, GPU memory (input embeddings in system RAM)",
+   "pick": "UD-Q3_K_XL",
+   "where": "GPU memory (input embeddings in system RAM)",
+   "conditions": "",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx3090",
+   "size": "lfm-2-5-24b-a2b",
+   "tier": "good",
+   "answerKind": "capacity estimate",
+   "answer": "fits: Q6_K, GPU memory (input embeddings in system RAM)",
+   "pick": "Q6_K",
+   "where": "GPU memory (input embeddings in system RAM)",
+   "conditions": "",
+   "macLimit": false
+  },
+  {
+   "setup": "rtx5090",
+   "size": "lfm-2-5-24b-a2b",
+   "tier": "good",
+   "answerKind": "capacity estimate",
+   "answer": "fits: Q8_0, GPU memory (input embeddings in system RAM)",
+   "pick": "Q8_0",
+   "where": "GPU memory (input embeddings in system RAM)",
+   "conditions": "",
+   "macLimit": false
+  },
+  {
+   "setup": "mac64",
+   "size": "lfm-2-5-24b-a2b",
+   "tier": "good",
+   "answerKind": "capacity estimate",
+   "answer": "fits: BF16, unified memory (after raising the Mac's GPU wired-memory limit)",
+   "pick": "BF16",
+   "where": "unified memory",
+   "conditions": "",
+   "macLimit": true
+  },
+  {
+   "setup": "m5max128",
+   "size": "lfm-2-5-24b-a2b",
+   "tier": "good",
+   "answerKind": "capacity estimate",
+   "answer": "fits: BF16, unified memory (after raising the Mac's GPU wired-memory limit)",
+   "pick": "BF16",
+   "where": "unified memory",
+   "conditions": "",
+   "macLimit": true
+  },
+  {
+   "setup": "mac256",
+   "size": "lfm-2-5-24b-a2b",
+   "tier": "good",
+   "answerKind": "capacity estimate",
+   "answer": "fits: BF16, unified memory (after raising the Mac's GPU wired-memory limit)",
+   "pick": "BF16",
+   "where": "unified memory",
+   "conditions": "",
+   "macLimit": true
+  },
+  {
+   "setup": "mac512",
+   "size": "lfm-2-5-24b-a2b",
+   "tier": "na",
+   "answerKind": "capacity estimate",
+   "answer": "unknown",
+   "pick": null,
+   "where": null,
+   "conditions": "This checker covers the graphics cards and machines in its list.",
+   "macLimit": false
+  }
+ ]
+}

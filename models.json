@@ -1237,7 +1237,7 @@
   {
    "name": "LFM2.5-24B-A2B",
    "page": "https://localrigcheck.com/lfm-2-5-24b-a2b/",
-   "updated": "2026-10-22",
+   "updated": "2026-10-26",
    "sourcesChecked": "2026-10-22",
    "runtime": "llama.cpp (Liquid AI and Unsloth GGUF)",
    "layers": 40,

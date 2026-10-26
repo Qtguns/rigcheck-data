@@ -774,13 +774,15 @@
   {
    "url": "/lfm-2-5-24b-a2b/",
    "name": "LFM2.5-24B-A2B",
-   "updated": "2026-10-22",
+   "updated": "2026-10-26",
    "checked": "2026-10-22",
    "subpages": [],
    "id": "lfm-2-5-24b-a2b",
    "role": "model",
    "parent": null,
-   "checkers": [],
+   "checkers": [
+    "lfm25"
+   ],
    "modality": {
     "primary": "text",
     "inputs": [
