@@ -5,7 +5,7 @@
  "name": "DeepSeek V4.1 Flash",
  "page": "https://localrigcheck.com/deepseek-v4-1-flash/",
  "checker": "https://localrigcheck.com/deepseek-v4-1-flash/#checker",
- "updated": "2026-10-26",
+ "updated": "2026-10-28",
  "sourcesChecked": "2026-10-20",
  "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
  "tiers": {
@@ -18,7 +18,7 @@
  "checkers": [
   "deepseek"
  ],
- "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp",
+ "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp",
  "answerKinds": [
   "published route match"
  ],
@@ -39,7 +39,7 @@
    "memGB": 12,
    "ramGB": 32,
    "unified": false,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp"
   },
   {
    "id": "rtx4060ti16",
@@ -47,7 +47,7 @@
    "memGB": 16,
    "ramGB": 32,
    "unified": false,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp"
   },
   {
    "id": "rtx3090",
@@ -55,7 +55,7 @@
    "memGB": 24,
    "ramGB": 64,
    "unified": false,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp"
   },
   {
    "id": "rtx5090",
@@ -63,7 +63,7 @@
    "memGB": 32,
    "ramGB": 64,
    "unified": false,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp"
   },
   {
    "id": "mac64",
@@ -71,7 +71,7 @@
    "memGB": 64,
    "ramGB": null,
    "unified": true,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp"
   },
   {
    "id": "m5max128",
@@ -79,7 +79,7 @@
    "memGB": 128,
    "ramGB": null,
    "unified": true,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp"
   },
   {
    "id": "mac256",
@@ -87,7 +87,7 @@
    "memGB": 256,
    "ramGB": null,
    "unified": true,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp"
   },
   {
    "id": "mac512",
@@ -95,7 +95,7 @@
    "memGB": 512,
    "ramGB": null,
    "unified": true,
-   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more or a Radeon AI PRO R9700 (the selected RAM at least 46 GB, an NVMe SSD, 8K context, text only), not llama.cpp"
+   "quickSetup": "DwarfStar's routes per DeepSeek checkpoint (documented on Macs and the DGX Spark, experimental on Strix Halo for the September weights) and, for 1017 only, Strata's route on an RTX 30/40/50 card with 12 GB or more, a Radeon AI PRO R9700 or a 128 GB Strix Halo under Windows (on a PC the selected RAM at least 46 GB; an NVMe SSD, 8K context by default), not llama.cpp"
   }
  ],
  "answers": [
@@ -118,7 +118,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Below Strata's 46 GB RAM minimum (1017 weights). Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context, text only, one request at a time. Windows on RTX 30 is built but was not run. With 16 GiB of graphics memory or less it defaults to Faster (5 of 6 experts per token); --full-quality uses all 6. This checker does not ask for system RAM.",
+   "conditions": "Below Strata's 46 GB RAM minimum (1017 weights). Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context by default, pictures on by default, one request at a time. Strata checked pictures only on Linux, not on Windows, Strix Halo or most NVIDIA cards. Windows on RTX 30 is built but was not run. With 16 GiB of graphics memory or less it defaults to Faster (5 of 6 experts per token); --full-quality uses all 6. This checker does not ask for system RAM.",
    "macLimit": false
   },
   {
@@ -140,7 +140,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Below Strata's 46 GB RAM minimum (1017 weights). Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context, text only, one request at a time. With 16 GiB of graphics memory or less it defaults to Faster (5 of 6 experts per token); --full-quality uses all 6. This checker does not ask for system RAM.",
+   "conditions": "Below Strata's 46 GB RAM minimum (1017 weights). Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context by default, pictures on by default, one request at a time. Strata checked pictures only on Linux, not on Windows, Strix Halo or most NVIDIA cards. Strata's RTX 40 code (sm_89, since 0.2.7) was built but not run by Strata itself. With 16 GiB of graphics memory or less it defaults to Faster (5 of 6 experts per token); --full-quality uses all 6. This checker does not ask for system RAM.",
    "macLimit": false
   },
   {
@@ -162,7 +162,7 @@
    "answer": "Matches Strata: its 1.75–2.25 bpw sets with 46 GB of RAM or more (1017 weights)",
    "pick": null,
    "where": null,
-   "conditions": "Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context, text only, one request at a time. Windows on RTX 30 is built but was not run. This checker does not ask for system RAM.",
+   "conditions": "Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context by default, pictures on by default, one request at a time. Strata checked pictures only on Linux, not on Windows, Strix Halo or most NVIDIA cards. Windows on RTX 30 is built but was not run. This checker does not ask for system RAM.",
    "macLimit": false
   },
   {
@@ -184,7 +184,7 @@
    "answer": "Matches Strata: its 1.75–2.25 bpw sets with 46 GB of RAM or more (1017 weights)",
    "pick": null,
    "where": null,
-   "conditions": "Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context, text only, one request at a time. This checker does not ask for system RAM.",
+   "conditions": "Strata (community engine) runs ISTA-DASLab's 1.75, 2.00 and 2.25 bpw GGUF sets of 1017 on RTX 30, 40 and 50 cards with 12 GB or more (Windows, Linux) and the R9700 (Linux), with at least 46 GB of RAM (64 GB tested comfortable), an NVMe SSD and about 245, 265 or 280 GB of free disk; 8K context by default, pictures on by default, one request at a time. Strata checked pictures only on Linux, not on Windows, Strix Halo or most NVIDIA cards. This checker does not ask for system RAM.",
    "macLimit": false
   },
   {

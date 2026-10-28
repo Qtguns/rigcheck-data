@@ -5,7 +5,7 @@
   {
    "url": "/deepseek-v4-1-flash/",
    "name": "DeepSeek V4.1 Flash",
-   "updated": "2026-10-26",
+   "updated": "2026-10-28",
    "checked": "2026-10-20",
    "subpages": [],
    "id": "deepseek-v4-1-flash",
@@ -69,18 +69,18 @@
      ],
      "where": "local",
      "status": "community",
-     "requires": "an NVIDIA RTX 30, 40 or 50 card with 12 GB or more (Windows, Linux) or a Radeon AI PRO R9700 (Linux), at least 46 GB of RAM, an NVMe SSD and 239 to 274 GB for ISTA-DASLab's 1.75 to 2.25 bpw GGUF sets; 8K context, text only",
+     "requires": "an NVIDIA RTX 30, 40 or 50 card with 12 GB or more (Windows, Linux), a Radeon AI PRO R9700 (Linux) or a 128 GB Ryzen AI Max (Strix Halo, Windows), at least 46 GB of RAM, an NVMe SSD and 239 to 274 GB for ISTA-DASLab's 1.75 to 2.25 bpw GGUF sets; 8K context by default, pictures on by default",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/DEEPSEEK41.md",
-     "read": "2026-10-26"
+     "read": "2026-10-28"
     },
     {
      "runtime": "llama.cpp",
      "variants": "all",
      "where": "local",
-     "status": "experimental",
-     "requires": "mainline support merged October 25, 2026 (pull request #31086, release b11870), but no source says which published GGUF loads in it: Unsloth's guide still builds its unmerged pull request #30817 branch for its 1017 GGUF from 233.0 GB (Unsloth: 128 GB RAM setups such as a MacBook, DGX Spark or RTX Spark); mrfakename's 1017 GGUF from 264.5 GB names the unmerged pull request #28696 (no hardware named), where a Q2_K conversion of the September weights was reported on one DGX Spark",
-     "evidence": "https://github.com/ggml-org/llama.cpp/pull/31086",
-     "read": "2026-10-26"
+     "status": "community",
+     "requires": "for 1017, release b11870 or newer (mainline support merged October 25, 2026, pull request #31086) with ISTA-DASLab's GSQ-RCO GGUF sets of 1017 (231.3 to 265.8 GB with the Engram file, in llama.cpp's layout since October 27, 2026); ISTA-DASLab names no hardware or memory size for llama.cpp. Unsloth's 1017 GGUF from 233.0 GB still needs its unmerged pull request #30817 branch (Unsloth: 128 GB RAM setups such as a MacBook, DGX Spark or RTX Spark) and mrfakename's from 264.5 GB the unmerged pull request #28696 (experimental); for the September weights, only a Q2_K conversion reported on one DGX Spark in that unmerged branch (experimental)",
+     "evidence": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+     "read": "2026-10-28"
     },
     {
      "runtime": "oMLX",
@@ -152,7 +152,7 @@
     },
     {
      "key": "llama.cpp",
-     "value": "Mainline support merged October 25, 2026 (pull request #31086); no source says which published GGUF loads in it",
+     "value": "Mainline support since release b11870 (October 25, 2026)",
      "ev": "community",
      "src": 3
     },
@@ -1919,7 +1919,7 @@
   {
    "url": "/recursive-flint/",
    "name": "Recursive Flint",
-   "updated": "2026-10-23",
+   "updated": "2026-10-27",
    "checked": "2026-10-23",
    "subpages": [],
    "id": "recursive-flint",
@@ -1976,9 +1976,9 @@
      "variants": "all",
      "where": "local",
      "status": "official",
-     "requires": "Apple M4 Pro, M5 Pro or M5 Max with 48 GB",
+     "requires": "Apple M4 Pro, M4 Max, M5 Pro or M5 Max with 48 GB",
      "evidence": "https://github.com/recursive-oss/rec",
-     "read": "2026-10-23"
+     "read": "2026-10-27"
     },
     {
      "runtime": "LM Studio",
