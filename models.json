@@ -3,7 +3,7 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
- "generated": "2026-10-28",
+ "generated": "2026-10-29",
  "models": [
   {
    "name": "Qwen-Image-2.1 / Turbo",
@@ -1651,7 +1651,7 @@
   {
    "name": "Mistral Large 4",
    "page": "https://localrigcheck.com/mistral-large-4/",
-   "updated": "2026-10-19",
+   "updated": "2026-10-29",
    "sourcesChecked": "2026-10-08",
    "weightsReleased": false,
    "totalParamsB": 1050,
