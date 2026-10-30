@@ -1067,8 +1067,8 @@
   {
    "url": "/mistral-large-4/",
    "name": "Mistral Large 4",
-   "updated": "2026-10-29",
-   "checked": "2026-10-08",
+   "updated": "2026-10-30",
+   "checked": "2026-10-30",
    "subpages": [],
    "id": "mistral-large-4",
    "role": "model",
@@ -1094,29 +1094,42 @@
      "params": {
       "total": 1050,
       "active": 52,
-      "scope": "49B active without embeddings and output layers; a 1.6B vision encoder is listed separately"
+      "scope": "Mistral's docs: 1.05T total and 52B active; the model card: ~1T total, 49B active per token (52B including embeddings and output layers); a 1.6B vision encoder is listed separately"
      }
     }
    ],
    "dates": {
     "announced": "2026-10-06",
-    "weights_released": null,
-    "weights_eta": {
-     "date": "2026-10-29",
-     "source": "https://huggingface.co/mistralai/Mistral-Large-4.0-1T05-A52B",
-     "read": "2026-10-29"
-    },
+    "weights_released": "2026-10-29",
     "added": "2026-10-07"
    },
-   "weights": "announced",
+   "weights": "released",
    "routes": [
+    {
+     "runtime": "vLLM",
+     "variants": "all",
+     "where": "local",
+     "status": "official",
+     "requires": "an 8-GPU data-center node (the model card's tensor-parallel-size 8 example)",
+     "evidence": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+     "read": "2026-10-30"
+    },
+    {
+     "runtime": "llama.cpp",
+     "variants": "all",
+     "where": "local",
+     "status": "community",
+     "requires": "a build of llama.cpp's main branch (support merged October 29, 2026; no numbered release when checked) and GGUF files by ggml-org or Unsloth",
+     "evidence": "https://github.com/ggml-org/llama.cpp/pull/31376",
+     "read": "2026-10-30"
+    },
     {
      "runtime": "Mistral API",
      "variants": "all",
      "where": "cloud",
      "status": "official",
-     "evidence": "https://docs.mistral.ai/models/mistral-large-4",
-     "read": "2026-10-08"
+     "evidence": "https://docs.mistral.ai/models/mistral-large-4-0",
+     "read": "2026-10-30"
     },
     {
      "runtime": "Ollama",
@@ -1124,55 +1137,69 @@
      "where": "cloud",
      "status": "cloud-only",
      "evidence": "https://ollama.com/library/mistral-large-4/tags",
-     "read": "2026-10-08"
+     "read": "2026-10-30"
     }
    ],
    "license": {
-    "name": null,
-    "flags": []
+    "name": "Mistral Ecosystem Open-Weight License",
+    "flags": [
+     "commercial-terms"
+    ]
    },
    "sheet": [
     {
      "key": "Developer",
      "value": "Mistral AI",
      "ev": "official",
-     "src": 2
+     "src": 1
     },
     {
      "key": "Total parameters",
-     "value": "1.05 trillion (Mistral docs)",
+     "value": "1.05 trillion",
      "ev": "official",
-     "src": 1
+     "src": 2
     },
     {
      "key": "Active parameters",
      "value": "52B per token",
      "ev": "official",
-     "src": 1
-    },
-    {
-     "key": "Context",
-     "value": "1M tokens (Mistral docs, API model page)",
-     "ev": "official",
-     "src": 1
-    },
-    {
-     "key": "Weights",
-     "value": "open weights announced for the end of October 2026",
-     "ev": "official",
      "src": 2
     },
     {
-     "key": "API",
-     "value": "mistral-large-4-0",
+     "key": "Context",
+     "value": "1M tokens",
      "ev": "official",
      "src": 1
+    },
+    {
+     "key": "Official files",
+     "value": "official FP8 files are 1,060.6 GB",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "Smallest GGUF",
+     "value": "233.0 GB for Unsloth's UD-IQ1_S",
+     "ev": "community",
+     "src": 6
+    },
+    {
+     "key": "License",
+     "value": "Mistral Ecosystem Open-Weight License",
+     "ev": "official",
+     "src": 1
+    },
+    {
+     "key": "llama.cpp",
+     "value": "merged support for the model on October 29, 2026",
+     "ev": "official",
+     "src": 9
     },
     {
      "key": "Ollama",
      "value": "only the cloud tag mistral-large-4:cloud",
      "ev": "official",
-     "src": 4
+     "src": 10
     }
    ]
   },

@@ -3,7 +3,7 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
- "generated": "2026-10-29",
+ "generated": "2026-10-30",
  "models": [
   {
    "name": "Qwen-Image-2.1 / Turbo",
@@ -1651,30 +1651,33 @@
   {
    "name": "Mistral Large 4",
    "page": "https://localrigcheck.com/mistral-large-4/",
-   "updated": "2026-10-29",
-   "sourcesChecked": "2026-10-08",
-   "weightsReleased": false,
+   "updated": "2026-10-30",
+   "sourcesChecked": "2026-10-30",
+   "weightsReleased": true,
    "totalParamsB": 1050,
    "activeParamsB": 52,
-   "note": "No weights yet: sizes are parameters × assumed bits per weight.",
+   "note": "Sizes are the bytes Hugging Face lists per format (official = mistralai repos); Q6_K and Q3_K_M have no file and are parameters × assumed bits per weight.",
    "formats": [
     {
      "key": "bf16",
      "label": "BF16 (full precision)",
-     "assumedBitsPerWeight": 16,
-     "estimatedGB": 2100
+     "fileGB": 2098.9,
+     "source": "https://huggingface.co/ggml-org/Mistral-Large-4-1T-A52B-GGUF",
+     "official": false
     },
     {
      "key": "fp8",
-     "label": "FP8",
-     "assumedBitsPerWeight": 8,
-     "estimatedGB": 1050
+     "label": "FP8 (official)",
+     "fileGB": 1060.6,
+     "source": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+     "official": true
     },
     {
      "key": "q8_0",
      "label": "Q8_0 (GGUF)",
-     "assumedBitsPerWeight": 8.5,
-     "estimatedGB": 1116
+     "fileGB": 1115.2,
+     "source": "https://huggingface.co/ggml-org/Mistral-Large-4-1T-A52B-GGUF",
+     "official": false
     },
     {
      "key": "q6_k",
@@ -1685,20 +1688,23 @@
     {
      "key": "q4_k_m",
      "label": "Q4_K_M (GGUF)",
-     "assumedBitsPerWeight": 4.8,
-     "estimatedGB": 630
+     "fileGB": 634.8,
+     "source": "https://huggingface.co/ggml-org/Mistral-Large-4-1T-A52B-GGUF",
+     "official": false
     },
     {
      "key": "nvfp4",
-     "label": "NVFP4",
-     "assumedBitsPerWeight": 4.5,
-     "estimatedGB": 591
+     "label": "NVFP4 (official)",
+     "fileGB": 610,
+     "source": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+     "official": true
     },
     {
      "key": "mxfp4",
-     "label": "MXFP4",
-     "assumedBitsPerWeight": 4.25,
-     "estimatedGB": 558
+     "label": "MXFP4 (AMD)",
+     "fileGB": 577.9,
+     "source": "https://huggingface.co/amd/Mistral-Large-4-1T-A52B-Quark-MXFP4",
+     "official": false
     },
     {
      "key": "q3_k_m",
@@ -1709,20 +1715,23 @@
     {
      "key": "q2_k",
      "label": "Q2_K (GGUF)",
-     "assumedBitsPerWeight": 3,
-     "estimatedGB": 394
+     "fileGB": 380.7,
+     "source": "https://huggingface.co/ggml-org/Mistral-Large-4-1T-A52B-GGUF",
+     "official": false
     },
     {
      "key": "iq2_xxs",
      "label": "IQ2_XXS (GGUF)",
-     "assumedBitsPerWeight": 2.1,
-     "estimatedGB": 276
+     "fileGB": 297.7,
+     "source": "https://huggingface.co/ggml-org/Mistral-Large-4-1T-A52B-GGUF",
+     "official": false
     },
     {
-     "key": "iq1_s",
-     "label": "IQ1_S (GGUF)",
-     "assumedBitsPerWeight": 1.6,
-     "estimatedGB": 210
+     "key": "ud_iq1_s",
+     "label": "UD-IQ1_S (Unsloth GGUF)",
+     "fileGB": 233,
+     "source": "https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF",
+     "official": false
     }
    ]
   }
