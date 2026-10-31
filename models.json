@@ -3,7 +3,7 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
- "generated": "2026-10-30",
+ "generated": "2026-10-31",
  "models": [
   {
    "name": "Qwen-Image-2.1 / Turbo",
@@ -537,7 +537,7 @@
   {
    "name": "DeepSeek V4.1 Flash",
    "page": "https://localrigcheck.com/deepseek-v4-1-flash/",
-   "updated": "2026-10-28",
+   "updated": "2026-10-31",
    "sourcesChecked": "2026-10-20",
    "kind": "moe-text",
    "dwarfStarFiles": {
