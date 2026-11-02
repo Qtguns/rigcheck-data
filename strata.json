@@ -3,8 +3,8 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "page": "https://localrigcheck.com/strata/",
- "updated": "2026-10-26",
- "sourcesChecked": "2026-10-26",
+ "updated": "2026-11-02",
+ "sourcesChecked": "2026-11-02",
  "engine": "Strata (github.com/Niko1221/Strata)",
  "sizes": [
   {
@@ -41,7 +41,7 @@
    "label": "IQ3_S",
    "expertsGB": 50,
    "minRamGB": 60,
-   "downloadGB": null
+   "downloadGB": 84
   },
   {
    "key": "UD_IQ4_XS",

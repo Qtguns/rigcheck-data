@@ -2085,7 +2085,7 @@
    "url": "/strata/",
    "name": "Strata checker",
    "updated": "2026-11-02",
-   "checked": "2026-10-26",
+   "checked": "2026-11-02",
    "subpages": [],
    "id": "strata",
    "role": "engine",
@@ -2123,7 +2123,7 @@
      "status": "official",
      "requires": "Windows / Linux, NVIDIA RTX 20+ or listed AMD (12 GB of VRAM recommended), RAM and VRAM for the chosen size",
      "evidence": "https://github.com/Niko1221/Strata",
-     "read": "2026-10-26"
+     "read": "2026-11-02"
     },
     {
      "runtime": "Strata",
@@ -2132,7 +2132,7 @@
      "status": "experimental",
      "requires": "Apple Silicon Mac (Metal, ready-made in the Mac app), macOS 15 or newer",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md",
-     "read": "2026-10-26"
+     "read": "2026-11-02"
     },
     {
      "runtime": "Strata",
@@ -2141,7 +2141,7 @@
      "status": "experimental",
      "requires": "older NVIDIA cards such as the GTX 10 series or Tesla P40 / V100 (separate CUDA 12 engine, Windows or Linux)",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/OLDER_GPUS.md",
-     "read": "2026-10-26"
+     "read": "2026-11-02"
     },
     {
      "runtime": "Strata",
@@ -2150,7 +2150,7 @@
      "status": "experimental",
      "requires": "older AMD cards such as the Radeon VII / MI50 (Linux source build)",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/OLDER_GPUS.md",
-     "read": "2026-10-26"
+     "read": "2026-11-02"
     },
     {
      "runtime": "Strata",
@@ -2159,7 +2159,7 @@
      "status": "experimental",
      "requires": "Intel Arc on Linux (Terminal engine package; model preparation through the source workflow)",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/INTEL_ARC.md",
-     "read": "2026-10-26"
+     "read": "2026-11-02"
     }
    ],
    "license": {
