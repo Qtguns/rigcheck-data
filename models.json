@@ -3,7 +3,7 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
- "generated": "2026-10-31",
+ "generated": "2026-11-02",
  "models": [
   {
    "name": "Qwen-Image-2.1 / Turbo",
@@ -1364,7 +1364,7 @@
   {
    "name": "Recursive Flint",
    "page": "https://localrigcheck.com/recursive-flint/",
-   "updated": "2026-10-27",
+   "updated": "2026-11-02",
    "sourcesChecked": "2026-10-23",
    "runtime": "llama.cpp (Recursive and LM Studio GGUF)",
    "layers": 49,
@@ -1386,6 +1386,17 @@
      "mtpLayers": 0
     },
     {
+     "key": "ud_q6_k_xl",
+     "label": "UD-Q6_K_XL",
+     "gb": 36.3,
+     "repo": "unsloth/flint-GGUF",
+     "inputEmbeddingGB": 0.326713344,
+     "outputWeightsGB": 0.326713344,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
      "key": "q6_k",
      "label": "Q6_K",
      "gb": 32.7,
@@ -1397,12 +1408,34 @@
      "mtpLayers": 0
     },
     {
+     "key": "ud_q5_k_xl",
+     "label": "UD-Q5_K_XL",
+     "gb": 29.9,
+     "repo": "unsloth/flint-GGUF",
+     "inputEmbeddingGB": 0.326713344,
+     "outputWeightsGB": 0.326713344,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
      "key": "q4_1",
      "label": "Q4_1 (official INT4)",
      "gb": 26,
      "repo": "RecursiveSI/flint-int4-gguf",
      "inputEmbeddingGB": 1.229979648,
      "outputWeightsGB": 0.19218432,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_q4_k_xl",
+     "label": "UD-Q4_K_XL",
+     "gb": 25.1,
+     "repo": "unsloth/flint-GGUF",
+     "inputEmbeddingGB": 0.326713344,
+     "outputWeightsGB": 0.326713344,
      "tiedOutput": false,
      "blockCount": 49,
      "mtpLayers": 0
@@ -1425,6 +1458,61 @@
      "repo": "RecursiveSI/flint-nvfp4-gguf",
      "inputEmbeddingGB": 0.614989824,
      "outputWeightsGB": 0.17296592,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_q3_k_xl",
+     "label": "UD-Q3_K_XL",
+     "gb": 18.5,
+     "repo": "unsloth/flint-GGUF",
+     "inputEmbeddingGB": 0.326713344,
+     "outputWeightsGB": 0.326713344,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_iq3_xxs",
+     "label": "UD-IQ3_XXS",
+     "gb": 14.5,
+     "repo": "unsloth/flint-GGUF",
+     "inputEmbeddingGB": 0.25224192,
+     "outputWeightsGB": 0.25224192,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_q2_k_xl",
+     "label": "UD-Q2_K_XL",
+     "gb": 13.6,
+     "repo": "unsloth/flint-GGUF",
+     "inputEmbeddingGB": 0.172965888,
+     "outputWeightsGB": 0.25224192,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_iq2_xxs",
+     "label": "UD-IQ2_XXS",
+     "gb": 11.9,
+     "repo": "unsloth/flint-GGUF",
+     "inputEmbeddingGB": 0.13212672,
+     "outputWeightsGB": 0.25224192,
+     "tiedOutput": false,
+     "blockCount": 49,
+     "mtpLayers": 0
+    },
+    {
+     "key": "ud_iq1_m",
+     "label": "UD-IQ1_M",
+     "gb": 11.4,
+     "repo": "unsloth/flint-GGUF",
+     "inputEmbeddingGB": 0.13212672,
+     "outputWeightsGB": 0.25224192,
      "tiedOutput": false,
      "blockCount": 49,
      "mtpLayers": 0
