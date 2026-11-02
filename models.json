@@ -1629,8 +1629,8 @@
   {
    "name": "Qwen3.8-Flash-Next",
    "page": "https://localrigcheck.com/qwen-3-8-flash-next/",
-   "updated": "2026-10-19",
-   "sourcesChecked": "2026-10-08",
+   "updated": "2026-11-02",
+   "sourcesChecked": "2026-11-02",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "kvGBAt32K_f16": 1.007,
    "files": [

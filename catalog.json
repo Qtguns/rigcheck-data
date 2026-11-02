@@ -1676,8 +1676,8 @@
   {
    "url": "/qwen-3-8-flash-next/",
    "name": "Qwen3.8-Flash-Next",
-   "updated": "2026-10-19",
-   "checked": "2026-10-08",
+   "updated": "2026-11-02",
+   "checked": "2026-11-02",
    "subpages": [],
    "id": "qwen-3-8-flash-next",
    "role": "model",
@@ -1722,7 +1722,7 @@
      "where": "local",
      "status": "community",
      "evidence": "https://unsloth.ai/docs/models/qwen3.8-next",
-     "read": "2026-10-08"
+     "read": "2026-11-02"
     },
     {
      "runtime": "Ollama",
@@ -1730,7 +1730,7 @@
      "where": "local",
      "status": "official",
      "evidence": "https://ollama.com/library/qwen3.8-flash-next/tags",
-     "read": "2026-10-08"
+     "read": "2026-11-02"
     },
     {
      "runtime": "LM Studio",
@@ -1738,7 +1738,7 @@
      "where": "local",
      "status": "community",
      "evidence": "https://huggingface.co/lmstudio-community/Qwen3.8-Flash-Next-GGUF",
-     "read": "2026-10-08"
+     "read": "2026-11-02"
     },
     {
      "runtime": "vLLM",
@@ -1746,7 +1746,7 @@
      "where": "local",
      "status": "official",
      "evidence": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
-     "read": "2026-10-08"
+     "read": "2026-11-02"
     },
     {
      "runtime": "SGLang",
@@ -1754,7 +1754,7 @@
      "where": "local",
      "status": "official",
      "evidence": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next",
-     "read": "2026-10-08"
+     "read": "2026-11-02"
     },
     {
      "runtime": "Strata",
@@ -1762,7 +1762,7 @@
      "where": "local",
      "status": "community",
      "evidence": "/strata/",
-     "read": "2026-10-08"
+     "read": "2026-11-02"
     }
    ],
    "license": {
