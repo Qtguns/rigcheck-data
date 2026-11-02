@@ -308,7 +308,7 @@
   {
    "url": "/gemma-4/",
    "name": "Gemma 4",
-   "updated": "2026-10-22",
+   "updated": "2026-11-02",
    "checked": "2026-10-12",
    "subpages": [],
    "id": "gemma-4",
@@ -774,7 +774,7 @@
   {
    "url": "/lfm-2-5-24b-a2b/",
    "name": "LFM2.5-24B-A2B",
-   "updated": "2026-10-26",
+   "updated": "2026-11-02",
    "checked": "2026-10-22",
    "subpages": [],
    "id": "lfm-2-5-24b-a2b",
@@ -1346,7 +1346,7 @@
   {
    "url": "/nemotron-3-5/",
    "name": "Nemotron 3.5",
-   "updated": "2026-10-24",
+   "updated": "2026-11-02",
    "checked": "2026-10-17",
    "subpages": [],
    "id": "nemotron-3-5",
@@ -1536,7 +1536,7 @@
   {
    "url": "/qwen-3-8-27b/",
    "name": "Qwen3.8-27B",
-   "updated": "2026-10-22",
+   "updated": "2026-11-02",
    "checked": "2026-10-12",
    "subpages": [],
    "id": "qwen-3-8-27b",
@@ -2084,7 +2084,7 @@
   {
    "url": "/strata/",
    "name": "Strata checker",
-   "updated": "2026-10-26",
+   "updated": "2026-11-02",
    "checked": "2026-10-26",
    "subpages": [],
    "id": "strata",
