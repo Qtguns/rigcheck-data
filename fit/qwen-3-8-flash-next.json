@@ -5,7 +5,7 @@
  "name": "Qwen3.8-Flash-Next",
  "page": "https://localrigcheck.com/qwen-3-8-flash-next/",
  "checker": "https://localrigcheck.com/qwen-3-8-flash-next/#checker",
- "updated": "2026-11-02",
+ "updated": "2026-11-05",
  "sourcesChecked": "2026-11-02",
  "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
  "tiers": {
@@ -103,7 +103,7 @@
    "answer": "does not fit",
    "pick": null,
    "where": null,
-   "conditions": "Even the smallest file (UD-IQ1_S, 72.5 GB) needs about 76.1 GB.",
+   "conditions": "Even the smallest file (UD-IQ1_S, 66.4 GB) needs about 70 GB.",
    "macLimit": false
   },
   {
@@ -114,7 +114,7 @@
    "answer": "does not fit",
    "pick": null,
    "where": null,
-   "conditions": "Even the smallest file (UD-IQ1_S, 72.5 GB) needs about 76.1 GB.",
+   "conditions": "Even the smallest file (UD-IQ1_S, 66.4 GB) needs about 70 GB.",
    "macLimit": false
   },
   {
@@ -122,9 +122,9 @@
    "size": "qwen-3-8-flash-next",
    "tier": "caveats",
    "answerKind": "capacity estimate",
-   "answer": "fits with caveats: UD-IQ1_S, GPU and system RAM (54 GB in RAM)",
-   "pick": "UD-IQ1_S",
-   "where": "GPU and system RAM (54 GB in RAM)",
+   "answer": "fits with caveats: UD-IQ1_M, GPU and system RAM (49.5 GB in RAM)",
+   "pick": "UD-IQ1_M",
+   "where": "GPU and system RAM (49.5 GB in RAM)",
    "conditions": "Flash-Next uses combined memory totals; per-card layer placement is not modeled. Close fits are uncertain until runtime allocation is checked.",
    "macLimit": false
   },
@@ -133,9 +133,9 @@
    "size": "qwen-3-8-flash-next",
    "tier": "caveats",
    "answerKind": "capacity estimate",
-   "answer": "fits with caveats: UD-Q2_K_XL, GPU and system RAM (53.1 GB in RAM)",
+   "answer": "fits with caveats: UD-Q2_K_XL, GPU and system RAM (53.8 GB in RAM)",
    "pick": "UD-Q2_K_XL",
-   "where": "GPU and system RAM (53.1 GB in RAM)",
+   "where": "GPU and system RAM (53.8 GB in RAM)",
    "conditions": "Flash-Next uses combined memory totals; per-card layer placement is not modeled. Close fits are uncertain until runtime allocation is checked.",
    "macLimit": false
   },

@@ -3,7 +3,7 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "note": "File sizes are decimal GB as Hugging Face lists them (all parts). kvBytesPerTokenF16 and the fit rules are RigCheck calculations and assumptions, explained on each page; they are capacity estimates, not tested setups.",
- "generated": "2026-11-04",
+ "generated": "2026-11-06",
  "models": [
   {
    "name": "Qwen-Image-2.1 / Turbo",
@@ -564,7 +564,7 @@
   {
    "name": "Qwen3.8-27B",
    "page": "https://localrigcheck.com/qwen-3-8-27b/",
-   "updated": "2026-10-22",
+   "updated": "2026-11-05",
    "sourcesChecked": "2026-10-12",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "layers": 64,
@@ -1629,7 +1629,7 @@
   {
    "name": "Qwen3.8-Flash-Next",
    "page": "https://localrigcheck.com/qwen-3-8-flash-next/",
-   "updated": "2026-11-02",
+   "updated": "2026-11-05",
    "sourcesChecked": "2026-11-02",
    "runtime": "llama.cpp (Unsloth GGUF)",
    "kvGBAt32K_f16": 1.007,
@@ -1672,7 +1672,7 @@
      "ngramTableGB": 28.80013824,
      "cpuInputEmbeddingGB": 0.6754304,
      "hostBuffersGB": 0.5,
-     "top1VsBF16Pct": 92.3
+     "top1VsBF16Pct": null
     },
     {
      "key": "ud_iq4_xs",
@@ -1680,59 +1680,59 @@
      "gb": 93.7,
      "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
      "ngramTableGB": 28.80013824,
-     "cpuInputEmbeddingGB": 0.6754304,
+     "cpuInputEmbeddingGB": 0.3377152,
      "hostBuffersGB": 0.5,
-     "top1VsBF16Pct": 89.6
+     "top1VsBF16Pct": null
     },
     {
      "key": "ud_q3_k_xl",
      "label": "UD-Q3_K_XL",
-     "gb": 90,
+     "gb": 89.5,
      "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
      "ngramTableGB": 28.80013824,
-     "cpuInputEmbeddingGB": 0.6754304,
+     "cpuInputEmbeddingGB": 0.3377152,
      "hostBuffersGB": 0.5,
-     "top1VsBF16Pct": 88.3
+     "top1VsBF16Pct": null
     },
     {
      "key": "ud_iq3_xxs",
      "label": "UD-IQ3_XXS",
-     "gb": 82,
+     "gb": 83.6,
      "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
      "ngramTableGB": 28.80013824,
      "cpuInputEmbeddingGB": 0.521472,
      "hostBuffersGB": 0.5,
-     "top1VsBF16Pct": 85.4
+     "top1VsBF16Pct": null
     },
     {
      "key": "ud_q2_k_xl",
      "label": "UD-Q2_K_XL",
-     "gb": 78.9,
+     "gb": 79.6,
      "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
      "ngramTableGB": 28.80013824,
-     "cpuInputEmbeddingGB": 0.4370432,
+     "cpuInputEmbeddingGB": 0.3377152,
      "hostBuffersGB": 0.5,
-     "top1VsBF16Pct": 82.7
+     "top1VsBF16Pct": null
     },
     {
      "key": "ud_iq1_m",
      "label": "UD-IQ1_M",
-     "gb": 74.5,
+     "gb": 68,
      "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
      "ngramTableGB": 28.80013824,
-     "cpuInputEmbeddingGB": 0.3575808,
+     "cpuInputEmbeddingGB": 0.3377152,
      "hostBuffersGB": 0.5,
-     "top1VsBF16Pct": 79.7
+     "top1VsBF16Pct": null
     },
     {
      "key": "ud_iq1_s",
      "label": "UD-IQ1_S",
-     "gb": 72.5,
+     "gb": 66.4,
      "repo": "unsloth/Qwen3.8-Flash-Next-GGUF",
      "ngramTableGB": 28.80013824,
-     "cpuInputEmbeddingGB": 0.3575808,
+     "cpuInputEmbeddingGB": 0.3377152,
      "hostBuffersGB": 0.5,
-     "top1VsBF16Pct": 77.3
+     "top1VsBF16Pct": null
     }
    ]
   },

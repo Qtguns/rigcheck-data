@@ -1536,7 +1536,7 @@
   {
    "url": "/qwen-3-8-27b/",
    "name": "Qwen3.8-27B",
-   "updated": "2026-11-02",
+   "updated": "2026-11-05",
    "checked": "2026-10-12",
    "subpages": [],
    "id": "qwen-3-8-27b",
@@ -1676,7 +1676,7 @@
   {
    "url": "/qwen-3-8-flash-next/",
    "name": "Qwen3.8-Flash-Next",
-   "updated": "2026-11-02",
+   "updated": "2026-11-05",
    "checked": "2026-11-02",
    "subpages": [],
    "id": "qwen-3-8-flash-next",
@@ -2084,7 +2084,7 @@
   {
    "url": "/strata/",
    "name": "Strata checker",
-   "updated": "2026-11-02",
+   "updated": "2026-11-06",
    "checked": "2026-11-02",
    "subpages": [],
    "id": "strata",
