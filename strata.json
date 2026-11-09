@@ -3,8 +3,8 @@
  "attribution": "RigCheck, https://localrigcheck.com",
  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
  "page": "https://localrigcheck.com/strata/",
- "updated": "2026-11-06",
- "sourcesChecked": "2026-11-02",
+ "updated": "2026-11-09",
+ "sourcesChecked": "2026-11-09",
  "engine": "Strata (github.com/Niko1221/Strata)",
  "sizes": [
   {
@@ -204,7 +204,7 @@
   {
    "key": "m5max128",
    "card": "M5 Max 128 GB",
-   "config": "macOS 27.2, model in memory, setup's defaults (MTP), short question",
+   "config": "macOS 27.2, model in memory, the setup defaults MAC.md measured (--spec 2 with MTP), short question",
    "type": "measured",
    "source": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md#measured-m5-max-128-gb",
    "outputTokS": {

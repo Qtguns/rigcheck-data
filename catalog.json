@@ -2084,8 +2084,8 @@
   {
    "url": "/strata/",
    "name": "Strata checker",
-   "updated": "2026-11-06",
-   "checked": "2026-11-02",
+   "updated": "2026-11-09",
+   "checked": "2026-11-09",
    "subpages": [],
    "id": "strata",
    "role": "engine",
@@ -2132,7 +2132,7 @@
      "status": "experimental",
      "requires": "Apple Silicon Mac (Metal, ready-made in the Mac app), macOS 15 or newer",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/MAC.md",
-     "read": "2026-11-02"
+     "read": "2026-11-09"
     },
     {
      "runtime": "Strata",
@@ -2157,9 +2157,9 @@
      "variants": "all",
      "where": "local",
      "status": "experimental",
-     "requires": "Intel Arc on Linux (Terminal engine package; model preparation through the source workflow)",
+     "requires": "Intel Arc on Linux (Terminal engine package; you fetch the model files, the first launch prepares them)",
      "evidence": "https://github.com/Niko1221/Strata/blob/main/docs/INTEL_ARC.md",
-     "read": "2026-11-02"
+     "read": "2026-11-09"
     }
    ],
    "license": {
