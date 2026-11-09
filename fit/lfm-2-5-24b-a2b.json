@@ -5,7 +5,7 @@
  "name": "LFM2.5-24B-A2B",
  "page": "https://localrigcheck.com/lfm-2-5-24b-a2b/",
  "checker": "https://localrigcheck.com/lfm-2-5-24b-a2b/#checker",
- "updated": "2026-11-02",
+ "updated": "2026-11-09",
  "sourcesChecked": "2026-10-22",
  "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
  "tiers": {
