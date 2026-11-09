@@ -650,7 +650,7 @@
   {
    "url": "/kolibri-1/",
    "name": "Kolibri-1",
-   "updated": "2026-10-21",
+   "updated": "2026-11-09",
    "checked": "2026-10-12",
    "subpages": [],
    "id": "kolibri-1",
@@ -693,9 +693,9 @@
      "variants": "all",
      "where": "local",
      "status": "official",
-     "requires": "needs the aleph-alpha-inference plugin, FP8, data-center GPUs",
-     "evidence": "https://github.com/Aleph-Alpha/aleph-alpha-inference",
-     "read": "2026-10-12"
+     "requires": "vLLM 0.33.0 or newer, or the aleph-alpha-inference plugin with older vLLM; FP8, data-center GPUs",
+     "evidence": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "read": "2026-11-09"
     },
     {
      "runtime": "Transformers",
@@ -753,7 +753,7 @@
     },
     {
      "key": "Official routes",
-     "value": "Aleph Alpha's vLLM plugin and, since October 20, 2026, Transformers 5.20 or newer",
+     "value": "vLLM, natively from version 0.33.0 (Aleph Alpha's plugin for older vLLM), and, since October 20, 2026, Transformers 5.20 or newer",
      "ev": "official",
      "src": 1
     },

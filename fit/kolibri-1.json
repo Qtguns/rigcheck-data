@@ -5,7 +5,7 @@
  "name": "Kolibri-1",
  "page": "https://localrigcheck.com/kolibri-1/",
  "checker": "https://localrigcheck.com/kolibri-1/#checker",
- "updated": "2026-10-21",
+ "updated": "2026-11-09",
  "sourcesChecked": "2026-10-12",
  "note": "The checker's own quick-mode answers on fixed setups, in its own words. answerKind says what kind of answer each is (a RigCheck capacity estimate, a planning budget, a published route or recipe match); none is a measured setup. tier 'na' means unknown, not 'does not fit'. Conditions are part of the answer.",
  "tiers": {
@@ -103,7 +103,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use the Aleph Alpha plugin, not plain vLLM.",
+   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use vLLM 0.33.0 or newer, which supports Kolibri natively, or Aleph Alpha's plugin with older vLLM.",
    "macLimit": false
   },
   {
@@ -125,7 +125,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use the Aleph Alpha plugin, not plain vLLM.",
+   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use vLLM 0.33.0 or newer, which supports Kolibri natively, or Aleph Alpha's plugin with older vLLM.",
    "macLimit": false
   },
   {
@@ -136,7 +136,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use the Aleph Alpha plugin, not plain vLLM.",
+   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use vLLM 0.33.0 or newer, which supports Kolibri natively, or Aleph Alpha's plugin with older vLLM.",
    "macLimit": false
   },
   {
@@ -147,7 +147,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use the Aleph Alpha plugin, not plain vLLM.",
+   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use vLLM 0.33.0 or newer, which supports Kolibri natively, or Aleph Alpha's plugin with older vLLM.",
    "macLimit": false
   },
   {
@@ -158,7 +158,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use the Aleph Alpha plugin, not plain vLLM.",
+   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use vLLM 0.33.0 or newer, which supports Kolibri natively, or Aleph Alpha's plugin with older vLLM.",
    "macLimit": false
   },
   {
@@ -169,7 +169,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use the Aleph Alpha plugin, not plain vLLM.",
+   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use vLLM 0.33.0 or newer, which supports Kolibri natively, or Aleph Alpha's plugin with older vLLM.",
    "macLimit": false
   },
   {
@@ -180,7 +180,7 @@
    "answer": "unknown",
    "pick": null,
    "where": null,
-   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use the Aleph Alpha plugin, not plain vLLM.",
+   "conditions": "Not an official minimum GPU configuration. Official model footprint ~78 GB; downloadable FP8 shards total 78.841 GB. Host RAM, concurrency, topology and context peaks are not specified by the minimum. Extra GPUs do not inherit a benchmark. Use vLLM 0.33.0 or newer, which supports Kolibri natively, or Aleph Alpha's plugin with older vLLM.",
    "macLimit": false
   }
  ]
